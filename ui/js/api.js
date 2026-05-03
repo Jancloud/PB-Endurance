@@ -25,10 +25,6 @@ export function buildRequestBody(state, els) {
     gel_count: Number(els.gelCount.textContent),
     ambient_temp_c: Number(els.ambientTemp.value),
     gel_carb_g: Number(els.gelCarb.value),
-    total_climb_m: state.climb.start + state.climb.mid + state.climb.end,
-    climb_start_m: state.climb.start,
-    climb_mid_m: state.climb.mid,
-    climb_end_m: state.climb.end,
     optimize: state.optimize,
   };
 }

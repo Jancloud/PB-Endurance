@@ -128,32 +128,3 @@ export function updateCards(payload, els) {
   const statHtml = `<span class="gel">每支 ${gelCarb}g · 计划总补给 ${plannedTotal}g · 已吸收 ${absorbedTotal.toFixed(1)}g</span>`;
   els.gelRow.innerHTML = `${statHtml}${pointsHtml}`;
 }
-
-export function attachAscentDrag(state, onReleased) {
-  document.querySelectorAll('.segment').forEach(seg => {
-    const key = seg.dataset.key;
-    let active = false;
-    let startY = 0;
-    let startV = 0;
-
-    seg.addEventListener('mousedown', e => {
-      active = true;
-      startY = e.clientY;
-      startV = state.climb[key];
-    });
-
-    window.addEventListener('mousemove', e => {
-      if (!active) return;
-      const nv = Math.max(0, Math.min(700, Math.round(startV + (startY - e.clientY) * 2)));
-      state.climb[key] = nv;
-      document.getElementById(`climb${key.charAt(0).toUpperCase() + key.slice(1)}`).textContent = `${nv}m`;
-      seg.style.background = `linear-gradient(180deg, rgba(0,242,255,${0.1 + nv / 1400}), rgba(0,0,0,0.2))`;
-    });
-
-    window.addEventListener('mouseup', () => {
-      if (!active) return;
-      active = false;
-      onReleased();
-    });
-  });
-}

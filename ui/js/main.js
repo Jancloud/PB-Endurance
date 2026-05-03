@@ -1,6 +1,6 @@
-import { fetchSimulation, fetchCoachAdvice, buildRequestBody } from './api.js?v=20261117';
-import { createChartController } from './chart.v20261103.js?v=20261117';
-import { attachAscentDrag, updateCards, updateInstantLabels } from './controls.js?v=20261117';
+import { fetchSimulation, fetchCoachAdvice, buildRequestBody } from './api.js?v=20261118';
+import { createChartController } from './chart.v20261103.js?v=20261118';
+import { updateCards, updateInstantLabels } from './controls.js?v=20261118';
 import {
   applyCoachAdvice,
   applyEngineCardState,
@@ -53,7 +53,6 @@ const state = {
   scanTimer: null,
   coachSeq: 0,
   coachStatus: 'idle',
-  climb: { start: 0, mid: 0, end: 0 },
 };
 const chartCtrl = createChartController(document.getElementById('chart'), els.finishTime, els.bonkGlow);
 
@@ -145,7 +144,6 @@ function attachEvents() {
     }, 420);
   };
 
-  attachAscentDrag(state, () => recomputeAndRender({ requestCoach: false, markStale: true }));
   window.addEventListener('resize', () => chartCtrl.chart.resize());
 }
 

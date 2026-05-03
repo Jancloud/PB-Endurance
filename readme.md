@@ -38,7 +38,7 @@ PB Fueler 是一个用于马拉松补给策略评估的仿真工具。它通过�
 - `ui/js/main.js`：UI 启动与联动编排。
 - `ui/js/api.js`：前端请求层。
 - `ui/js/chart.v20261103.js`：图表渲染与 BONK 闪烁。
-- `ui/js/controls.js`：控件联动与三段爬升拖拽。
+- `ui/js/controls.js`：控件联动与策略卡片文案更新。
 - `ui/js/coach_ui.js`：LLM 请求时的 Loading 与教练文案渲染。
 - `ui/js/utils.js`：通用工具（时间格式化、debounce）。
 - `ui/preview.png`：UI 效果截图。
