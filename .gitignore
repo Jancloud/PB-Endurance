@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+output/
+tools-mingit/
+tools-mingit.zip
+node_modules/
+.vercel/

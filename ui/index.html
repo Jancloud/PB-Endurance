@@ -1,0 +1,107 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PB Fueler UI Prototype</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <h1>Electric Glycogen</h1>
+      <div style="display:flex;gap:8px;align-items:center;">
+        <small id="uiVer" class="secondary">UI v20261114</small>
+        <button id="optBtn" class="btn-primary">优化建议</button>
+      </div>
+    </header>
+
+    <section class="chart-wrap">
+      <div id="chart"></div>
+      <div id="bonkGlow" class="bonk-glow"></div>
+    </section>
+
+    <section class="scorecard glass">
+      <div class="score-main">
+        <div class="score-block time-card">
+          <p class="label">预计完赛时间</p>
+          <p id="finishTime" class="big">02:59:59</p>
+        </div>
+        <div class="score-block strategy-card">
+          <div class="strategy-head">
+            <div>
+              <p class="label">教练建议</p>
+              <div class="strategy-meta">
+                <span id="strategyStatus" class="pill pill-risk">风险</span>
+                <span id="strategySource" class="pill pill-source">数值引擎</span>
+              </div>
+            </div>
+            <span class="scan-tag">Coach Link</span>
+          </div>
+          <p id="strategyText" class="strategy">后程分段：28km 起调整为 04:30</p>
+          <p id="strategyWarning" class="strategy-warning">数值引擎正在等待教练润色</p>
+          <div id="strategyPlans" class="strategy-plans"></div>
+        </div>
+      </div>
+      <div>
+        <p class="label">补给计划</p>
+        <div id="gelRow" class="gel-row"></div>
+      </div>
+    </section>
+
+    <section id="drawer" class="drawer">
+      <div id="drawerHandle" class="handle"></div>
+      <div class="drawer-body">
+        <div class="control">
+          <label>体重(kg) <span id="weightVal">55</span></label>
+          <input id="weight" type="range" min="40" max="100" step="1" value="55">
+          <p id="weightHint" class="secondary">体重直接影响基础能耗与糖原储备上限</p>
+        </div>
+        <div class="control">
+          <label>VDOT <span id="vdotVal">53.6</span></label>
+          <input id="vdot" type="range" min="35" max="70" step="0.1" value="53.6">
+          <p id="vdotHint" class="secondary">半马/全马锚点：--</p>
+        </div>
+        <div class="control">
+          <label>目标配速 <span id="paceVal">04'10"</span></label>
+          <input id="pace" type="range" min="210" max="420" step="1" value="250">
+          <p id="paceHint" class="secondary">42.195km 预计完赛：--:--:--</p>
+        </div>
+        <div class="control">
+          <label>预测强度 <span id="intensityVal">0.87</span></label>
+          <progress id="intensityBar" max="1.2" value="0.87"></progress>
+          <p id="intensityHint" class="secondary">可控区：建议按补给计划稳定推进</p>
+        </div>
+        <div class="control">
+          <label>碳水装载(%) <span id="loadingVal">90</span></label>
+          <input id="loading" type="range" min="0" max="100" step="1" value="90">
+          <p id="loadingHint" class="secondary">装载状态：--</p>
+        </div>
+        <div class="control">
+          <label>环境温度(°C) <span id="ambientTempVal">12</span></label>
+          <input id="ambientTemp" type="range" min="5" max="30" step="1" value="12">
+          <p id="ambientTempHint" class="secondary">12°C 为黄金温度，15°C 以上每升高 1°C 糖耗系数 +1%</p>
+        </div>
+        <div class="control">
+          <label>单支碳水(g) <span id="gelCarbVal">25</span></label>
+          <input id="gelCarb" type="range" min="20" max="45" step="1" value="25">
+          <p id="gelCarbHint" class="secondary">当前按 25g/支基准，建议按你实际胶规格调整</p>
+        </div>
+        <div class="control gels"><label>能量胶数量</label><div><button id="gelMinus">-</button><span id="gelCount">6</span><button id="gelPlus">+</button></div></div>
+      </div>
+    </section>
+
+    <section class="ascent glass">
+      <p class="label">三段式爬升输入器</p>
+      <div class="ascent-grid">
+        <div class="segment" data-key="start"><span>前段</span><b id="climbStart">0m</b></div>
+        <div class="segment" data-key="mid"><span>中段</span><b id="climbMid">0m</b></div>
+        <div class="segment" data-key="end"><span>后段</span><b id="climbEnd">0m</b></div>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="./js/main.js?v=20261114"></script>
+</body>
+</html>
+
