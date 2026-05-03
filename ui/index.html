@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PB Fueler UI Prototype</title>
-  <link rel="stylesheet" href="./styles.css?v=20261119" />
+  <link rel="stylesheet" href="./styles.css?v=20261120" />
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
 </head>
 <body>
@@ -12,7 +12,7 @@
     <header class="topbar">
       <h1>PB动力舱</h1>
       <div class="topbar-actions">
-        <small id="uiVer" class="secondary">UI v20261119</small>
+        <small id="uiVer" class="secondary">UI v20261120</small>
         <button id="optBtn" class="btn-primary">优化建议</button>
       </div>
     </header>
@@ -50,49 +50,60 @@
       </div>
     </section>
 
-    <section id="drawer" class="drawer">
-      <div id="drawerHandle" class="handle"></div>
+    <section id="drawer" class="drawer" data-state="peek">
+      <div class="drawer-top">
+        <div id="drawerHandle" class="handle"></div>
+        <p id="drawerConclusion" class="drawer-conclusion">当前配速可控，预计可稳定完赛。</p>
+      </div>
       <div class="drawer-body">
-        <div class="control">
-          <label>体重(kg) <span id="weightVal">55</span></label>
-          <input id="weight" type="range" min="40" max="100" step="1" value="55">
-          <p id="weightHint" class="secondary">体重直接影响基础能耗与糖原储备上限</p>
+        <div class="drawer-section">
+          <p class="drawer-section-title">核心参数</p>
+          <div class="control">
+            <label>体重(kg) <span id="weightVal">55</span></label>
+            <input id="weight" type="range" min="40" max="100" step="1" value="55">
+            <p id="weightHint" class="secondary">体重直接影响基础能耗与糖原储备上限</p>
+          </div>
+          <div class="control">
+            <label>VDOT <span id="vdotVal">53.6</span></label>
+            <input id="vdot" type="range" min="35" max="70" step="0.1" value="53.6">
+            <p id="vdotHint" class="secondary">半马/全马锚点：--</p>
+          </div>
+          <div class="control">
+            <label>目标配速 <span id="paceVal">04'10"</span></label>
+            <input id="pace" type="range" min="210" max="420" step="1" value="250">
+            <p id="paceHint" class="secondary">42.195km 预计完赛：--:--:--</p>
+          </div>
+          <div class="control">
+            <label>预测强度 <span id="intensityVal">0.87</span></label>
+            <progress id="intensityBar" max="1.2" value="0.87"></progress>
+            <p id="intensityHint" class="secondary">可控区：建议按补给计划稳定推进</p>
+          </div>
+          <div class="control">
+            <label>碳水装载(%) <span id="loadingVal">90</span></label>
+            <input id="loading" type="range" min="0" max="100" step="1" value="90">
+            <p id="loadingHint" class="secondary">装载状态：--</p>
+          </div>
+          <div class="control gels"><label>能量胶数量</label><div><button id="gelMinus">-</button><span id="gelCount">6</span><button id="gelPlus">+</button></div></div>
         </div>
-        <div class="control">
-          <label>VDOT <span id="vdotVal">53.6</span></label>
-          <input id="vdot" type="range" min="35" max="70" step="0.1" value="53.6">
-          <p id="vdotHint" class="secondary">半马/全马锚点：--</p>
+        <div class="drawer-section">
+          <button id="advancedToggle" class="advanced-toggle" type="button">展开高级参数</button>
+          <div id="advancedPanel" class="advanced-panel">
+            <div class="control">
+              <label>环境温度(°C) <span id="ambientTempVal">12</span></label>
+              <input id="ambientTemp" type="range" min="5" max="30" step="1" value="12">
+              <p id="ambientTempHint" class="secondary">12°C 为黄金温度，15°C 以上每升高 1°C 糖耗系数 +1%</p>
+            </div>
+            <div class="control">
+              <label>单支碳水(g) <span id="gelCarbVal">25</span></label>
+              <input id="gelCarb" type="range" min="20" max="45" step="1" value="25">
+              <p id="gelCarbHint" class="secondary">当前按 25g/支基准，建议按你实际胶规格调整</p>
+            </div>
+          </div>
         </div>
-        <div class="control">
-          <label>目标配速 <span id="paceVal">04'10"</span></label>
-          <input id="pace" type="range" min="210" max="420" step="1" value="250">
-          <p id="paceHint" class="secondary">42.195km 预计完赛：--:--:--</p>
-        </div>
-        <div class="control">
-          <label>预测强度 <span id="intensityVal">0.87</span></label>
-          <progress id="intensityBar" max="1.2" value="0.87"></progress>
-          <p id="intensityHint" class="secondary">可控区：建议按补给计划稳定推进</p>
-        </div>
-        <div class="control">
-          <label>碳水装载(%) <span id="loadingVal">90</span></label>
-          <input id="loading" type="range" min="0" max="100" step="1" value="90">
-          <p id="loadingHint" class="secondary">装载状态：--</p>
-        </div>
-        <div class="control">
-          <label>环境温度(°C) <span id="ambientTempVal">12</span></label>
-          <input id="ambientTemp" type="range" min="5" max="30" step="1" value="12">
-          <p id="ambientTempHint" class="secondary">12°C 为黄金温度，15°C 以上每升高 1°C 糖耗系数 +1%</p>
-        </div>
-        <div class="control">
-          <label>单支碳水(g) <span id="gelCarbVal">25</span></label>
-          <input id="gelCarb" type="range" min="20" max="45" step="1" value="25">
-          <p id="gelCarbHint" class="secondary">当前按 25g/支基准，建议按你实际胶规格调整</p>
-        </div>
-        <div class="control gels"><label>能量胶数量</label><div><button id="gelMinus">-</button><span id="gelCount">6</span><button id="gelPlus">+</button></div></div>
       </div>
     </section>
   </main>
-  <script type="module" src="./js/main.js?v=20261118"></script>
+  <script type="module" src="./js/main.js?v=20261120"></script>
 </body>
 </html>
 

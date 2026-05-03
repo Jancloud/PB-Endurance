@@ -127,4 +127,6 @@ export function updateCards(payload, els) {
   const pointsHtml = gelPoints.map(k => `<span class="gel">补 ${k}km</span>`).join('');
   const statHtml = `<span class="gel">每支 ${gelCarb}g · 计划总补给 ${plannedTotal}g · 已吸收 ${absorbedTotal.toFixed(1)}g</span>`;
   els.gelRow.innerHTML = `${statHtml}${pointsHtml}`;
+
+  return strategy;
 }

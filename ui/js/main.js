@@ -1,6 +1,6 @@
-import { fetchSimulation, fetchCoachAdvice, buildRequestBody } from './api.js?v=20261118';
-import { createChartController } from './chart.v20261103.js?v=20261118';
-import { updateCards, updateInstantLabels } from './controls.js?v=20261118';
+import { fetchSimulation, fetchCoachAdvice, buildRequestBody } from './api.js?v=20261120';
+import { createChartController } from './chart.v20261103.js?v=20261120';
+import { updateCards, updateInstantLabels } from './controls.js?v=20261120';
 import {
   applyCoachAdvice,
   applyEngineCardState,
@@ -22,6 +22,9 @@ const els = {
   optBtn: document.getElementById('optBtn'),
   drawer: document.getElementById('drawer'),
   drawerHandle: document.getElementById('drawerHandle'),
+  drawerConclusion: document.getElementById('drawerConclusion'),
+  advancedToggle: document.getElementById('advancedToggle'),
+  advancedPanel: document.getElementById('advancedPanel'),
   weight: document.getElementById('weight'),
   vdot: document.getElementById('vdot'),
   pace: document.getElementById('pace'),
@@ -48,13 +51,149 @@ const els = {
   gelPlus: document.getElementById('gelPlus'),
 };
 
+const DRAWER_STATES = ['peek', 'half', 'full'];
+
 const state = {
   optimize: false,
   scanTimer: null,
   coachSeq: 0,
   coachStatus: 'idle',
+  drawerState: 'peek',
+  advancedOpen: false,
+  dragCtx: null,
+  lastDrawerDragAt: 0,
 };
+
 const chartCtrl = createChartController(document.getElementById('chart'), els.finishTime, els.bonkGlow);
+
+function isMobileViewport() {
+  return window.matchMedia('(max-width: 720px)').matches;
+}
+
+function setAdvancedOpen(isOpen) {
+  if (!els.advancedPanel || !els.advancedToggle) return;
+  state.advancedOpen = Boolean(isOpen);
+  els.advancedPanel.classList.toggle('open', state.advancedOpen);
+  els.advancedToggle.textContent = state.advancedOpen ? '收起高级参数' : '展开高级参数';
+}
+
+function setDrawerState(nextState) {
+  if (!DRAWER_STATES.includes(nextState)) return;
+  state.drawerState = nextState;
+
+  if (isMobileViewport()) {
+    els.drawer.dataset.state = nextState;
+    els.drawer.classList.remove('open');
+    els.drawer.style.height = '';
+    if (nextState !== 'full' && state.advancedOpen) setAdvancedOpen(false);
+    return;
+  }
+
+  els.drawer.dataset.state = '';
+  els.drawer.classList.toggle('open', nextState !== 'peek');
+}
+
+function cycleDrawerState() {
+  if (!isMobileViewport()) {
+    els.drawer.classList.toggle('open');
+    return;
+  }
+  if (state.drawerState === 'peek') return setDrawerState('half');
+  if (state.drawerState === 'half') return setDrawerState('full');
+  return setDrawerState('peek');
+}
+
+function getTouchY(evt) {
+  if (evt.touches && evt.touches.length > 0) return evt.touches[0].clientY;
+  if (evt.changedTouches && evt.changedTouches.length > 0) return evt.changedTouches[0].clientY;
+  return evt.clientY;
+}
+
+function getDrawerHeights() {
+  const vh = window.innerHeight;
+  const peek = 44;
+  const half = Math.max(340, Math.min(Math.round(vh * 0.56), 520));
+  const full = Math.max(half + 120, Math.min(Math.round(vh * 0.88), Math.round(vh - 10)));
+  return { peek, half, full };
+}
+
+function closestDrawerState(heightPx) {
+  const sizes = getDrawerHeights();
+  return Object.entries(sizes).reduce((best, current) => {
+    const [stateName, size] = current;
+    if (!best) return { stateName, diff: Math.abs(heightPx - size) };
+    const diff = Math.abs(heightPx - size);
+    return diff < best.diff ? { stateName, diff } : best;
+  }, null).stateName;
+}
+
+function onDrawerDragStart(evt) {
+  if (!isMobileViewport()) return;
+  state.dragCtx = {
+    startY: getTouchY(evt),
+    startHeight: els.drawer.getBoundingClientRect().height,
+    moved: false,
+  };
+  els.drawer.classList.add('dragging');
+}
+
+function onDrawerDragMove(evt) {
+  if (!state.dragCtx || !isMobileViewport()) return;
+  const y = getTouchY(evt);
+  const delta = state.dragCtx.startY - y;
+  const sizes = getDrawerHeights();
+  const nextHeight = Math.max(sizes.peek, Math.min(sizes.full, state.dragCtx.startHeight + delta));
+  if (Math.abs(delta) > 5) state.dragCtx.moved = true;
+  els.drawer.style.height = `${Math.round(nextHeight)}px`;
+  if (evt.cancelable) evt.preventDefault();
+}
+
+function onDrawerDragEnd() {
+  if (!state.dragCtx || !isMobileViewport()) return;
+  const draggedHeight = Number.parseFloat(els.drawer.style.height) || els.drawer.getBoundingClientRect().height;
+  const target = closestDrawerState(draggedHeight);
+  els.drawer.classList.remove('dragging');
+  els.drawer.style.height = '';
+  setDrawerState(target);
+  if (state.dragCtx.moved) state.lastDrawerDragAt = Date.now();
+  state.dragCtx = null;
+}
+
+function updateDrawerConclusion(strategy) {
+  if (!els.drawerConclusion || !strategy) return;
+  const level = strategy.level || 'risk';
+  const km = strategy.bonkKm ? `${strategy.bonkKm}km` : '后程';
+
+  els.drawerConclusion.classList.remove('safe', 'risk', 'bonk');
+  if (level === 'safe') {
+    els.drawerConclusion.classList.add('safe');
+    els.drawerConclusion.textContent = '当前配速可控，预计可稳定完赛。';
+    return;
+  }
+  if (level === 'bonk') {
+    els.drawerConclusion.classList.add('bonk');
+    els.drawerConclusion.textContent = `预计 ${km} 撞墙，优先调整后程配速。`;
+    return;
+  }
+  els.drawerConclusion.classList.add('risk');
+  els.drawerConclusion.textContent = '后程风险上升，建议预留 5-10 秒配速余量。';
+}
+
+function syncDrawerByViewport() {
+  if (isMobileViewport()) {
+    els.drawer.classList.remove('open');
+    els.drawer.dataset.state = state.drawerState;
+    return;
+  }
+
+  els.drawer.style.height = '';
+  els.drawer.dataset.state = '';
+  if (state.drawerState === 'peek') {
+    els.drawer.classList.remove('open');
+  } else {
+    els.drawer.classList.add('open');
+  }
+}
 
 async function requestCoachSuggestion(requestBody, seq) {
   try {
@@ -72,7 +211,7 @@ async function requestCoachSuggestion(requestBody, seq) {
     state.coachStatus = 'failed';
     showCoachUnavailable(els);
   } finally {
-    els.optBtn.textContent = state.optimize ? '\u5173\u95ed\u4f18\u5316' : '\u4f18\u5316\u5efa\u8bae';
+    els.optBtn.textContent = state.optimize ? '关闭优化' : '优化建议';
   }
 }
 
@@ -81,7 +220,8 @@ async function recomputeAndRender({ requestCoach = false, markStale = true } = {
   const payload = await fetchSimulation(requestBody);
   if (payload.error) return console.error(payload.error);
 
-  updateCards(payload, els);
+  const strategy = updateCards(payload, els);
+  updateDrawerConclusion(strategy);
   applyEngineCardState(els);
   chartCtrl.render(payload);
 
@@ -120,13 +260,32 @@ function attachEvents() {
     await recomputeAndRender({ requestCoach: false, markStale: true });
   });
 
-  els.drawerHandle.onclick = () => els.drawer.classList.toggle('open');
+  els.drawerHandle.onclick = () => {
+    if (Date.now() - state.lastDrawerDragAt < 180) return;
+    cycleDrawerState();
+  };
+
+  if (els.advancedToggle) {
+    els.advancedToggle.onclick = () => {
+      if (state.drawerState !== 'full' && isMobileViewport()) {
+        setDrawerState('full');
+      }
+      setAdvancedOpen(!state.advancedOpen);
+    };
+  }
+
+  els.drawerHandle.addEventListener('touchstart', onDrawerDragStart, { passive: true });
+  window.addEventListener('touchmove', onDrawerDragMove, { passive: false });
+  window.addEventListener('touchend', onDrawerDragEnd);
+  els.drawerHandle.addEventListener('mousedown', onDrawerDragStart);
+  window.addEventListener('mousemove', onDrawerDragMove);
+  window.addEventListener('mouseup', onDrawerDragEnd);
 
   els.optBtn.onclick = async () => {
     if (state.coachStatus === 'loading') return;
 
     state.optimize = !state.optimize;
-    els.optBtn.textContent = '\u4f18\u5316\u4e2d...';
+    els.optBtn.textContent = '优化中...';
     chartCtrl.chart.setOption({
       series: [
         { lineStyle: { color: '#6b7280' } },
@@ -144,10 +303,16 @@ function attachEvents() {
     }, 420);
   };
 
-  window.addEventListener('resize', () => chartCtrl.chart.resize());
+  window.addEventListener('resize', () => {
+    chartCtrl.chart.resize();
+    syncDrawerByViewport();
+  });
 }
 
 (async function init() {
+  setDrawerState('peek');
+  setAdvancedOpen(false);
+  syncDrawerByViewport();
   updateInstantLabels(els);
   attachEvents();
   await recomputeAndRender({ requestCoach: false, markStale: true });
