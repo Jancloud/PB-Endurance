@@ -1,6 +1,6 @@
-import { fetchSimulation, fetchCoachAdvice, buildRequestBody } from './api.js?v=20261120';
-import { createChartController } from './chart.v20261103.js?v=20261120';
-import { updateCards, updateInstantLabels } from './controls.js?v=20261120';
+import { fetchSimulation, fetchCoachAdvice, buildRequestBody } from './api.js?v=20261122';
+import { createChartController } from './chart.v20261103.js?v=20261122';
+import { updateCards, updateInstantLabels } from './controls.js?v=20261122';
 import {
   applyCoachAdvice,
   applyEngineCardState,
@@ -11,6 +11,7 @@ import {
 import { debounce } from './utils.js?v=20261105';
 
 const els = {
+  app: document.querySelector('.app'),
   finishTime: document.getElementById('finishTime'),
   strategyText: document.getElementById('strategyText'),
   strategyPlans: document.getElementById('strategyPlans'),
@@ -74,7 +75,7 @@ function setAdvancedOpen(isOpen) {
   if (!els.advancedPanel || !els.advancedToggle) return;
   state.advancedOpen = Boolean(isOpen);
   els.advancedPanel.classList.toggle('open', state.advancedOpen);
-  els.advancedToggle.textContent = state.advancedOpen ? 'ÊÕÆğ¸ß¼¶²ÎÊı' : 'Õ¹¿ª¸ß¼¶²ÎÊı';
+  els.advancedToggle.textContent = state.advancedOpen ? 'æ”¶èµ·é«˜çº§å‚æ•°' : 'å±•å¼€é«˜çº§å‚æ•°';
 }
 
 function setDrawerState(nextState) {
@@ -84,12 +85,18 @@ function setDrawerState(nextState) {
   if (isMobileViewport()) {
     els.drawer.dataset.state = nextState;
     els.drawer.classList.remove('open');
-    els.drawer.style.height = '';
+    els.drawer.style.maxHeight = '';
+    if (els.app) {
+      els.app.classList.toggle('tuning-full', nextState === 'full');
+    }
     if (nextState !== 'full' && state.advancedOpen) setAdvancedOpen(false);
     return;
   }
 
   els.drawer.dataset.state = '';
+  if (els.app) {
+    els.app.classList.remove('tuning-full');
+  }
   els.drawer.classList.toggle('open', nextState !== 'peek');
 }
 
@@ -113,7 +120,7 @@ function getDrawerHeights() {
   const vh = window.innerHeight;
   const peek = 44;
   const half = Math.max(340, Math.min(Math.round(vh * 0.56), 520));
-  const full = Math.max(half + 120, Math.min(Math.round(vh * 0.88), Math.round(vh - 10)));
+  const full = Math.max(half + 120, Math.min(Math.round(vh * 0.8), Math.round(vh - 10)));
   return { peek, half, full };
 }
 
@@ -144,16 +151,16 @@ function onDrawerDragMove(evt) {
   const sizes = getDrawerHeights();
   const nextHeight = Math.max(sizes.peek, Math.min(sizes.full, state.dragCtx.startHeight + delta));
   if (Math.abs(delta) > 5) state.dragCtx.moved = true;
-  els.drawer.style.height = `${Math.round(nextHeight)}px`;
+  els.drawer.style.maxHeight = `${Math.round(nextHeight)}px`;
   if (evt.cancelable) evt.preventDefault();
 }
 
 function onDrawerDragEnd() {
   if (!state.dragCtx || !isMobileViewport()) return;
-  const draggedHeight = Number.parseFloat(els.drawer.style.height) || els.drawer.getBoundingClientRect().height;
+  const draggedHeight = Number.parseFloat(els.drawer.style.maxHeight) || els.drawer.getBoundingClientRect().height;
   const target = closestDrawerState(draggedHeight);
   els.drawer.classList.remove('dragging');
-  els.drawer.style.height = '';
+  els.drawer.style.maxHeight = '';
   setDrawerState(target);
   if (state.dragCtx.moved) state.lastDrawerDragAt = Date.now();
   state.dragCtx = null;
@@ -162,21 +169,21 @@ function onDrawerDragEnd() {
 function updateDrawerConclusion(strategy) {
   if (!els.drawerConclusion || !strategy) return;
   const level = strategy.level || 'risk';
-  const km = strategy.bonkKm ? `${strategy.bonkKm}km` : 'ºó³Ì';
+  const km = strategy.bonkKm ? `${strategy.bonkKm}km` : 'åç¨‹';
 
   els.drawerConclusion.classList.remove('safe', 'risk', 'bonk');
   if (level === 'safe') {
     els.drawerConclusion.classList.add('safe');
-    els.drawerConclusion.textContent = 'µ±Ç°ÅäËÙ¿É¿Ø£¬Ô¤¼Æ¿ÉÎÈ¶¨ÍêÈü¡£';
+    els.drawerConclusion.textContent = 'å½“å‰é…é€Ÿå¯æ§ï¼Œé¢„è®¡å¯ç¨³å®šå®Œèµ›ã€‚';
     return;
   }
   if (level === 'bonk') {
     els.drawerConclusion.classList.add('bonk');
-    els.drawerConclusion.textContent = `Ô¤¼Æ ${km} ×²Ç½£¬ÓÅÏÈµ÷Õûºó³ÌÅäËÙ¡£`;
+    els.drawerConclusion.textContent = `é¢„è®¡ ${km} æ’å¢™ï¼Œä¼˜å…ˆè°ƒæ•´åç¨‹é…é€Ÿã€‚`;
     return;
   }
   els.drawerConclusion.classList.add('risk');
-  els.drawerConclusion.textContent = 'ºó³Ì·çÏÕÉÏÉı£¬½¨ÒéÔ¤Áô 5-10 ÃëÅäËÙÓàÁ¿¡£';
+  els.drawerConclusion.textContent = 'åç¨‹é£é™©ä¸Šå‡ï¼Œå»ºè®®é¢„ç•™ 5-10 ç§’é…é€Ÿä½™é‡ã€‚';
 }
 
 function syncDrawerByViewport() {
@@ -187,7 +194,11 @@ function syncDrawerByViewport() {
   }
 
   els.drawer.style.height = '';
+  els.drawer.style.maxHeight = '';
   els.drawer.dataset.state = '';
+  if (els.app) {
+    els.app.classList.remove('tuning-full');
+  }
   if (state.drawerState === 'peek') {
     els.drawer.classList.remove('open');
   } else {
@@ -211,7 +222,7 @@ async function requestCoachSuggestion(requestBody, seq) {
     state.coachStatus = 'failed';
     showCoachUnavailable(els);
   } finally {
-    els.optBtn.textContent = state.optimize ? '¹Ø±ÕÓÅ»¯' : 'ÓÅ»¯½¨Òé';
+    els.optBtn.textContent = state.optimize ? 'å…³é—­ä¼˜åŒ–' : 'ä¼˜åŒ–å»ºè®®';
   }
 }
 
@@ -285,7 +296,7 @@ function attachEvents() {
     if (state.coachStatus === 'loading') return;
 
     state.optimize = !state.optimize;
-    els.optBtn.textContent = 'ÓÅ»¯ÖĞ...';
+    els.optBtn.textContent = 'ä¼˜åŒ–ä¸­...';
     chartCtrl.chart.setOption({
       series: [
         { lineStyle: { color: '#6b7280' } },

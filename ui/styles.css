@@ -168,6 +168,7 @@ h1 { margin: 0; letter-spacing: 0.5px; font-size: 24px; }
   border-radius: 8px;
   padding: 6px 8px;
   font-size: 12px;
+  white-space: nowrap;
 }
 .drawer {
   position: sticky;
@@ -259,7 +260,11 @@ progress { width: 100%; height: 10px; }
   width: 28px; height: 28px; border-radius: 8px; border: 1px solid #355; color: var(--line); background: #0f1724;
 }
 @media (max-width: 720px) {
-  .app { padding: 12px 12px calc(72px + env(safe-area-inset-bottom)); }
+  .app {
+    min-height: 100svh;
+    min-height: 100dvh;
+    padding: 12px 12px calc(12px + env(safe-area-inset-bottom));
+  }
   .topbar {
     align-items: flex-start;
     gap: 10px;
@@ -286,29 +291,26 @@ progress { width: 100%; height: 10px; }
   .scorecard { padding: 10px; }
   .big { font-size: 30px; }
   .drawer {
-    position: fixed;
-    left: 10px;
-    right: 10px;
+    position: sticky;
     bottom: calc(8px + env(safe-area-inset-bottom));
-    z-index: 60;
-    margin-top: 0;
-    max-height: none;
-    height: calc(44px + env(safe-area-inset-bottom));
+    z-index: 20;
+    margin-top: 10px;
+    max-height: calc(44px + env(safe-area-inset-bottom));
     border-radius: 16px;
     background: rgba(15, 23, 36, 0.98);
     border-color: rgba(58, 88, 122, 0.85);
-    transition: height 240ms cubic-bezier(0.18, 0.82, 0.22, 1), box-shadow 240ms ease;
+    transition: max-height 240ms cubic-bezier(0.18, 0.82, 0.22, 1), box-shadow 240ms ease;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
   }
   .drawer.dragging { transition: none; }
   .drawer[data-state="peek"] {
-    height: calc(44px + env(safe-area-inset-bottom));
+    max-height: calc(44px + env(safe-area-inset-bottom));
   }
   .drawer[data-state="half"] {
-    height: min(56vh, 520px);
+    max-height: min(56dvh, 520px);
   }
   .drawer[data-state="full"] {
-    height: min(88vh, 760px);
+    max-height: min(80dvh, 700px);
     box-shadow: 0 14px 36px rgba(0, 0, 0, 0.52);
   }
   .drawer-conclusion {
@@ -316,7 +318,6 @@ progress { width: 100%; height: 10px; }
     font-size: 11px;
   }
   .drawer-body {
-    max-height: calc(100% - 56px);
     max-height: calc(100% - 56px - env(safe-area-inset-bottom));
     padding-bottom: 26px;
   }
@@ -337,5 +338,37 @@ progress { width: 100%; height: 10px; }
   }
   .drawer[data-state="half"] .drawer-body {
     padding-top: 10px;
+  }
+
+  .gel-row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 10px;
+    padding-bottom: 4px;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+  }
+  .gel-row::-webkit-scrollbar {
+    height: 4px;
+  }
+  .gel-row::-webkit-scrollbar-thumb {
+    background: rgba(116, 66, 176, 0.8);
+    border-radius: 999px;
+  }
+  .gel {
+    flex: 0 0 auto;
+  }
+
+  .app.tuning-full .time-card {
+    padding: 8px 10px;
+    min-height: 0;
+  }
+  .app.tuning-full .time-card .label {
+    font-size: 11px;
+    margin-bottom: 2px;
+  }
+  .app.tuning-full .time-card .big {
+    font-size: 24px;
   }
 }
