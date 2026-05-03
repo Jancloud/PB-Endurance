@@ -1,6 +1,6 @@
-import { fetchSimulation, fetchCoachAdvice, buildRequestBody } from './api.js?v=20261122';
-import { createChartController } from './chart.v20261103.js?v=20261122';
-import { updateCards, updateInstantLabels } from './controls.js?v=20261122';
+import { fetchSimulation, fetchCoachAdvice, buildRequestBody } from './api.js?v=20261123';
+import { createChartController } from './chart.v20261103.js?v=20261123';
+import { updateCards, updateInstantLabels } from './controls.js?v=20261123';
 import {
   applyCoachAdvice,
   applyEngineCardState,
@@ -71,6 +71,16 @@ function isMobileViewport() {
   return window.matchMedia('(max-width: 720px)').matches;
 }
 
+function updateDrawerOffset() {
+  if (!els.app || !els.drawer) return;
+  if (!isMobileViewport()) {
+    els.app.style.removeProperty('--drawer-offset');
+    return;
+  }
+  const h = Math.max(44, Math.round(els.drawer.getBoundingClientRect().height));
+  els.app.style.setProperty('--drawer-offset', `${h}px`);
+}
+
 function setAdvancedOpen(isOpen) {
   if (!els.advancedPanel || !els.advancedToggle) return;
   state.advancedOpen = Boolean(isOpen);
@@ -90,6 +100,7 @@ function setDrawerState(nextState) {
       els.app.classList.toggle('tuning-full', nextState === 'full');
     }
     if (nextState !== 'full' && state.advancedOpen) setAdvancedOpen(false);
+    updateDrawerOffset();
     return;
   }
 
@@ -98,6 +109,7 @@ function setDrawerState(nextState) {
     els.app.classList.remove('tuning-full');
   }
   els.drawer.classList.toggle('open', nextState !== 'peek');
+  updateDrawerOffset();
 }
 
 function cycleDrawerState() {
@@ -152,6 +164,7 @@ function onDrawerDragMove(evt) {
   const nextHeight = Math.max(sizes.peek, Math.min(sizes.full, state.dragCtx.startHeight + delta));
   if (Math.abs(delta) > 5) state.dragCtx.moved = true;
   els.drawer.style.maxHeight = `${Math.round(nextHeight)}px`;
+  updateDrawerOffset();
   if (evt.cancelable) evt.preventDefault();
 }
 
@@ -164,6 +177,7 @@ function onDrawerDragEnd() {
   setDrawerState(target);
   if (state.dragCtx.moved) state.lastDrawerDragAt = Date.now();
   state.dragCtx = null;
+  updateDrawerOffset();
 }
 
 function updateDrawerConclusion(strategy) {
@@ -204,6 +218,7 @@ function syncDrawerByViewport() {
   } else {
     els.drawer.classList.add('open');
   }
+  updateDrawerOffset();
 }
 
 async function requestCoachSuggestion(requestBody, seq) {
@@ -317,6 +332,7 @@ function attachEvents() {
   window.addEventListener('resize', () => {
     chartCtrl.chart.resize();
     syncDrawerByViewport();
+    updateDrawerOffset();
   });
 }
 
@@ -324,6 +340,7 @@ function attachEvents() {
   setDrawerState('peek');
   setAdvancedOpen(false);
   syncDrawerByViewport();
+  updateDrawerOffset();
   updateInstantLabels(els);
   attachEvents();
   await recomputeAndRender({ requestCoach: false, markStale: true });
