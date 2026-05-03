@@ -16,6 +16,7 @@ body {
 }
 .app { max-width: 1024px; margin: 0 auto; padding: 16px 16px 120px; }
 .topbar { display: flex; justify-content: space-between; align-items: center; }
+.topbar-actions { display: flex; gap: 8px; align-items: center; }
 h1 { margin: 0; letter-spacing: 0.5px; font-size: 24px; }
 .btn-primary {
   background: linear-gradient(135deg, #0ff, #38f);
@@ -25,6 +26,7 @@ h1 { margin: 0; letter-spacing: 0.5px; font-size: 24px; }
   font-weight: 700;
   padding: 10px 14px;
   cursor: pointer;
+  white-space: nowrap;
 }
 .chart-wrap { position: relative; margin-top: 14px; border: 1px solid #1f2937; border-radius: 14px; overflow: hidden; }
 #chart { height: 360px; }
@@ -229,6 +231,48 @@ progress { width: 100%; height: 10px; }
   width: 28px; height: 28px; border-radius: 8px; border: 1px solid #355; color: var(--line); background: #0f1724;
 }
 @media (max-width: 720px) {
+  .app { padding: 12px 12px 148px; }
+  .topbar {
+    align-items: flex-start;
+    gap: 10px;
+  }
+  h1 {
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+  }
+  .topbar-actions {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+  }
+  .btn-primary {
+    padding: 8px 10px;
+    font-size: 14px;
+    border-radius: 12px;
+  }
+  .secondary { font-size: 10px; }
+  .chart-wrap { margin-top: 10px; }
+  #chart { height: 54vh; min-height: 320px; }
   .score-main { grid-template-columns: 1fr; }
-  #chart { height: 300px; }
+  .scorecard { padding: 10px; }
+  .big { font-size: 30px; }
+  .drawer {
+    position: fixed;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    z-index: 60;
+    margin-top: 0;
+    max-height: 44px;
+    border-radius: 16px;
+    background: rgba(15, 23, 36, 0.96);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+  }
+  .drawer.open { max-height: 88vh; }
+  .drawer-body {
+    max-height: calc(88vh - 18px);
+    padding-bottom: 26px;
+  }
+  .ascent { margin-bottom: 86px; }
 }

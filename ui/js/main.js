@@ -1,6 +1,6 @@
-import { fetchSimulation, fetchCoachAdvice, buildRequestBody } from './api.js?v=20261114';
-import { createChartController } from './chart.v20261103.js?v=20261114';
-import { attachAscentDrag, updateCards, updateInstantLabels } from './controls.js?v=20261114';
+import { fetchSimulation, fetchCoachAdvice, buildRequestBody } from './api.js?v=20261117';
+import { createChartController } from './chart.v20261103.js?v=20261117';
+import { attachAscentDrag, updateCards, updateInstantLabels } from './controls.js?v=20261117';
 import {
   applyCoachAdvice,
   applyEngineCardState,

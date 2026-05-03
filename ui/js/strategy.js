@@ -10,6 +10,13 @@ function safeNumber(v, fallback = 0) {
   return Number.isFinite(n) ? n : fallback;
 }
 
+function parseDurationToSec(hmsText) {
+  if (typeof hmsText !== 'string') return null;
+  const match = hmsText.trim().match(/^(\d{1,2}):(\d{2}):(\d{2})$/);
+  if (!match) return null;
+  return Number(match[1]) * 3600 + Number(match[2]) * 60 + Number(match[3]);
+}
+
 function classifyStatus(points, intensity) {
   const bonkPoint = points.find(p => p.is_bonk) || null;
   const minG = points.reduce((min, p) => Math.min(min, safeNumber(p.glycogen_level, 9999)), 9999);
@@ -33,9 +40,22 @@ function getStatusClass(level) {
   return 'strategy-bonk';
 }
 
+function resolveFinishGoalText(ctx) {
+  const finishSec = Number.isFinite(ctx.finishSec)
+    ? ctx.finishSec
+    : parseDurationToSec(ctx.finishTime);
+  if (!Number.isFinite(finishSec)) {
+    return '完成当前完赛目标';
+  }
+  if (finishSec <= 3 * 3600) {
+    return '冲击 3 小时大关';
+  }
+  return `稳住 ${ctx.finishTime || '当前'} 完赛目标`;
+}
+
 function buildRealtimeMessage(level, ctx, bonkPoint) {
   if (level === 'safe') {
-    return `当前策略稳健。糖原储备充足，足以支持你以 ${formatPace(ctx.paceSecPerKm)} 冲击 3 小时大关。`;
+    return `当前策略稳健。糖原储备充足，足以支持你以 ${formatPace(ctx.paceSecPerKm)} ${resolveFinishGoalText(ctx)}。`;
   }
 
   if (level === 'risk') {
@@ -73,8 +93,12 @@ function getIntensityHint(intensity) {
 
 export function buildStrategySummary(payload, context) {
   const points = payload.series || [];
+  const finishTime = payload?.summary?.finish_time || '';
+  const finishSec = parseDurationToSec(finishTime);
   const mergedContext = {
     ...context,
+    finishTime,
+    finishSec,
     highChallenge: isHighChallenge(context.vdot, context.paceSecPerKm),
   };
 

@@ -1,5 +1,5 @@
 ﻿import { toHHMMSS } from './utils.js?v=20261105';
-import { buildStrategySummary } from './strategy.js?v=20261105';
+import { buildStrategySummary } from './strategy.js?v=20261117';
 
 const VDOT_ANCHORS = [
   { vdot: 40.0, hm: '01:40:00', fm: '03:35:00' },
