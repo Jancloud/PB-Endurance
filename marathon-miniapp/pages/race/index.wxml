@@ -1,0 +1,182 @@
+<view class="container">
+  <view class="hero-card">
+    <view class="hero-title">赛事日历</view>
+    <view class="hero-subtitle">支持多目标赛事管理，按月筛选并查看开赛倒计时</view>
+    <view class="metrics-row">
+      <view class="metric-item">
+        <view class="metric-label">当前月份</view>
+        <view class="metric-value">{{activeMonthLabel}}</view>
+      </view>
+      <view class="metric-item">
+        <view class="metric-label">筛选结果</view>
+        <view class="metric-value">{{totalMatchedCount}} 场</view>
+      </view>
+      <view class="metric-item">
+        <view class="metric-label">目标赛事</view>
+        <view class="metric-value">{{targetRaces.length}} 场</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="target-board" wx:if="{{targetRaces.length > 0}}">
+    <view class="target-race-card" wx:for="{{targetRaces}}" wx:key="id">
+      <view class="row target-head">
+        <view>
+          <view class="target-race-name">{{item.name}}</view>
+          <view class="target-race-meta">{{item.displayDate}} · {{item.city}}</view>
+        </view>
+        <view class="target-remove" data-id="{{item.id}}" bindtap="removeTarget">×</view>
+      </view>
+      <view class="target-divider"></view>
+      <view class="target-countdown-row" wx:if="{{!item.countdown.isUnknown}}">
+        <view class="count-item">
+          <view class="count-num">{{item.countdownDays}}</view>
+          <view class="count-label">天</view>
+        </view>
+        <view class="count-dot">:</view>
+        <view class="count-item">
+          <view class="count-num">{{item.countdownHours}}</view>
+          <view class="count-label">时</view>
+        </view>
+        <view class="count-dot">:</view>
+        <view class="count-item">
+          <view class="count-num">{{item.countdownMinutes}}</view>
+          <view class="count-label">分</view>
+        </view>
+      </view>
+      <view class="target-countdown-empty" wx:else>日期待定</view>
+      <view class="target-divider"></view>
+      <view class="target-week-text">{{item.trainingWeeksText}}</view>
+    </view>
+  </view>
+  <view class="card empty-target-card" wx:if="{{targetRaces.length === 0}}">
+    <view class="empty-target-title">还没有目标赛事</view>
+    <view class="empty-text">在下方赛事列表点击“加入目标赛事”即可生成倒计时卡片。</view>
+  </view>
+
+  <view class="card filter-card">
+    <view class="row section-row">
+      <view class="section-title">赛事筛选</view>
+      <button class="btn-secondary reset-btn" bindtap="onResetFilters">重置</button>
+    </view>
+    <input
+      class="search-input"
+      placeholder="搜索赛事名 / 城市 / 关键词"
+      placeholder-style="color:#7f918d;"
+      value="{{keyword}}"
+      bindinput="onKeywordInput"
+    />
+    <view class="filter-grid">
+      <view class="filter-item">
+        <view class="filter-label">距离</view>
+        <picker mode="selector" range="{{distanceOptions}}" value="{{distanceIndex}}" bindchange="onDistanceChange">
+          <view class="picker-box">{{selectedDistance}}</view>
+        </picker>
+      </view>
+      <view class="filter-item">
+        <view class="filter-label">报名状态</view>
+        <picker mode="selector" range="{{statusOptions}}" value="{{statusIndex}}" bindchange="onStatusChange">
+          <view class="picker-box">{{selectedStatus}}</view>
+        </picker>
+      </view>
+      <view class="filter-item">
+        <view class="filter-label">城市</view>
+        <picker mode="selector" range="{{cityOptions}}" value="{{cityIndex}}" bindchange="onCityChange">
+          <view class="picker-box">{{selectedCity}}</view>
+        </picker>
+      </view>
+      <view class="filter-item">
+        <view class="filter-label">赛事等级</view>
+        <picker mode="selector" range="{{levelOptions}}" value="{{levelIndex}}" bindchange="onLevelChange">
+          <view class="picker-box">{{selectedLevel}}</view>
+        </picker>
+      </view>
+      <view class="filter-item filter-item-full">
+        <view class="filter-label">日期可信度</view>
+        <picker
+          mode="selector"
+          range="{{dateStatusOptions}}"
+          value="{{dateStatusIndex}}"
+          bindchange="onDateStatusChange"
+        >
+          <view class="picker-box">{{selectedDateStatus}}</view>
+        </picker>
+      </view>
+    </view>
+  </view>
+
+  <view class="card reminder-card" wx:if="{{officialMissingSourceCount > 0 || withSourceCount > 0}}">
+    <view class="reminder-title">数据提醒</view>
+    <view class="reminder-line" wx:if="{{officialMissingSourceCount > 0}}">
+      已官宣但缺来源：<text class="danger-value">{{officialMissingSourceCount}}</text> 场
+    </view>
+    <view class="reminder-line" wx:if="{{withSourceCount > 0}}">
+      已附来源链接：<text class="ok-value">{{withSourceCount}}</text> 场
+    </view>
+  </view>
+
+  <view class="month-tabs card" wx:if="{{months.length > 0}}">
+    <scroll-view scroll-x="true" enable-flex="true" show-scrollbar="false">
+      <view class="month-row">
+        <view
+          class="{{activeMonth === item.key ? 'month-tab active' : 'month-tab'}}"
+          wx:for="{{months}}"
+          wx:key="key"
+          data-month="{{item.key}}"
+          bindtap="onMonthTap"
+        >
+          {{item.label}}
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="card calendar-card" wx:if="{{showCalendar}}">
+    <view class="week-head">
+      <text wx:for="{{weekLabels}}" wx:key="*this">{{item}}</text>
+    </view>
+    <view class="calendar-grid">
+      <view
+        wx:for="{{calendarCells}}"
+        wx:key="index"
+        class="{{item.empty ? 'day-cell empty' : item.highlight ? 'day-cell active' : 'day-cell'}}"
+      >
+        <text class="day-number">{{item.day}}</text>
+        <text class="day-count" wx:if="{{item.highlight}}">{{item.count}} 场</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="card section-card">
+    <view class="section-title">赛事列表</view>
+    <block wx:if="{{filteredRaces.length > 0}}">
+      <view
+        class="{{item.isDateUnverified ? 'race-item race-item-pending' : 'race-item'}}"
+        wx:for="{{filteredRaces}}"
+        wx:key="id"
+      >
+        <view class="row race-head">
+          <view class="race-name">{{item.name}}</view>
+          <view class="race-date">{{item.displayDate}}</view>
+        </view>
+        <view class="race-meta">
+          <text class="meta-tag">{{item.city}}</text>
+          <text class="meta-tag">{{item.distance}}</text>
+          <text class="meta-tag">{{item.level}}</text>
+          <text class="meta-tag countdown-tag">{{item.countdownText}}</text>
+        </view>
+        <view class="race-intro">{{item.intro}}</view>
+        <button
+          class="{{item.isTarget ? 'btn-secondary choose-btn selected-btn' : 'btn-primary choose-btn'}}"
+          bindtap="toggleTarget"
+          data-id="{{item.id}}"
+        >
+          {{item.isTarget ? "已加入目标（点我移除）" : "加入目标赛事"}}
+        </button>
+      </view>
+    </block>
+    <block wx:if="{{filteredRaces.length === 0}}">
+      <view class="empty-text">当前筛选条件下暂无赛事，试试放宽筛选条件。</view>
+    </block>
+  </view>
+</view>

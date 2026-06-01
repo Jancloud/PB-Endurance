@@ -1,0 +1,314 @@
+.container {
+  padding: 20rpx 20rpx calc(env(safe-area-inset-bottom) + 40rpx);
+}
+
+.risk-page {
+  animation: riskPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes riskPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 rgba(255, 104, 104, 0.08);
+  }
+  50% {
+    box-shadow: 0 0 32rpx rgba(255, 104, 104, 0.2);
+  }
+}
+
+.fueler-hero {
+  border: 2rpx solid #2a3632;
+}
+
+.fueler-hero-title {
+  font-size: 42rpx;
+}
+
+.hero-risk {
+  border-color: rgba(255, 123, 123, 0.45);
+}
+
+.status-tag {
+  padding: 8rpx 16rpx;
+  border-radius: 999rpx;
+  font-size: 22rpx;
+  font-weight: 700;
+}
+
+.status-safe {
+  background: rgba(137, 212, 78, 0.18);
+  color: #c7ee5a;
+}
+
+.status-risk {
+  background: rgba(232, 159, 74, 0.18);
+  color: #f2ba73;
+}
+
+.metric-warn {
+  color: #ffd06f;
+}
+
+.sub3-hint {
+  margin-top: 10rpx;
+  border-left: 6rpx solid #ffcc66;
+  background: rgba(232, 159, 74, 0.12);
+  border-radius: 12rpx;
+  padding: 10rpx 12rpx;
+  color: #f3c98f;
+  font-size: 22rpx;
+}
+
+.sticky-core {
+  position: sticky;
+  top: 12rpx;
+  z-index: 15;
+  display: flex;
+  gap: 8rpx;
+  margin-bottom: 14rpx;
+  border-radius: 16rpx;
+  padding: 10rpx;
+  border: 2rpx solid #2a3538;
+  background: rgba(13, 24, 29, 0.95);
+  backdrop-filter: blur(6rpx);
+}
+
+.sticky-risk {
+  border-color: rgba(255, 122, 122, 0.45);
+}
+
+.sticky-item {
+  flex: 1;
+  border-radius: 12rpx;
+  padding: 8rpx;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.s-label {
+  display: block;
+  font-size: 20rpx;
+  color: #8ea3a8;
+}
+
+.s-value {
+  display: block;
+  margin-top: 2rpx;
+  font-size: 24rpx;
+  color: #e9f5f2;
+  font-weight: 700;
+}
+
+.chart-wrap {
+  border-radius: 14rpx;
+  overflow: hidden;
+  border: 2rpx solid #2b3a41;
+  background: #0e1722;
+}
+
+.rear-chart-wrap {
+  background: linear-gradient(180deg, #101826 0%, #0b111a 100%);
+  border-color: rgba(114, 135, 153, 0.34);
+}
+
+.gly-canvas {
+  display: block;
+}
+
+.rear-chart-wrap .gly-canvas {
+  display: block;
+}
+
+.control {
+  margin-bottom: 16rpx;
+}
+
+.control:last-child {
+  margin-bottom: 0;
+}
+
+.control-head {
+  color: #d7e2de;
+  margin-bottom: 6rpx;
+}
+
+.control-sub {
+  margin-top: 6rpx;
+  font-size: 24rpx;
+  line-height: 1.4;
+  color: #86969a;
+}
+
+.gel-points {
+  white-space: nowrap;
+  width: 100%;
+}
+
+.gel-row {
+  display: inline-flex;
+  gap: 10rpx;
+}
+
+.gel-tag {
+  border: 2rpx solid #6640a4;
+  background: rgba(179, 71, 255, 0.16);
+  color: #dbc8ff;
+  border-radius: 999rpx;
+  padding: 8rpx 16rpx;
+  font-size: 22rpx;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8rpx;
+}
+
+.gel-tag-active {
+  border-color: #d9b6ff;
+  box-shadow: 0 0 0 2rpx rgba(197, 141, 255, 0.32) inset;
+  background: rgba(197, 141, 255, 0.28);
+  color: #f5e9ff;
+}
+
+.gel-tag-limited {
+  border-color: #ff9f45;
+  background: rgba(255, 140, 0, 0.2);
+  color: #ffd5a6;
+}
+
+.gel-tag-sub {
+  font-size: 18rpx;
+  color: #ffb76a;
+}
+
+.tip {
+  margin-top: 10rpx;
+}
+
+.limit-tip {
+  margin-top: 10rpx;
+  border-left: 6rpx solid #ff8c00;
+  background: rgba(255, 140, 0, 0.14);
+  color: #ffcb8c;
+  border-radius: 12rpx;
+  padding: 10rpx 12rpx;
+  font-size: 21rpx;
+  line-height: 1.45;
+}
+
+.heatmap-wrap {
+  margin-top: 6rpx;
+}
+
+.heatmap-track {
+  position: relative;
+  border-radius: 10rpx;
+  overflow: hidden;
+  border: 2rpx solid rgba(100, 124, 142, 0.36);
+  background: #0e1722;
+}
+
+.heatmap-row {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  height: 18rpx;
+}
+
+.heat-cell {
+  flex: 1;
+}
+
+.heat-cell-focus {
+  box-shadow: 0 0 0 2rpx rgba(197, 141, 255, 0.45) inset;
+}
+
+.heatmap-bonk-zone {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 70, 70, 0.22);
+}
+
+.heatmap-markers {
+  position: relative;
+  height: 14rpx;
+  margin-top: 6rpx;
+}
+
+.heat-marker {
+  position: absolute;
+  width: 8rpx;
+  height: 8rpx;
+  border-radius: 50%;
+  background: rgba(181, 113, 255, 0.8);
+  transform: translateX(-50%);
+}
+
+.heat-marker-focus {
+  width: 10rpx;
+  height: 10rpx;
+  background: #e3c6ff;
+  box-shadow: 0 0 10rpx rgba(227, 198, 255, 0.7);
+}
+
+.heatmap-axis {
+  position: relative;
+  height: 24rpx;
+  margin-top: 2rpx;
+}
+
+.heat-tick {
+  position: absolute;
+  transform: translateX(-50%);
+  font-size: 18rpx;
+  color: #8ea1ae;
+}
+
+.heatmap-note {
+  margin-top: 6rpx;
+  font-size: 20rpx;
+  color: #ff9f9f;
+}
+
+.km-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10rpx;
+}
+
+.km-grid-core {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.km-item {
+  border: 2rpx solid #2a3434;
+  background: #111716;
+  border-radius: 14rpx;
+  padding: 12rpx;
+}
+
+.km-item-focus {
+  border-color: #8f61dc;
+  box-shadow: 0 0 0 2rpx rgba(143, 97, 220, 0.25) inset;
+}
+
+.km-label {
+  font-size: 22rpx;
+  color: #98aba6;
+}
+
+.gel-mark {
+  margin-left: 4rpx;
+}
+
+.km-value {
+  margin-top: 4rpx;
+  font-size: 28rpx;
+  font-weight: 700;
+  color: #f2f8ff;
+}
+
+.km-value.danger {
+  color: #ff8c82;
+}

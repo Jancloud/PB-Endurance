@@ -1,0 +1,141 @@
+page {
+  background: linear-gradient(180deg, #0a0f10 0%, #0e1714 48%, #090d0e 100%);
+  color: #f3f6ff;
+  font-size: 28rpx;
+}
+
+.container {
+  padding: 20rpx 20rpx calc(env(safe-area-inset-bottom) + 154rpx);
+}
+
+.card {
+  background: #151b1b;
+  border-radius: 24rpx;
+  padding: 22rpx;
+  margin-bottom: 16rpx;
+  border: 2rpx solid #2a3232;
+  box-shadow: 0 8rpx 24rpx rgba(0, 0, 0, 0.28);
+}
+
+.card-title {
+  font-size: 34rpx;
+  font-weight: 700;
+  margin-bottom: 14rpx;
+  color: #ffffff;
+}
+
+.hero-card {
+  border-radius: 26rpx;
+  padding: 24rpx;
+  margin-bottom: 16rpx;
+  background: #111717;
+  border: 2rpx solid #283232;
+  color: #f5f8ff;
+}
+
+.hero-accent {
+  background: linear-gradient(135deg, #c7ee5a 0%, #b4dd47 100%);
+  border: 2rpx solid #bfe651;
+  color: #111318;
+  box-shadow: 0 10rpx 28rpx rgba(160, 210, 80, 0.28);
+}
+
+.hero-title {
+  font-size: 40rpx;
+  font-weight: 800;
+}
+
+.hero-subtitle {
+  font-size: 24rpx;
+  margin-top: 8rpx;
+  opacity: 0.82;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.muted {
+  color: #9ca9a5;
+}
+
+.tag {
+  display: inline-block;
+  padding: 6rpx 16rpx;
+  border-radius: 999rpx;
+  background: #e89f4a;
+  color: #131720;
+  font-size: 22rpx;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: #c7ee5a;
+  color: #111318;
+  border: none;
+  border-radius: 999rpx;
+  font-weight: 800;
+}
+
+.btn-secondary {
+  background: #222b2b;
+  color: #f1f5ff;
+  border: none;
+  border-radius: 999rpx;
+  font-weight: 700;
+}
+
+button {
+  height: 76rpx;
+  line-height: 76rpx;
+  font-size: 28rpx;
+  padding: 0 24rpx;
+}
+
+button::after {
+  border: none;
+}
+
+.metrics-row {
+  display: flex;
+  gap: 10rpx;
+  margin-top: 14rpx;
+}
+
+.metric-item {
+  flex: 1;
+  border-radius: 14rpx;
+  padding: 12rpx 10rpx;
+  background: rgba(255, 255, 255, 0.08);
+  border: 2rpx solid rgba(255, 255, 255, 0.14);
+}
+
+.hero-accent .metric-item {
+  background: rgba(0, 0, 0, 0.08);
+  border: 2rpx solid rgba(0, 0, 0, 0.1);
+}
+
+.metric-label {
+  font-size: 21rpx;
+  opacity: 0.86;
+}
+
+.metric-value {
+  font-size: 34rpx;
+  margin-top: 2rpx;
+  font-weight: 800;
+}
+
+.empty-text {
+  color: #95a29f;
+  font-size: 26rpx;
+}
+
+.section-title {
+  font-size: 28rpx;
+  font-weight: 700;
+  color: #f3f6ff;
+  margin-bottom: 10rpx;
+}

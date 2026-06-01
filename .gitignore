@@ -8,3 +8,6 @@ tools-mingit/
 tools-mingit.zip
 node_modules/
 .vercel/
+project.private.config.json
+**/project.private.config.json
+marathon-miniapp/config/weather-provider.private.js

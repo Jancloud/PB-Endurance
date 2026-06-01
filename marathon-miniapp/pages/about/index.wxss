@@ -1,0 +1,48 @@
+.panel-card {
+  background: #151b1b;
+}
+
+.content-text {
+  color: #c8d4d1;
+  font-size: 25rpx;
+  line-height: 1.7;
+}
+
+.feature-line {
+  color: #c8d4d1;
+  font-size: 24rpx;
+  line-height: 1.7;
+}
+
+.feature-line + .feature-line {
+  margin-top: 8rpx;
+}
+
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12rpx;
+  padding: 10rpx 12rpx;
+  background: #111716;
+  border: 2rpx solid #2a3434;
+  margin-bottom: 8rpx;
+}
+
+.meta-label {
+  color: #94a5a2;
+  font-size: 24rpx;
+}
+
+.meta-value {
+  color: #c7ee5a;
+  font-size: 26rpx;
+  font-weight: 700;
+}
+
+.footer-text {
+  margin-top: 4rpx;
+  color: #e89f4a;
+  text-align: center;
+  font-size: 24rpx;
+}

@@ -1,0 +1,440 @@
+.target-board {
+  margin-bottom: 16rpx;
+}
+
+.target-race-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24rpx;
+  padding: 18rpx 20rpx;
+  margin-bottom: 10rpx;
+  background: linear-gradient(135deg, #b8e24d 0%, #b2dd46 58%, #aed941 100%);
+  border: 2rpx solid #a2cd39;
+  box-shadow: 0 14rpx 28rpx rgba(111, 142, 32, 0.28);
+}
+
+.target-race-card::after {
+  content: "";
+  position: absolute;
+  top: -30rpx;
+  right: -16rpx;
+  width: 170rpx;
+  height: 170rpx;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.target-race-card::before {
+  content: "";
+  position: absolute;
+  left: -28rpx;
+  bottom: -38rpx;
+  width: 170rpx;
+  height: 170rpx;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.target-head {
+  position: relative;
+  z-index: 1;
+}
+
+.target-race-name {
+  color: #172108;
+  font-size: 40rpx;
+  font-weight: 800;
+  text-shadow: 0 2rpx 8rpx rgba(93, 121, 27, 0.12);
+}
+
+.target-race-meta {
+  margin-top: 4rpx;
+  color: #314419;
+  font-size: 26rpx;
+}
+
+.target-remove {
+  width: 56rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  text-align: center;
+  border-radius: 999rpx;
+  font-size: 42rpx;
+  color: #2c3c15;
+  background: rgba(129, 166, 45, 0.32);
+  border: 2rpx solid rgba(98, 126, 29, 0.26);
+}
+
+.target-divider {
+  margin-top: 12rpx;
+  border-top: 2rpx solid rgba(96, 126, 28, 0.32);
+}
+
+.target-countdown-row {
+  margin-top: 8rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12rpx;
+  position: relative;
+  z-index: 1;
+}
+
+.target-countdown-empty {
+  margin-top: 14rpx;
+  color: #2f4317;
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.count-item {
+  min-width: 102rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.count-num {
+  color: #1a250c;
+  font-size: 68rpx;
+  font-weight: 800;
+  line-height: 1;
+  text-shadow: 0 3rpx 10rpx rgba(97, 126, 29, 0.12);
+}
+
+.count-label {
+  margin-top: 2rpx;
+  color: #304418;
+  font-size: 26rpx;
+}
+
+.count-dot {
+  margin-top: -10rpx;
+  color: rgba(76, 104, 23, 0.62);
+  font-size: 46rpx;
+  font-weight: 700;
+}
+
+.target-week-text {
+  margin-top: 8rpx;
+  color: #2f4317;
+  text-align: center;
+  font-size: 28rpx;
+  position: relative;
+  z-index: 1;
+}
+
+.empty-target-card {
+  margin-bottom: 16rpx;
+}
+
+.empty-target-title {
+  font-size: 32rpx;
+  font-weight: 800;
+  color: #f2f6ff;
+  margin-bottom: 8rpx;
+}
+
+.filter-card {
+  padding-top: 16rpx;
+}
+
+.section-row {
+  margin-bottom: 12rpx;
+}
+
+.reset-btn {
+  height: 58rpx;
+  line-height: 58rpx;
+  font-size: 22rpx;
+  padding: 0 18rpx;
+  width: 120rpx;
+  margin: 0;
+}
+
+.search-input {
+  height: 74rpx;
+  border-radius: 14rpx;
+  background: #111716;
+  border: 2rpx solid #2a3434;
+  color: #f0f4ff;
+  padding: 0 20rpx;
+  margin-bottom: 12rpx;
+}
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12rpx;
+}
+
+.filter-item-full {
+  grid-column: span 2;
+}
+
+.filter-label {
+  font-size: 22rpx;
+  color: #95a6a2;
+  margin-bottom: 6rpx;
+}
+
+.picker-box {
+  background: #111716;
+  border: 2rpx solid #2a3434;
+  border-radius: 14rpx;
+  min-height: 66rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 14rpx;
+  color: #f3f6ff;
+}
+
+.reminder-card {
+  border-color: #3a3121;
+  background: linear-gradient(180deg, rgba(232, 159, 74, 0.14) 0%, rgba(21, 27, 27, 1) 48%);
+}
+
+.reminder-title {
+  font-size: 28rpx;
+  font-weight: 800;
+  color: #f7c98c;
+  margin-bottom: 8rpx;
+}
+
+.reminder-line {
+  color: #cfd9d6;
+  font-size: 24rpx;
+  margin-top: 4rpx;
+}
+
+.warn-value {
+  color: #f5bf76;
+  font-weight: 800;
+}
+
+.danger-value {
+  color: #ff8b7f;
+  font-weight: 800;
+}
+
+.ok-value {
+  color: #c7ee5a;
+  font-weight: 800;
+}
+
+.month-tabs {
+  padding: 10rpx 12rpx;
+}
+
+.month-row {
+  display: inline-flex;
+  gap: 10rpx;
+}
+
+.month-tab {
+  min-width: 130rpx;
+  text-align: center;
+  height: 62rpx;
+  line-height: 62rpx;
+  border-radius: 14rpx;
+  background: #1a2222;
+  border: 2rpx solid #2a3434;
+  color: #c8d4d1;
+  padding: 0 14rpx;
+}
+
+.month-tab.active {
+  background: #c7ee5a;
+  color: #141821;
+  border-color: #c7ee5a;
+  font-weight: 800;
+}
+
+.calendar-card {
+  padding: 16rpx;
+}
+
+.week-head {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 10rpx;
+  color: #97a8a4;
+  text-align: center;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10rpx;
+}
+
+.day-cell {
+  height: 82rpx;
+  border-radius: 999rpx;
+  background: #273131;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #cfd9d6;
+}
+
+.day-cell.empty {
+  opacity: 0.25;
+}
+
+.day-cell.active {
+  background: #c7ee5a;
+  color: #111318;
+  font-weight: 800;
+}
+
+.day-number {
+  font-size: 24rpx;
+}
+
+.day-count {
+  font-size: 18rpx;
+  margin-top: 2rpx;
+}
+
+.source-line {
+  margin-top: 8rpx;
+  font-size: 22rpx;
+  line-height: 1.4;
+}
+
+.source-label {
+  color: #8d9f9b;
+}
+
+.source-ok {
+  color: #c7ee5a;
+}
+
+.source-empty {
+  color: #acbbb8;
+}
+
+.source-missing {
+  color: #ff978b;
+  font-weight: 700;
+}
+
+.race-item {
+  background: #111716;
+  border: 2rpx solid #2a3434;
+  border-radius: 16rpx;
+  padding: 14rpx;
+  margin-bottom: 12rpx;
+}
+
+.race-item-pending {
+  border-color: rgba(232, 159, 74, 0.6);
+  box-shadow: inset 0 0 0 2rpx rgba(232, 159, 74, 0.22);
+}
+
+.race-head {
+  gap: 12rpx;
+}
+
+.race-name {
+  flex: 1;
+  font-size: 30rpx;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.race-date {
+  color: #c2cdc9;
+  font-size: 24rpx;
+}
+
+.race-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rpx;
+  margin-top: 8rpx;
+}
+
+.meta-tag {
+  border-radius: 999rpx;
+  border: 2rpx solid #2e3838;
+  background: #1b2424;
+  color: #d2dbd8;
+  font-size: 21rpx;
+  line-height: 1;
+  padding: 8rpx 12rpx;
+}
+
+.countdown-tag {
+  border-color: #39503d;
+  color: #c7ee5a;
+}
+
+.status-tag {
+  border: none;
+  font-weight: 700;
+}
+
+.date-status-tag {
+  border: none;
+  font-weight: 700;
+}
+
+.date-confirmed {
+  background: rgba(199, 238, 90, 0.22);
+  color: #c7ee5a;
+}
+
+.date-pending {
+  background: rgba(232, 159, 74, 0.24);
+  color: #f2bf75;
+}
+
+.date-other {
+  background: rgba(109, 125, 120, 0.22);
+  color: #c3d0cd;
+}
+
+.status-open {
+  background: rgba(199, 238, 90, 0.22);
+  color: #c7ee5a;
+}
+
+.status-soon {
+  background: rgba(232, 159, 74, 0.22);
+  color: #efb267;
+}
+
+.status-close {
+  background: rgba(154, 168, 164, 0.2);
+  color: #c3d0cd;
+}
+
+.status-ended {
+  background: rgba(123, 135, 132, 0.2);
+  color: #a7b5b2;
+}
+
+.status-unknown {
+  background: rgba(109, 125, 120, 0.2);
+  color: #b9c5c2;
+}
+
+.race-intro {
+  margin-top: 8rpx;
+  color: #a8b6b2;
+  line-height: 1.5;
+}
+
+.choose-btn {
+  margin-top: 10rpx;
+}
+
+.selected-btn {
+  background: #242d2d;
+}

@@ -1,0 +1,41 @@
+.panel-card {
+  background: #151b1b;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10rpx;
+}
+
+.stats-item {
+  background: #111716;
+  border: 2rpx solid #2a3434;
+  border-radius: 14rpx;
+  padding: 12rpx;
+}
+
+.stats-label {
+  color: #93a6a2;
+  font-size: 22rpx;
+}
+
+.stats-value {
+  margin-top: 6rpx;
+  color: #c7ee5a;
+  font-size: 28rpx;
+  font-weight: 800;
+  word-break: break-all;
+}
+
+.action-btn {
+  margin-top: 12rpx;
+}
+
+.btn-danger {
+  background: #ff4b4b;
+  color: #ffffff;
+  border: none;
+  border-radius: 999rpx;
+  font-weight: 700;
+}

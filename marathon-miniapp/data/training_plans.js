@@ -1,0 +1,10885 @@
+module.exports = {
+  "meta": {
+    "source_files": [
+      "C:\\AIcode\\全马训练计划_20w.xlsx",
+      "C:\\AIcode\\半马训练计划.xlsx"
+    ],
+    "source_sheet_names": [
+      "全马训练计划",
+      "全马训练计划"
+    ],
+    "imported_at_utc": "2026-04-28T01:00:01.307176+00:00",
+    "merge_note": "Read-only merge from multiple Excel files. Source files are never modified.",
+    "overwritten_template_names": [],
+    "summary": {
+      "template_count": 7,
+      "templates": {
+        "全马300": 20,
+        "全马315": 20,
+        "全马330": 20,
+        "全马345": 20,
+        "半马200": 20,
+        "半马145": 24,
+        "半马130": 24
+      },
+      "week_rows": 148,
+      "daily_rows": 1036,
+      "weekly_km_mismatch_rows": 0
+    }
+  },
+  "templates": [
+    {
+      "template_name": "全马300",
+      "template_code": "300",
+      "target_time_minutes": 180,
+      "weeks": [
+        {
+          "week": 1,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 43.0,
+          "weekly_km_computed": 43.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "轻松跑",
+              "distance_km": 10.0,
+              "pace": "5'20-5'40",
+              "description": "轻松跑 50-60 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 5.0,
+              "pace": null,
+              "description": "400m×12 @3'42-3'48，走休90-100秒",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 10.0,
+              "pace": "5'20-5'40",
+              "description": "轻松跑 50-60 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "长距离",
+              "distance_km": 18.0,
+              "pace": "5'05-5'25",
+              "description": "LSD 长距离(90-110 分钟)",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 46.0,
+          "weekly_km_computed": 46.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "轻松跑",
+              "distance_km": 10.0,
+              "pace": "5'20-5'40",
+              "description": "轻松跑 50-60 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 7.0,
+              "pace": null,
+              "description": "800m×8 @3'50-3'55，慢跑2′-2′30″恢复",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 10.0,
+              "pace": "5'20-5'40",
+              "description": "轻松跑 50-60 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "长距离",
+              "distance_km": 19.0,
+              "pace": "5'05-5'25",
+              "description": "LSD 长距离(90-110 分钟)",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 46.0,
+          "weekly_km_computed": 46.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "轻松跑",
+              "distance_km": 10.0,
+              "pace": "5'20-5'40",
+              "description": "轻松跑 50-60 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 6.0,
+              "pace": null,
+              "description": "1K×6 / 2K×4 @3'58-4'05，慢跑1′30″-3′恢复",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 10.0,
+              "pace": "5'20-5'40",
+              "description": "轻松跑 50-60 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "长距离",
+              "distance_km": 20.0,
+              "pace": "5'05-5'25",
+              "description": "LSD 长距离(90-110 分钟)",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 42.0,
+          "weekly_km_computed": 42.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "轻松跑",
+              "distance_km": 10.0,
+              "pace": "5'20-5'40",
+              "description": "轻松跑 50-60 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 4.0,
+              "pace": null,
+              "description": "400m×10 @3'42-3'48，走休90-100秒",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 10.0,
+              "pace": "5'20-5'40",
+              "description": "轻松跑 50-60 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "长距离",
+              "distance_km": 18.0,
+              "pace": "5'05-5'25",
+              "description": "LSD 长距离(90-110 分钟)",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 5,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 45.0,
+          "weekly_km_computed": 45.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "轻松跑",
+              "distance_km": 10.0,
+              "pace": "5'20-5'40",
+              "description": "轻松跑 50-60 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 5.0,
+              "pace": null,
+              "description": "400m×12 @3'40-3'45，走休90秒",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 10.0,
+              "pace": "5'20-5'40",
+              "description": "轻松跑 50-60 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "长距离",
+              "distance_km": 20.0,
+              "pace": "5'05-5'25",
+              "description": "LSD 长距离(100-120 分钟)",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 6,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 48.0,
+          "weekly_km_computed": 48.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "轻松跑",
+              "distance_km": 10.0,
+              "pace": "5'20-5'40",
+              "description": "轻松跑 50-60 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 7.0,
+              "pace": null,
+              "description": "800m×8 @3'48-3'52，慢跑2′-2′30″恢复",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 10.0,
+              "pace": "5'20-5'40",
+              "description": "轻松跑 50-60 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "长距离",
+              "distance_km": 21.0,
+              "pace": "5'05-5'25",
+              "description": "LSD 长距离(100-120 分钟)",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 48.0,
+          "weekly_km_computed": 48.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "轻松跑",
+              "distance_km": 10.0,
+              "pace": "5'20-5'40",
+              "description": "轻松跑 50-60 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 6.0,
+              "pace": null,
+              "description": "1K×6 / 2K×4 @3'55-4'00，慢跑1′30″-3′恢复",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 10.0,
+              "pace": "5'20-5'40",
+              "description": "轻松跑 50-60 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "长距离",
+              "distance_km": 22.0,
+              "pace": "5'05-5'25",
+              "description": "LSD 长距离(100-120 分钟)",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 8,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 44.0,
+          "weekly_km_computed": 44.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "轻松跑",
+              "distance_km": 10.0,
+              "pace": "5'20-5'40",
+              "description": "轻松跑 50-60 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 4.0,
+              "pace": null,
+              "description": "400m×10 @3'42-3'48，走休90-100秒",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 10.0,
+              "pace": "5'20-5'40",
+              "description": "轻松跑 50-60 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "长距离",
+              "distance_km": 20.0,
+              "pace": "5'05-5'25",
+              "description": "LSD 长距离(100-120 分钟)",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 9,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 82.0,
+          "weekly_km_computed": 82.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'18-5'25",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 11.0,
+              "pace": null,
+              "description": "5321倒金字塔（5K/3K/2K/1K）@4'28→4'13-4'03-3'48，组间休5′-4′-3′",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'18-5'25",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'18-5'25",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 32.0,
+              "pace": "4'55-5'05",
+              "description": "LSD 长距离(时长2h40-3h)",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 79.0,
+          "weekly_km_computed": 79.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'18-5'25",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "2K×6 @4'05，组间休2′-2′30″",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'18-5'25",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'18-5'25",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 28.0,
+              "pace": "4'15-4'45",
+              "description": "渐加速长距离(时长2h):每30分钟提速10s，配速4'45-4'35-4'25-4'15",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 11,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 80.0,
+          "weekly_km_computed": 80.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'18-5'25",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "12K马配节奏跑 @4'15",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'18-5'25",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'18-5'25",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 29.0,
+              "pace": "4'42-4'48",
+              "description": "强度有氧长距离(时长2h20)",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 12,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 79.0,
+          "weekly_km_computed": 79.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'18-5'25",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 11.0,
+              "pace": null,
+              "description": "5321倒金字塔（5K/3K/2K/1K）@4'28→4'13-4'03-3'48，组间休5′-4′-3′",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'18-5'25",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'18-5'25",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 29.0,
+              "pace": "4'42-4'48",
+              "description": "强度有氧长距离(时长2h20)",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 13,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 83.0,
+          "weekly_km_computed": 83.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'22",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "2K×6 @4'02，组间休2′-2′30″",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'22",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'22",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 32.0,
+              "pace": "4'50-5'00",
+              "description": "LSD 长距离(时长2h40-3h)",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 14,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 79.0,
+          "weekly_km_computed": 79.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'22",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "12K马配节奏跑 @4'12",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'22",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'22",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 28.0,
+              "pace": "4'12-4'42",
+              "description": "渐加速长距离(时长2h):每30分钟提速10s，配速4'42-4'32-4'22-4'12",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 15,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 80.0,
+          "weekly_km_computed": 80.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'22",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 11.0,
+              "pace": null,
+              "description": "5321倒金字塔（5K/3K/2K/1K）@4'25→4'10-4'00-3'45，组间休5′-4′-3′",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'22",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'22",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 30.0,
+              "pace": "4'40-4'46",
+              "description": "强度有氧长距离(时长2h20)",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 16,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 81.0,
+          "weekly_km_computed": 81.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'12-5'20",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "2K×6 @4'02，组间休2′-2′30″",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'12-5'20",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'12-5'20",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 30.0,
+              "pace": "4'40-4'46",
+              "description": "强度有氧长距离(时长2h20)",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 17,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 86.0,
+          "weekly_km_computed": 86.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'12-5'20",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "12K马配节奏跑 @4'10",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'12-5'20",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'12-5'20",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 35.0,
+              "pace": "4'50-5'00",
+              "description": "LSD 长距离(时长2h40-3h)",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 18,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 78.0,
+          "weekly_km_computed": 78.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'12-5'20",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 11.0,
+              "pace": null,
+              "description": "5321倒金字塔（5K/3K/2K/1K）@4'20→4'05-3'55-3'40，组间休5′-4′-3′",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'12-5'20",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'12-5'20",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 28.0,
+              "pace": "4'10-4'40",
+              "description": "渐加速长距离(时长2h):每30分钟提速10s，配速4'40-4'30-4'20-4'10",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 19,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 81.0,
+          "weekly_km_computed": 81.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'12-5'20",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "2K×6 @4'00，组间休2′-2′30″",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'12-5'20",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'12-5'20",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 30.0,
+              "pace": "4'38-4'45",
+              "description": "强度有氧长距离(时长2h20)",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 20,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 81.0,
+          "weekly_km_computed": 81.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'12-5'20",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "12K马配节奏跑 @4'10",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'12-5'20",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'12-5'20",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "30KM测试",
+              "distance_km": 30.0,
+              "pace": "4'40",
+              "description": "30km 全马模拟（约2小时15分):前20K@4'40，后10K@4'12",
+              "segment": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "template_name": "全马315",
+      "template_code": "315",
+      "target_time_minutes": 195,
+      "weeks": [
+        {
+          "week": 1,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 43.0,
+          "weekly_km_computed": 43.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "5'40-6'05",
+              "description": "轻松恢复慢跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 5.0,
+              "pace": null,
+              "description": "400m×10-12 @3'52-3'58，组间走休100秒",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "5'40-6'05",
+              "description": "恢复慢跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "长距离",
+              "distance_km": 20.0,
+              "pace": "5'25-5'40",
+              "description": "稳态有氧跑（约110分钟）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 44.0,
+          "weekly_km_computed": 44.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "5'40-6'05",
+              "description": "轻松恢复慢跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 6.0,
+              "pace": null,
+              "description": "800m×6-8 @4'05-4'10，组间休2′-2′30″",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "5'40-6'05",
+              "description": "恢复慢跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "长距离",
+              "distance_km": 20.0,
+              "pace": "5'25-5'40",
+              "description": "稳态有氧跑（约110分钟）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 45.0,
+          "weekly_km_computed": 45.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "5'40-6'05",
+              "description": "轻松恢复慢跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 7.0,
+              "pace": null,
+              "description": "1km×5-6 / 2km×4 @4'22-4'27，组间休1′30″-3′",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "5'40-6'05",
+              "description": "恢复慢跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "长距离",
+              "distance_km": 20.0,
+              "pace": "5'25-5'40",
+              "description": "稳态有氧跑（约110分钟）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 39.0,
+          "weekly_km_computed": 39.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "5'40-6'05",
+              "description": "轻松恢复慢跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 4.0,
+              "pace": null,
+              "description": "400m×8 / 800m×5，配速适度放宽（周度减量）",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "5'40-6'05",
+              "description": "恢复慢跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "长距离",
+              "distance_km": 17.0,
+              "pace": "5'25-5'40",
+              "description": "稳态有氧跑（约90分钟，减量）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 5,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 45.0,
+          "weekly_km_computed": 45.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "5'35-6'00",
+              "description": "轻松恢复慢跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 5.0,
+              "pace": null,
+              "description": "400m×10-12 @3'48-3'55，组间走休100秒",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "5'35-6'00",
+              "description": "恢复慢跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "长距离",
+              "distance_km": 22.0,
+              "pace": "5'15-5'30",
+              "description": "进阶有氧跑（约120分钟）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 6,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 46.0,
+          "weekly_km_computed": 46.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "5'35-6'00",
+              "description": "轻松恢复慢跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 6.0,
+              "pace": null,
+              "description": "800m×6-8 @4'00-4'06，组间休2′-2′30″",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "5'35-6'00",
+              "description": "恢复慢跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "长距离",
+              "distance_km": 22.0,
+              "pace": "5'15-5'30",
+              "description": "进阶有氧跑（约120分钟）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 47.0,
+          "weekly_km_computed": 47.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "5'35-6'00",
+              "description": "轻松恢复慢跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 7.0,
+              "pace": null,
+              "description": "1km×5-6 / 2km×4 @4'18-4'23，组间休1′30″-3′",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "5'35-6'00",
+              "description": "恢复慢跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "长距离",
+              "distance_km": 22.0,
+              "pace": "5'15-5'30",
+              "description": "进阶有氧跑（约120分钟）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 8,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 44.0,
+          "weekly_km_computed": 44.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "5'35-6'00",
+              "description": "轻松恢复慢跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 4.0,
+              "pace": null,
+              "description": "400m×8 / 800m×5，配速适度放宽（周度减量）",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "5'35-6'00",
+              "description": "恢复慢跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "长距离",
+              "distance_km": 22.0,
+              "pace": "5'15-5'30",
+              "description": "进阶有氧跑（约120分钟）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 9,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 78.0,
+          "weekly_km_computed": 78.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'20-5'35",
+              "description": "有氧慢跑 70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 11.0,
+              "pace": null,
+              "description": "5321倒金字塔（5K/3K/2K/1K）@4'50→4'35→4'25→4'10，组间休5′-4′-3′",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'20-5'35",
+              "description": "有氧慢跑 70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'30",
+              "description": "节奏慢跑 + 100m 加速 ×6 组",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 28.0,
+              "pace": "5'35-5'40",
+              "description": "LSD 长距离（时长2h40）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 78.0,
+          "weekly_km_computed": 78.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'20-5'35",
+              "description": "有氧慢跑 70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "12km 分段加速'前4K@5'00 / 中4K@4'50 / 后4K@4'40",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'20-5'35",
+              "description": "有氧慢跑 70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'30",
+              "description": "节奏慢跑 + 100m 加速 ×6 组",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 27.0,
+              "pace": "4'37-5'00",
+              "description": "渐加速长距离（时长2h30):每5K提速5秒，最终接近马拉松配速4'37",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 11,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 78.0,
+          "weekly_km_computed": 78.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'20-5'35",
+              "description": "有氧慢跑 70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 11.0,
+              "pace": null,
+              "description": "5321倒金字塔（5K/3K/2K/1K）@4'50→4'35→4'25→4'10，组间休5′-4′-3′",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'20-5'35",
+              "description": "有氧慢跑 70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'30",
+              "description": "节奏慢跑 + 100m 加速 ×6 组",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 28.0,
+              "pace": "5'05-5'10",
+              "description": "强度有氧长距离（时长2h20）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 12,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 76.0,
+          "weekly_km_computed": 76.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'20-5'35",
+              "description": "有氧慢跑 70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "12km 分段加速'前4K@5'00 / 中4K@4'50 / 后4K@4'40",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'20-5'35",
+              "description": "有氧慢跑 70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'30",
+              "description": "节奏慢跑 + 100m 加速 ×6 组",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 25.0,
+              "pace": "5'35-5'40",
+              "description": "LSD / 强度有氧轮换（减量周，约2小时15分）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 13,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 78.0,
+          "weekly_km_computed": 78.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'30",
+              "description": "有氧慢跑 70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 11.0,
+              "pace": null,
+              "description": "5321倒金字塔（5K/3K/2K/1K）@4'45→4'30→4'20→4'05，组间休5′-4′-3′",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'30",
+              "description": "有氧慢跑 70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'10-5'25",
+              "description": "节奏慢跑 + 100m 加速 ×6 组",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 28.0,
+              "pace": "5'32-5'37",
+              "description": "LSD 长距离（时长2h40）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 14,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 78.0,
+          "weekly_km_computed": 78.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'30",
+              "description": "有氧慢跑 70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "12km 分段加速'前4K@4'55 / 中4K@4'45 / 后4K@4'37",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'30",
+              "description": "有氧慢跑 70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'10-5'25",
+              "description": "节奏慢跑 + 100m 加速 ×6 组",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 27.0,
+              "pace": "4'37-5'00",
+              "description": "渐加速长距离（时长2h30):每5K提速5秒，最终接近马拉松配速4'37",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 15,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 78.0,
+          "weekly_km_computed": 78.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'30",
+              "description": "有氧慢跑 70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 11.0,
+              "pace": null,
+              "description": "5321倒金字塔（5K/3K/2K/1K）@4'45→4'30→4'20→4'05，组间休5′-4′-3′",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'30",
+              "description": "有氧慢跑 70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'10-5'25",
+              "description": "节奏慢跑 + 100m 加速 ×6 组",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 28.0,
+              "pace": "5'00-5'05",
+              "description": "强度有氧长距离（时长2h20）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 16,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 76.0,
+          "weekly_km_computed": 76.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'30",
+              "description": "有氧慢跑 70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "12km 分段加速'前4K@4'55 / 中4K@4'45 / 后4K@4'37",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'30",
+              "description": "有氧慢跑 70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'10-5'25",
+              "description": "节奏慢跑 + 100m 加速 ×6 组",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 25.0,
+              "pace": "5'32-5'37",
+              "description": "三类长距离循环（减量周，约2小时15分）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 17,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 78.0,
+          "weekly_km_computed": 78.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'28",
+              "description": "有氧慢跑 70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 11.0,
+              "pace": null,
+              "description": "5321倒金字塔（5K/3K/2K/1K）@4'40→4'25→4'15→4'00，组间休5′-4′-3′",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'28",
+              "description": "有氧慢跑 70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'10-5'25",
+              "description": "节奏慢跑 + 100m 加速 ×6 组",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 28.0,
+              "pace": "5'30-5'35",
+              "description": "LSD 长距离（时长2h40）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 18,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 78.0,
+          "weekly_km_computed": 78.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'28",
+              "description": "有氧慢跑 70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "12km 分段加速'前4K@4'50 / 中4K@4'43 / 后4K@4'37",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'28",
+              "description": "有氧慢跑 70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'10-5'25",
+              "description": "节奏慢跑 + 100m 加速 ×6 组",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 27.0,
+              "pace": "4'37-5'00",
+              "description": "渐加速长距离（时长2h30):每5K提速5秒，最终接近马拉松配速4'37",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 19,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 78.0,
+          "weekly_km_computed": 78.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'28",
+              "description": "有氧慢跑 70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 11.0,
+              "pace": null,
+              "description": "5321倒金字塔（5K/3K/2K/1K）@4'40→4'25→4'15→4'00，组间休5′-4′-3′",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'28",
+              "description": "有氧慢跑 70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'10-5'25",
+              "description": "节奏慢跑 + 100m 加速 ×6 组",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 28.0,
+              "pace": "4'58-5'03",
+              "description": "强度有氧长距离（约2小时20分）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 20,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 81.0,
+          "weekly_km_computed": 81.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'28",
+              "description": "有氧慢跑 70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "12km 分段加速'前4K@4'50 / 中4K@4'43 / 后4K@4'37",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'15-5'28",
+              "description": "有氧慢跑 70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 13.0,
+              "pace": "5'10-5'25",
+              "description": "节奏慢跑 + 100m 加速 ×6 组",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "30KM测试",
+              "distance_km": 30.0,
+              "pace": "5'05-5'10",
+              "description": "30km 全马模拟（约2小时35分):前20K@5'05-5'10，后10K@4'37",
+              "segment": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "template_name": "全马330",
+      "template_code": "330",
+      "target_time_minutes": 210,
+      "weeks": [
+        {
+          "week": 1,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 37.0,
+          "weekly_km_computed": 37.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'55-6'20",
+              "description": "持续轻松跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 5.0,
+              "pace": null,
+              "description": "400m×10-12 @4'08-4'15，组间走休100秒",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'55-6'20",
+              "description": "持续轻松跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "长距离",
+              "distance_km": 16.0,
+              "pace": "5'35-5'50",
+              "description": "基础有氧耐力跑 80-100 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 38.0,
+          "weekly_km_computed": 38.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'55-6'20",
+              "description": "持续轻松跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 6.0,
+              "pace": null,
+              "description": "800m×6-8 @4'18-4'24，组间慢跑2′-2′30″",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'55-6'20",
+              "description": "持续轻松跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "长距离",
+              "distance_km": 16.0,
+              "pace": "5'35-5'50",
+              "description": "基础有氧耐力跑 80-100 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 39.0,
+          "weekly_km_computed": 39.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'55-6'20",
+              "description": "持续轻松跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 7.0,
+              "pace": null,
+              "description": "1km×5-6 / 2km×4 @4'35-4'40，组间休1′30″-3′",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'55-6'20",
+              "description": "持续轻松跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "长距离",
+              "distance_km": 16.0,
+              "pace": "5'35-5'50",
+              "description": "基础有氧耐力跑 80-100 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 35.0,
+          "weekly_km_computed": 35.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'55-6'20",
+              "description": "持续轻松跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 4.0,
+              "pace": null,
+              "description": "400m×8 / 800m×5，配速适度放宽（周度减量）",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'55-6'20",
+              "description": "持续轻松跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "长距离",
+              "distance_km": 15.0,
+              "pace": "5'35-5'50",
+              "description": "基础有氧耐力跑 80-100 分钟（减量）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 5,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 40.0,
+          "weekly_km_computed": 40.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "5'50-6'15",
+              "description": "持续轻松跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 4.0,
+              "pace": null,
+              "description": "400m×10-12 @4'05-4'12，组间走休100秒",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "5'50-6'15",
+              "description": "持续轻松跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "长距离",
+              "distance_km": 18.0,
+              "pace": "5'30-5'45",
+              "description": "进阶有氧跑 90-110 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 6,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 42.0,
+          "weekly_km_computed": 42.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "5'50-6'15",
+              "description": "持续轻松跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 6.0,
+              "pace": null,
+              "description": "800m×6-8 @4'15-4'20，组间慢跑2′-2′30″",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "5'50-6'15",
+              "description": "持续轻松跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "长距离",
+              "distance_km": 18.0,
+              "pace": "5'30-5'45",
+              "description": "进阶有氧跑 90-110 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 43.0,
+          "weekly_km_computed": 43.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "5'50-6'15",
+              "description": "持续轻松跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 7.0,
+              "pace": null,
+              "description": "1km×5-6 / 2km×4 @4'30-4'35，组间休1′30″-3′",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "5'50-6'15",
+              "description": "持续轻松跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "长距离",
+              "distance_km": 18.0,
+              "pace": "5'30-5'45",
+              "description": "进阶有氧跑 90-110 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 8,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 38.0,
+          "weekly_km_computed": 38.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'50-6'15",
+              "description": "持续轻松跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 4.0,
+              "pace": null,
+              "description": "间歇减量课（为10K测试预留状态）",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'50-6'15",
+              "description": "持续轻松跑 45-55 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "节奏跑",
+              "distance_km": 18.0,
+              "pace": "5'30-5'45",
+              "description": "进阶有氧跑 90-110 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 9,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 69.0,
+          "weekly_km_computed": 69.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'35-5'50",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 9.0,
+              "pace": null,
+              "description": "节奏跑 @5'00-4'58/km",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'35-5'50",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'30-5'45",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 27.0,
+              "pace": "5'45-5'55",
+              "description": "LSD 长距离（约2h30-2h40）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 70.0,
+          "weekly_km_computed": 70.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'35-5'50",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "分段跑'前4K@5'20 / 中4K@5'10 / 后4K@5'00-4'58（12km）",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'35-5'50",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'30-5'45",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 25.0,
+              "pace": "5'45-5'55",
+              "description": "渐加速长距离（约24-26km):前19-21K轻松，最后5K提速至4'58",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 11,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 69.0,
+          "weekly_km_computed": 69.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'35-5'50",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 9.0,
+              "pace": null,
+              "description": "节奏跑 @5'00-4'58/km",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'35-5'50",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'30-5'45",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 27.0,
+              "pace": "5'45-5'55",
+              "description": "LSD 长距离（约2h30-2h40）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 12,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 70.0,
+          "weekly_km_computed": 70.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'35-5'50",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "分段跑'前4K@5'20 / 中4K@5'10 / 后4K@5'00-4'58（12km）",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'35-5'50",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'30-5'45",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 25.0,
+              "pace": "5'18-5'25",
+              "description": "强度有氧长距离（约2h10-2h20):提升长距离配速稳定性",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 13,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 72.0,
+          "weekly_km_computed": 72.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'30-5'45",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 11.0,
+              "pace": null,
+              "description": "节奏跑 @4'58/km",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'30-5'45",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'25-5'40",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 28.0,
+              "pace": "5'40-5'50",
+              "description": "LSD 长距离（约2h30-2h40）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 14,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 71.0,
+          "weekly_km_computed": 71.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'30-5'45",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "分段跑'前4K@5'15 / 中4K@5'05 / 后4K@4'58（12km）",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'30-5'45",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'25-5'40",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 26.0,
+              "pace": "5'40-5'50",
+              "description": "渐加速长距离（约25-27km):前20-22K轻松，最后5K提至4'58",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 15,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 72.0,
+          "weekly_km_computed": 72.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'30-5'45",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 11.0,
+              "pace": null,
+              "description": "节奏跑 @4'58/km",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'30-5'45",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'25-5'40",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 28.0,
+              "pace": "5'40-5'50",
+              "description": "LSD 长距离（约2h30-2h40）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 16,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 70.0,
+          "weekly_km_computed": 70.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'30-5'45",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "分段跑'前4K@5'15 / 中4K@5'05 / 后4K@4'58（12km）",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'30-5'45",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'25-5'40",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 25.0,
+              "pace": "5'15-5'20",
+              "description": "强度有氧长距离（约2h15）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 17,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 72.0,
+          "weekly_km_computed": 72.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'28-5'42",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 11.0,
+              "pace": null,
+              "description": "节奏跑 @4'55/km",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'28-5'42",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'22-5'38",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 28.0,
+              "pace": "5'38-5'48",
+              "description": "LSD 长距离（约2h30-2h40）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 18,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 72.0,
+          "weekly_km_computed": 72.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'28-5'42",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "分段跑'前4K@5'10 / 中4K@5'00 / 后4K@4'55",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'28-5'42",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'22-5'38",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 27.0,
+              "pace": "5'38-5'48",
+              "description": "渐加速长距离:前20-22K轻松，最后5K提至4'55",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 19,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 72.0,
+          "weekly_km_computed": 72.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'28-5'42",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 11.0,
+              "pace": null,
+              "description": "节奏跑 @4'55/km",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'28-5'42",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'22-5'38",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 28.0,
+              "pace": "5'38-5'48",
+              "description": "LSD 长距离（约2h30-2h40）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 20,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 75.0,
+          "weekly_km_computed": 75.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'28-5'42",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "分段跑'前4K@5'10 / 中4K@5'00 / 后4K@4'55",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'28-5'42",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "轻松跑",
+              "distance_km": 11.0,
+              "pace": "5'22-5'38",
+              "description": "有氧慢跑 60-70 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息或交叉训练",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "30KM测试",
+              "distance_km": 30.0,
+              "pace": "5'10-5'15",
+              "description": "30km 全马模拟（约2小时33分):前20K@5'10-5'15，后10K@4'55",
+              "segment": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "template_name": "全马345",
+      "template_code": "345",
+      "target_time_minutes": 225,
+      "weeks": [
+        {
+          "week": 1,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 37.0,
+          "weekly_km_computed": 37.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'05-6'35",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 9.0,
+              "pace": null,
+              "description": "9K 渐加速，每 3K 提速 10s(5'30-5'20-5'10)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'05-6'35",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 14.0,
+              "pace": "6'10-6'40",
+              "description": "有氧耐力跑，90-105分钟",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 37.0,
+          "weekly_km_computed": 37.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'05-6'35",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 8.0,
+              "pace": null,
+              "description": "800 快(4'55-5'00) + 400 慢 × 6(6'00-6'25)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'05-6'35",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 15.0,
+              "pace": "6'10-6'40",
+              "description": "有氧耐力跑，90-105分钟",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 41.0,
+          "weekly_km_computed": 41.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "6'05-6'35",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 9.0,
+              "pace": null,
+              "description": "9K 渐加速，每 3K 提速 10s(5'30-5'20-5'10)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "6'05-6'35",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 16.0,
+              "pace": "6'10-6'40",
+              "description": "有氧耐力跑，90-105分钟",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 36.0,
+          "weekly_km_computed": 36.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'05-6'35",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 8.0,
+              "pace": null,
+              "description": "800 快(4'55-5'00) + 400 慢 × 6(6'00-6'25)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'05-6'35",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 14.0,
+              "pace": "6'10-6'40",
+              "description": "有氧耐力跑，90-105分钟",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 5,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 41.0,
+          "weekly_km_computed": 41.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "6'00-6'30",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 9.0,
+              "pace": null,
+              "description": "9K 渐加速，每 3K 提速 10s(5'20-5'10-5'00)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "6'00-6'30",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 16.0,
+              "pace": "6'05-6'35",
+              "description": "有氧耐力跑，90-120分钟",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 6,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 41.0,
+          "weekly_km_computed": 41.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "6'00-6'30",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 8.0,
+              "pace": null,
+              "description": "800 快(4'50-4'55) + 400 慢 × 6(5'55-6'20)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "6'00-6'30",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 17.0,
+              "pace": "6'05-6'35",
+              "description": "有氧耐力跑，100-120分钟",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 45.0,
+          "weekly_km_computed": 45.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "6'00-6'30",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 9.0,
+              "pace": null,
+              "description": "9K 渐加速，每 3K 提速 10s(5'20-5'10-5'00)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "6'00-6'30",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 18.0,
+              "pace": "6'05-6'35",
+              "description": "有氧耐力跑，100-120分钟",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 8,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 37.0,
+          "weekly_km_computed": 37.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'00-6'30",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 8.0,
+              "pace": null,
+              "description": "800 快(4'50-4'55) + 400 慢 × 6(5'55-6'20)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'00-6'30",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 15.0,
+              "pace": "6'05-6'35",
+              "description": "有氧耐力跑，100-120分钟",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 9,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 50.0,
+          "weekly_km_computed": 50.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'16-6'46",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "12km 渐加速质量跑(5'56-5'41-5'26)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'16-6'46",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 24.0,
+              "pace": "6'16-6'46",
+              "description": "纯LSD长距离(时长2h40）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 49.0,
+          "weekly_km_computed": 49.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "6'16-6'46",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "12km 渐加速质量跑(5'56-5'41-5'26)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "6'16-6'46",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 21.0,
+              "pace": "5'26-6'11",
+              "description": "分段加速长距离（时长2h，每30分钟提速，6'11-5'56-5'41-5'26）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 11,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 52.0,
+          "weekly_km_computed": 52.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "6'16-6'46",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "12km 渐加速质量跑(5'56-5'41-5'26)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "6'16-6'46",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 24.0,
+              "pace": "6'16-6'46",
+              "description": "纯LSD长距离(时长2h40）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 12,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 47.0,
+          "weekly_km_computed": 47.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'16-6'46",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "12km 渐加速质量跑(5'56-5'41-5'26)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'16-6'46",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 21.0,
+              "pace": "5'26-6'11",
+              "description": "分段加速长距离（时长2h，每30分钟提速，6'11-5'56-5'41-5'26）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 13,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 51.0,
+          "weekly_km_computed": 51.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'11-6'41",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "12km 渐加速质量跑(5'51-5'36-5'21)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'11-6'41",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 25.0,
+              "pace": "6'11-6'41",
+              "description": "纯LSD长距离(时长2h40）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 14,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 49.0,
+          "weekly_km_computed": 49.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "6'11-6'41",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "12km 渐加速质量跑(5'51-5'36-5'21)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "6'11-6'41",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 21.0,
+              "pace": "5'21-6'06",
+              "description": "分段加速长距离（时长2h，每30分钟提速，6'06-5'51-5'36-5'21）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 15,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 53.0,
+          "weekly_km_computed": 53.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "6'11-6'41",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "12km 渐加速质量跑(5'51-5'36-5'21)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "6'11-6'41",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 25.0,
+              "pace": "6'11-6'41",
+              "description": "纯LSD长距离(时长2h40）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 16,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 44.0,
+          "weekly_km_computed": 44.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'11-6'41",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "12km 渐加速质量跑(5'51-5'36-5'21)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'11-6'41",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 18.0,
+              "pace": "5'21-6'06",
+              "description": "分段加速长距离（时长2h，每30分钟提速，6'06-5'51-5'36-5'21）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 17,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 51.0,
+          "weekly_km_computed": 51.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'06-6'36",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "12km 渐加速质量跑(5'46-5'31-5'16)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'06-6'36",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 25.0,
+              "pace": "6'06-6'36",
+              "description": "纯LSD长距离(时长2h40）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 18,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 50.0,
+          "weekly_km_computed": 50.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "6'06-6'36",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "12km 渐加速质量跑(5'46-5'31-5'16)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "6'06-6'36",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 22.0,
+              "pace": "5'16-6'01",
+              "description": "分段加速长距离（时长2h，每30分钟提速，6'01-5'46-5'31-5'16）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 19,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 53.0,
+          "weekly_km_computed": 53.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "6'06-6'36",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "12km 渐加速质量跑(5'46-5'31-5'16)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "6'06-6'36",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 25.0,
+              "pace": "6'06-6'36",
+              "description": "纯LSD长距离(时长2h40）",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 20,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 56.0,
+          "weekly_km_computed": 56.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'06-6'36",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "12km 渐加速质量跑(5'46-5'31-5'16)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'06-6'36",
+              "description": "有氧慢跑 40-50 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "交叉训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "30KM测试",
+              "distance_km": 30.0,
+              "pace": "5'40",
+              "description": "30km 全马模拟（约2小时46分):前20K@5'40，后10K@5'17",
+              "segment": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "template_name": "半马200",
+      "template_code": "200",
+      "target_time_minutes": 120,
+      "weeks": [
+        {
+          "week": 1,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 30.0,
+          "weekly_km_computed": 30.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 6.0,
+              "pace": "6'35-7'10",
+              "description": "有氧慢跑 35-45 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 8.0,
+              "pace": null,
+              "description": "总里程 6-8km；分段配速：2km@6'35 → 2km@6'20 → 2km@6'05 →（可选）2km@5'55",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 6.0,
+              "pace": "6'35-7'10",
+              "description": "有氧慢跑 35-45 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 10.0,
+              "pace": "6'30-7'00",
+              "description": "10-12km，整体配速 6'30-7'00",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 31.0,
+          "weekly_km_computed": 31.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 6.0,
+              "pace": "6'35-7'10",
+              "description": "有氧慢跑 35-45 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 8.0,
+              "pace": null,
+              "description": "总里程 6-8km；分段配速：2km@6'35 → 2km@6'20 → 2km@6'05 →（可选）2km@5'55",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 6.0,
+              "pace": "6'35-7'10",
+              "description": "有氧慢跑 35-45 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 11.0,
+              "pace": "6'30-7'00",
+              "description": "10-12km，整体配速 6'30-7'00",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 32.0,
+          "weekly_km_computed": 32.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 6.0,
+              "pace": "6'35-7'10",
+              "description": "有氧慢跑 35-45 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 8.0,
+              "pace": null,
+              "description": "总里程 6-8km；分段配速：2km@6'35 → 2km@6'20 → 2km@6'05 →（可选）2km@5'55",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 6.0,
+              "pace": "6'35-7'10",
+              "description": "有氧慢跑 35-45 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 12.0,
+              "pace": "6'30-7'00",
+              "description": "10-12km，整体配速 6'30-7'00",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 31.0,
+          "weekly_km_computed": 31.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 6.0,
+              "pace": "6'35-7'10",
+              "description": "有氧慢跑 35-45 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 8.0,
+              "pace": null,
+              "description": "总里程 6-8km；分段配速：2km@6'35 → 2km@6'20 → 2km@6'05 →（可选）2km@5'55",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 6.0,
+              "pace": "6'35-7'10",
+              "description": "有氧慢跑 35-45 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 11.0,
+              "pace": "6'30-7'00",
+              "description": "10-12km，整体配速 6'30-7'00",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 5,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 32.0,
+          "weekly_km_computed": 32.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 6.0,
+              "pace": "6'25-7'00",
+              "description": "有氧慢跑 35-45 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 8.0,
+              "pace": null,
+              "description": "总里程 8-10km；分段配速：2km@6'30 → 2km@6'15 → 2km@6'00 →（可选）2km@5'45",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 6.0,
+              "pace": "6'25-7'00",
+              "description": "有氧慢跑 35-45 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 12.0,
+              "pace": "6'25-6'55",
+              "description": "12-14km，整体配速 6'25-6'55",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 6,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 33.0,
+          "weekly_km_computed": 33.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 6.0,
+              "pace": "6'25-7'00",
+              "description": "有氧慢跑 35-45 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 8.0,
+              "pace": null,
+              "description": "总里程 8-10km；分段配速：2km@6'30 → 2km@6'15 → 2km@6'00 →（可选）2km@5'45",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 6.0,
+              "pace": "6'25-7'00",
+              "description": "有氧慢跑 35-45 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 13.0,
+              "pace": "6'25-6'55",
+              "description": "12-14km，整体配速 6'25-6'55",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 34.0,
+          "weekly_km_computed": 34.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 6.0,
+              "pace": "6'25-7'00",
+              "description": "有氧慢跑 35-45 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 8.0,
+              "pace": null,
+              "description": "总里程 8-10km；分段配速：2km@6'30 → 2km@6'15 → 2km@6'00 →（可选）2km@5'45",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 6.0,
+              "pace": "6'25-7'00",
+              "description": "有氧慢跑 35-45 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 14.0,
+              "pace": "6'25-6'55",
+              "description": "12-14km，整体配速 6'25-6'55",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 8,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 33.0,
+          "weekly_km_computed": 33.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 6.0,
+              "pace": "6'25-7'00",
+              "description": "有氧慢跑 35-45 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 8.0,
+              "pace": null,
+              "description": "总里程 8-10km；分段配速：2km@6'30 → 2km@6'15 → 2km@6'00 →（可选）2km@5'45",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 6.0,
+              "pace": "6'25-7'00",
+              "description": "有氧慢跑 35-45 分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 13.0,
+              "pace": "6'25-6'55",
+              "description": "12-14km，整体配速 6'25-6'55",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 9,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 35.0,
+          "weekly_km_computed": 35.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'20-6'55",
+              "description": "有氧慢跑 40-50分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 8.0,
+              "pace": null,
+              "description": "总里程 8km；分段配速：2km@6'25 → 2km@6'10 → 2km@5'58 → 2km@5'48",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'20-6'55",
+              "description": "有氧慢跑 40-50分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 13.0,
+              "pace": "6'20-6'50",
+              "description": "13-14km，整体配速 6'20-6'50",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 36.0,
+          "weekly_km_computed": 36.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'20-6'55",
+              "description": "有氧慢跑 40-50分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 8.0,
+              "pace": null,
+              "description": "总里程 8km；分段配速：2km@6'25 → 2km@6'10 → 2km@5'58 → 2km@5'48",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'20-6'55",
+              "description": "有氧慢跑 40-50分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 14.0,
+              "pace": "6'20-6'50",
+              "description": "13-14km，整体配速 6'20-6'50，末段 2km@5'50-5'45",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 11,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 35.0,
+          "weekly_km_computed": 35.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'20-6'55",
+              "description": "有氧慢跑 40-50分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 8.0,
+              "pace": null,
+              "description": "总里程 8km；分段配速：2km@6'25 → 2km@6'10 → 2km@5'58 → 2km@5'48",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'20-6'55",
+              "description": "有氧慢跑 40-50分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 13.0,
+              "pace": "6'20-6'50",
+              "description": "13-14km，整体配速 6'20-6'50",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 12,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 36.0,
+          "weekly_km_computed": 36.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'20-6'55",
+              "description": "有氧慢跑 40-50分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 8.0,
+              "pace": null,
+              "description": "总里程 8km；分段配速：2km@6'25 → 2km@6'10 → 2km@5'58 → 2km@5'48",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'20-6'55",
+              "description": "有氧慢跑 40-50分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 14.0,
+              "pace": "6'20-6'50",
+              "description": "13-14km，整体配速 6'20-6'50，末段 2km@5'50-5'45",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 13,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 38.0,
+          "weekly_km_computed": 38.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'20-6'50",
+              "description": "有氧慢跑 40-50分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 10.0,
+              "pace": null,
+              "description": "总里程 10km；分段配速：2km@6'20 → 2km@6'05 → 2km@5'55 → 2km@5'45 → 末段目标配速 5'39",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'20-6'50",
+              "description": "有氧慢跑 40-50分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 14.0,
+              "pace": "6'15-6'45",
+              "description": "14-16km，整体配速 6'15-6'45",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 14,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 39.0,
+          "weekly_km_computed": 39.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'20-6'50",
+              "description": "有氧慢跑 40-50分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 10.0,
+              "pace": null,
+              "description": "总里程 10km；分段配速：2km@6'20 → 2km@6'05 → 2km@5'55 → 2km@5'45 → 末段目标配速 5'39",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'20-6'50",
+              "description": "有氧慢跑 40-50分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 15.0,
+              "pace": "6'15-6'45",
+              "description": "14-16km，整体配速 6'15-6'45，末段 3km@5'42-5'39",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 15,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 40.0,
+          "weekly_km_computed": 40.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'20-6'50",
+              "description": "有氧慢跑 40-50分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 10.0,
+              "pace": null,
+              "description": "总里程 10km；分段配速：2km@6'20 → 2km@6'05 → 2km@5'55 → 2km@5'45 → 末段目标配速 5'39",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'20-6'50",
+              "description": "有氧慢跑 40-50分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 16.0,
+              "pace": "6'15-6'45",
+              "description": "14-16km，整体配速 6'15-6'45",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 16,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 39.0,
+          "weekly_km_computed": 39.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'20-6'50",
+              "description": "有氧慢跑 40-50分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 10.0,
+              "pace": null,
+              "description": "总里程 10km；分段配速：2km@6'20 → 2km@6'05 → 2km@5'55 → 2km@5'45 → 末段目标配速 5'39",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'20-6'50",
+              "description": "有氧慢跑 40-50分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 15.0,
+              "pace": "6'15-6'45",
+              "description": "14-16km，整体配速 6'15-6'45，末段 3km@5'42-5'39",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 17,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 42.0,
+          "weekly_km_computed": 42.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'20-6'45",
+              "description": "有氧慢跑 40-50分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "总里程 10-12km；分段配速：3km@6'20 → 3km@6'05 → 3km@5'52 → 3km@5'39",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'20-6'45",
+              "description": "有氧慢跑 40-50分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 16.0,
+              "pace": "6'10-6'40",
+              "description": "16-17km，整体配速 6'10-6'40",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 18,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 43.0,
+          "weekly_km_computed": 43.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'20-6'45",
+              "description": "有氧慢跑 40-50分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "总里程 10-12km；分段配速：3km@6'20 → 3km@6'05 → 3km@5'52 → 3km@5'39",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'20-6'45",
+              "description": "有氧慢跑 40-50分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 17.0,
+              "pace": "6'10-6'40",
+              "description": "16-17km，整体配速 6'10-6'40，末段 3-4km@5'39-5'36",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 19,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 43.0,
+          "weekly_km_computed": 43.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'20-6'45",
+              "description": "有氧慢跑 40-50分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "总里程 10-12km；分段配速：3km@6'20 → 3km@6'05 → 3km@5'52 → 3km@5'39",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'20-6'45",
+              "description": "有氧慢跑 40-50分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 17.0,
+              "pace": "6'10-6'40",
+              "description": "16-17km，整体配速 6'10-6'40",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 20,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 42.0,
+          "weekly_km_computed": 42.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'20-6'45",
+              "description": "有氧慢跑 40-50分钟",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "总里程 10-12km；分段配速：3km@6'20 → 3km@6'05 → 3km@5'52 → 3km@5'39",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "6'20-6'45",
+              "description": "有氧慢跑 40-50分钟",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 16.0,
+              "pace": "6'10-6'40",
+              "description": "16-17km，整体配速 6'10-6'40，末段 3-4km@5'39-5'36",
+              "segment": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "template_name": "半马145",
+      "template_code": "145",
+      "target_time_minutes": 105,
+      "weeks": [
+        {
+          "week": 1,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 30.0,
+          "weekly_km_computed": 30.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "5'45-6'20",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 6.0,
+              "pace": null,
+              "description": "3×2K 间歇4'55-4'58（组间慢跑休息 2'30''-3'）",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "5'45-6'20",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 10.0,
+              "pace": "5'45-6'20",
+              "description": "总里程 10-12K；末段 2K 配速 5'20-5'25/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 32.0,
+          "weekly_km_computed": 32.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "5'45-6'20",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 7.0,
+              "pace": null,
+              "description": "800m快( 4'44-4'48) + 400m慢(5'30-6'00) @6 组",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "5'45-6'20",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 11.0,
+              "pace": "5'45-6'20",
+              "description": "总里程 10-12K；末段 2K 配速 5'20-5'25/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 32.0,
+          "weekly_km_computed": 32.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "5'45-6'20",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 6.0,
+              "pace": null,
+              "description": "3×2K 间歇4'55-4'58（组间慢跑休息 2'30''-3'）",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "5'45-6'20",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 12.0,
+              "pace": "5'45-6'20",
+              "description": "总里程 10-12K；末段 2K 配速 5'20-5'25/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 32.0,
+          "weekly_km_computed": 32.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "5'45-6'20",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 7.0,
+              "pace": null,
+              "description": "800m快( 4'44-4'48) + 400m慢(5'30-6'00) @6 组",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "5'45-6'20",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 11.0,
+              "pace": "5'45-6'20",
+              "description": "总里程 10-12K；末段 2K 配速 5'20-5'25/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 5,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 31.0,
+          "weekly_km_computed": 31.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "5'40-6'15",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 6.0,
+              "pace": null,
+              "description": "3×2K 间歇4'50-4'54（组间慢跑休息 2'30''-3'）",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "5'40-6'15",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 11.0,
+              "pace": "5'40-6'15",
+              "description": "总里程 11-13K；末段 2K 配速 5'10-5'15/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 6,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 33.0,
+          "weekly_km_computed": 33.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "5'40-6'15",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 7.0,
+              "pace": null,
+              "description": "800m快( 4'40-4'44) + 400m慢(5'25-5'55) @6 组",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "5'40-6'15",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 12.0,
+              "pace": "5'40-6'15",
+              "description": "总里程 11-13K；末段 2K 配速 5'10-5'15/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 33.0,
+          "weekly_km_computed": 33.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "5'40-6'15",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 6.0,
+              "pace": null,
+              "description": "3×2K 间歇4'50-4'54（组间慢跑休息 2'30''-3'）",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "5'40-6'15",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 13.0,
+              "pace": "5'40-6'15",
+              "description": "总里程 11-13K；末段 2K 配速 5'10-5'15/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 8,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 33.0,
+          "weekly_km_computed": 33.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "5'40-6'15",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 7.0,
+              "pace": null,
+              "description": "800m快( 4'40-4'44) + 400m慢(5'25-5'55) @6 组",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 7.0,
+              "pace": "5'40-6'15",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 12.0,
+              "pace": "5'40-6'15",
+              "description": "总里程 11-13K；末段 2K 配速 5'10-5'15/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 9,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 34.0,
+          "weekly_km_computed": 34.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'35-6'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 6.0,
+              "pace": null,
+              "description": "3×2K 间歇4'46-4'50（组间慢跑休息 2'30''-3'）",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'35-6'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 12.0,
+              "pace": "5'35-6'10",
+              "description": "总里程 12-14K；末段 2K 配速 5'00-5'05/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 36.0,
+          "weekly_km_computed": 36.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'35-6'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 7.0,
+              "pace": null,
+              "description": "800m快( 4'36-4'40) + 400m慢(5'20-5'50) @6 组",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'35-6'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 13.0,
+              "pace": "5'35-6'10",
+              "description": "总里程 12-14K；末段 2K 配速 5'00-5'05/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 11,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 36.0,
+          "weekly_km_computed": 36.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'35-6'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 6.0,
+              "pace": null,
+              "description": "3×2K 间歇4'46-4'50（组间慢跑休息 2'30''-3'）",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'35-6'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 14.0,
+              "pace": "5'35-6'10",
+              "description": "总里程 12-14K；末段 2K 配速 5'00-5'05/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 12,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 33.0,
+          "weekly_km_computed": 33.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'35-6'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 7.0,
+              "pace": null,
+              "description": "800m快( 4'36-4'40) + 400m慢(5'20-5'50) @6 组",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'35-6'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "10公里测试",
+              "distance_km": 10.0,
+              "pace": "4'47",
+              "description": "10公里测试＜48 分钟",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 13,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 38.0,
+          "weekly_km_computed": 38.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'40-6'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 8.0,
+              "pace": "5'02-5'04",
+              "description": "半马配速节奏跑",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'40-6'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 14.0,
+              "pace": "5'40-6'10",
+              "description": "14-15K",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 14,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 41.0,
+          "weekly_km_computed": 41.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'40-6'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 10.0,
+              "pace": null,
+              "description": "4+4+2 渐进 10K@4K(5'35-5'45)+4K(5'12-5'16)+2K(5'02-5'04)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'40-6'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 15.0,
+              "pace": "5'40-6'10",
+              "description": "14-15K；末段 3K 加速到 5'02-5'04/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 15,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 39.0,
+          "weekly_km_computed": 39.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'40-6'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 8.0,
+              "pace": "5'02-5'04",
+              "description": "半马配速节奏跑",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'40-6'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 15.0,
+              "pace": "5'40-6'10",
+              "description": "14-15K",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 16,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 40.0,
+          "weekly_km_computed": 40.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'40-6'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 10.0,
+              "pace": null,
+              "description": "4+4+2 渐进 10K@4K(5'35-5'45)+4K(5'12-5'16)+2K(5'02-5'04)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'40-6'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 14.0,
+              "pace": "5'40-6'10",
+              "description": "14-15K；末段 3K 加速到 5'02-5'04/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 17,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 40.0,
+          "weekly_km_computed": 40.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'35-6'05",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 9.0,
+              "pace": "4'59-5'01",
+              "description": "半马配速节奏跑",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'35-6'05",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 15.0,
+              "pace": "5'35-6'05",
+              "description": "15-16K",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 18,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 42.0,
+          "weekly_km_computed": 42.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'35-6'05",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 10.0,
+              "pace": null,
+              "description": "4+4+2 渐进 10K@4K(5'30-5'40)+4K(5'08-5'12)+2K(4'59-5'01)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'35-6'05",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 16.0,
+              "pace": "5'35-6'05",
+              "description": "15-16K；末段 3-4K 加速到 4'59-5'01/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 19,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 41.0,
+          "weekly_km_computed": 41.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'35-6'05",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 9.0,
+              "pace": "4'59-5'01",
+              "description": "半马配速节奏跑",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'35-6'05",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 16.0,
+              "pace": "5'35-6'05",
+              "description": "15-16K",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 20,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 41.0,
+          "weekly_km_computed": 41.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'35-6'05",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 10.0,
+              "pace": null,
+              "description": "4+4+2 渐进 10K@4K(5'30-5'40)+4K(5'08-5'12)+2K(4'59-5'01)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'35-6'05",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 15.0,
+              "pace": "5'35-6'05",
+              "description": "15-16K；末段 3-4K 加速到 4'59-5'01/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 21,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 42.0,
+          "weekly_km_computed": 42.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'35-6'05",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 10.0,
+              "pace": "4'56-4'59",
+              "description": "半马配速节奏跑",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'35-6'05",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 16.0,
+              "pace": "5'30-6'00",
+              "description": "16-18K",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 22,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 43.0,
+          "weekly_km_computed": 43.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'35-6'05",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 10.0,
+              "pace": null,
+              "description": "4+4+2 渐进 10K@4K(5'25-5'35)+4K(5'04-5'08)+2K(4'56-4'59)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'35-6'05",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 17.0,
+              "pace": "5'30-6'00",
+              "description": "16-18K；末段 4K 加速到 4'56-4'59/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 23,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 44.0,
+          "weekly_km_computed": 44.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'35-6'05",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 10.0,
+              "pace": "4'56-4'59",
+              "description": "半马配速节奏跑",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'35-6'05",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 18.0,
+              "pace": "5'30-6'00",
+              "description": "16-18K",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 24,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 42.0,
+          "weekly_km_computed": 42.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'35-6'05",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 10.0,
+              "pace": null,
+              "description": "4+4+2 渐进 10K@4K(5'25-5'35)+4K(5'04-5'08)+2K(4'56-4'59)",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "5'35-6'05",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 16.0,
+              "pace": "5'30-6'00",
+              "description": "16K测试，前 10K(5'18-5'28)，后 6K 4'57",
+              "segment": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "template_name": "半马130",
+      "template_code": "130",
+      "target_time_minutes": 90,
+      "weeks": [
+        {
+          "week": 1,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 25.0,
+          "weekly_km_computed": 25.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "4'55-5'20",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 4.0,
+              "pace": null,
+              "description": "400m×10-12，配速 3'45-3'50/km，组间休息 90-100 秒",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "4'55-5'20",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "节奏跑",
+              "distance_km": 5.0,
+              "pace": null,
+              "description": "20 分钟，配速 4'12-4'15/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 26.0,
+          "weekly_km_computed": 26.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "4'55-5'20",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 5.0,
+              "pace": null,
+              "description": "800m×5-6，配速 3'58-4'02/km，组间休息 2'-2'30\"",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "4'55-5'20",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "节奏跑",
+              "distance_km": 5.0,
+              "pace": null,
+              "description": "20 分钟，配速 4'12-4'15/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 27.0,
+          "weekly_km_computed": 27.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "4'55-5'20",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 6.0,
+              "pace": null,
+              "description": "1K×4-5 或 2K×3，配速 4'05-4'08/km，组间休息 1'30\"-3'",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "4'55-5'20",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "节奏跑",
+              "distance_km": 5.0,
+              "pace": null,
+              "description": "20 分钟，配速 4'12-4'15/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 25.0,
+          "weekly_km_computed": 25.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "4'55-5'20",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 4.0,
+              "pace": null,
+              "description": "400m×10-12，配速 3'45-3'50/km，组间休息 90-100 秒",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 8.0,
+              "pace": "4'55-5'20",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "节奏跑",
+              "distance_km": 5.0,
+              "pace": null,
+              "description": "20 分钟，配速 4'12-4'15/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 5,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 29.0,
+          "weekly_km_computed": 29.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'50-5'15",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 5.0,
+              "pace": null,
+              "description": "400m×10-12，配速 3'42-3'48/km，组间休息 90-100 秒",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'50-5'15",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "节奏跑",
+              "distance_km": 6.0,
+              "pace": null,
+              "description": "25 分钟，配速 4'10-4'13/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 6,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 30.0,
+          "weekly_km_computed": 30.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'50-5'15",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 6.0,
+              "pace": null,
+              "description": "800m×6-7，配速 3'55-4'00/km，组间休息 2'-2'30\"",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'50-5'15",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "节奏跑",
+              "distance_km": 6.0,
+              "pace": null,
+              "description": "25 分钟，配速 4'10-4'13/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 32.0,
+          "weekly_km_computed": 32.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'50-5'15",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 8.0,
+              "pace": null,
+              "description": "1K×5 或 2K×3-4，配速 4'03-4'06/km，组间休息 1'30\"-3'",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'50-5'15",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "节奏跑",
+              "distance_km": 6.0,
+              "pace": null,
+              "description": "25 分钟，配速 4'10-4'13/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 8,
+          "phase": "基础期",
+          "is_deload_week": false,
+          "weekly_km": 29.0,
+          "weekly_km_computed": 29.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'50-5'15",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 5.0,
+              "pace": null,
+              "description": "400m×10-12，配速 3'42-3'48/km，组间休息 90-100 秒",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'50-5'15",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "节奏跑",
+              "distance_km": 6.0,
+              "pace": null,
+              "description": "25 分钟，配速 4'10-4'13/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 9,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 30.0,
+          "weekly_km_computed": 30.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'45-5'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 5.0,
+              "pace": null,
+              "description": "400m×12，配速 3'40-3'45/km，组间休息 90-100 秒",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'45-5'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "节奏跑",
+              "distance_km": 7.0,
+              "pace": null,
+              "description": "30 分钟，配速 4'08-4'12/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 31.0,
+          "weekly_km_computed": 31.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'45-5'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 6.0,
+              "pace": null,
+              "description": "800m×6-8，配速 3'52-3'58/km，组间休息 2'-2'30\"",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'45-5'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "节奏跑",
+              "distance_km": 7.0,
+              "pace": null,
+              "description": "30 分钟，配速 4'08-4'12/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 11,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 33.0,
+          "weekly_km_computed": 33.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'45-5'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 8.0,
+              "pace": null,
+              "description": "1K×5-6 或 2K×4，配速 4'00-4'05/km，组间休息 1'30\"-3'",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'45-5'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "节奏跑",
+              "distance_km": 7.0,
+              "pace": null,
+              "description": "30 分钟，配速 4'08-4'12/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 12,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 30.0,
+          "weekly_km_computed": 30.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'45-5'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 5.0,
+              "pace": null,
+              "description": "400m×12，配速 3'40-3'45/km，组间休息 90-100 秒",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'45-5'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "节奏跑",
+              "distance_km": 7.0,
+              "pace": null,
+              "description": "30 分钟，配速 4'08-4'12/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 13,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 41.0,
+          "weekly_km_computed": 41.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'50-5'15",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 8.0,
+              "pace": "4'18",
+              "description": "8K，配速 4'18/km",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'50-5'15",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 15.0,
+              "pace": "4'50-5'15",
+              "description": "15-16K",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 14,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 46.0,
+          "weekly_km_computed": 46.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'50-5'15",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "（3K@4'18 + 1K 慢跑 )×3 组",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'50-5'15",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 16.0,
+              "pace": "4'50-5'15",
+              "description": "15-16K，末段 3K 拉至 4'18/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 15,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 42.0,
+          "weekly_km_computed": 42.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'50-5'15",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 8.0,
+              "pace": "4'18",
+              "description": "8K，配速 4'18/km",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'50-5'15",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 16.0,
+              "pace": "4'50-5'15",
+              "description": "15-16K",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 16,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 45.0,
+          "weekly_km_computed": 45.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'50-5'15",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "（3K@4'18 + 1K 慢跑 )×3 组",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'50-5'15",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 15.0,
+              "pace": "4'50-5'15",
+              "description": "15-16K，末段 3K 拉至 4'18/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 17,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 43.0,
+          "weekly_km_computed": 43.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'45-5'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 9.0,
+              "pace": "4'15",
+              "description": "9K，配速 4'15/km",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'45-5'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 16.0,
+              "pace": "4'45-5'10",
+              "description": "16-17K",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 18,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 47.0,
+          "weekly_km_computed": 47.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'45-5'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "(3K@4'15 + 1K 慢跑 )×3 组",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'45-5'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 17.0,
+              "pace": "4'45-5'10",
+              "description": "16-17K，末段 3K 拉至 4'15/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 19,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 44.0,
+          "weekly_km_computed": 44.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'45-5'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 9.0,
+              "pace": "4'15",
+              "description": "9K，配速 4'15/km",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'45-5'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 17.0,
+              "pace": "4'45-5'10",
+              "description": "16-17K",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 20,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 46.0,
+          "weekly_km_computed": 46.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'45-5'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "(3K@4'15 + 1K 慢跑 )×3 组",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'45-5'10",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 16.0,
+              "pace": "4'45-5'10",
+              "description": "16-17K，末段 3K 拉至 4'15/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 21,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 45.0,
+          "weekly_km_computed": 45.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'40-5'05",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 10.0,
+              "pace": "4'13",
+              "description": "10K，配速 4'12-4'13/km",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'40-5'05",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 17.0,
+              "pace": "4'40-5'05",
+              "description": "17-18K",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 22,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 48.0,
+          "weekly_km_computed": 48.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'40-5'05",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "(3K@4'12-4'13 + 1K 慢跑) ×3 组",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'40-5'05",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 18.0,
+              "pace": "4'40-5'05",
+              "description": "17-18K，末段 3K 拉至 4'12-4'13/km",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 23,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 46.0,
+          "weekly_km_computed": 46.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'40-5'05",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 10.0,
+              "pace": "4'13",
+              "description": "10K，配速 4'12-4'13/km",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'40-5'05",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "长距离",
+              "distance_km": 18.0,
+              "pace": "4'40-5'05",
+              "description": "17-18K",
+              "segment": null
+            }
+          ]
+        },
+        {
+          "week": 24,
+          "phase": "专项期",
+          "is_deload_week": false,
+          "weekly_km": 45.0,
+          "weekly_km_computed": 45.0,
+          "weekly_km_mismatch": false,
+          "sessions": [
+            {
+              "day_index": 1,
+              "day_label": "周一",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'40-5'05",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 2,
+              "day_label": "周二",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "完全休息或拉伸",
+              "segment": null
+            },
+            {
+              "day_index": 3,
+              "day_label": "周三",
+              "workout_type": "质量课",
+              "distance_km": 12.0,
+              "pace": null,
+              "description": "(3K@4'12-4'13 + 1K 慢跑) ×3 组",
+              "segment": null
+            },
+            {
+              "day_index": 4,
+              "day_label": "周四",
+              "workout_type": "轻松跑",
+              "distance_km": 9.0,
+              "pace": "4'40-5'05",
+              "description": "有氧慢跑 40-50min",
+              "segment": null
+            },
+            {
+              "day_index": 5,
+              "day_label": "周五",
+              "workout_type": "力量训练",
+              "distance_km": null,
+              "pace": null,
+              "description": "力量训练（下肢 + 核心）",
+              "segment": null
+            },
+            {
+              "day_index": 6,
+              "day_label": "周六",
+              "workout_type": "休息",
+              "distance_km": null,
+              "pace": null,
+              "description": "休息（为周日长距离储备状态）",
+              "segment": null
+            },
+            {
+              "day_index": 7,
+              "day_label": "周日",
+              "workout_type": "15公里测试",
+              "distance_km": 15.0,
+              "pace": null,
+              "description": "前3K 4'40，后12K 4'10-4'13",
+              "segment": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};

@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/fueler/index",
+    "pages/plan/index",
+    "pages/race/index",
+    "pages/profile/index",
+    "pages/about/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "跑友备赛助手",
+    "navigationBarBackgroundColor": "#0a0f10",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#090d0e",
+    "backgroundTextStyle": "light"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "用于获取当前位置天气信息"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation"
+  ],
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "custom": true,
+    "color": "#95a39f",
+    "selectedColor": "#c7ee5a",
+    "backgroundColor": "#111716",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/plan/index",
+        "text": "计划"
+      },
+      {
+        "pagePath": "pages/race/index",
+        "text": "赛事"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,3 @@
+module.exports = {
+  amapKey: "YOUR_AMAP_WEB_SERVICE_KEY",
+};

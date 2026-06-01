@@ -1,0 +1,50 @@
+<view class="container">
+  <view class="hero-card hero-accent">
+    <view class="hero-title">关于 {{appName}}</view>
+    <view class="hero-subtitle">科学备赛，稳步PB</view>
+  </view>
+
+  <view class="card panel-card">
+    <view class="section-title">小程序简介</view>
+    <view class="content-text">
+      PB日历是一款面向半马/全马跑者的备赛管理工具，帮助跑者用更清晰的计划、更直观的数据完成训练闭环。
+    </view>
+  </view>
+
+  <view class="card panel-card">
+    <view class="section-title">核心功能</view>
+    <view class="feature-line">1. 训练计划：半马/全马训练安排，按日打卡并跟踪完成进度。</view>
+    <view class="feature-line">2. 赛事日历：筛选赛事、添加目标赛事，查看倒计时。</view>
+    <view class="feature-line">3. 天气建议：基于当前位置获取实时天气与训练提醒。</view>
+    <view class="feature-line">4. 备赛概览：查看当前计划、完成度与目标赛事状态。</view>
+  </view>
+
+  <view class="card panel-card">
+    <view class="section-title">开发者信息</view>
+    <view class="meta-row">
+      <text class="meta-label">开发者</text>
+      <text class="meta-value">{{developer}}</text>
+    </view>
+  </view>
+
+  <view class="card panel-card">
+    <view class="section-title">版本信息</view>
+    <view class="meta-row">
+      <text class="meta-label">当前版本</text>
+      <text class="meta-value">{{version}}</text>
+    </view>
+    <view class="meta-row">
+      <text class="meta-label">更新日期</text>
+      <text class="meta-value">{{releaseDate}}</text>
+    </view>
+  </view>
+
+  <view class="card panel-card">
+    <view class="section-title">使用说明</view>
+    <view class="feature-line">1. 定位权限仅用于天气信息展示。</view>
+    <view class="feature-line">2. 训练建议仅供参考，不替代医疗建议。</view>
+    <view class="feature-line">3. 赛事与训练数据以系统同步结果为准。</view>
+  </view>
+
+  <view class="footer-text">PB日历 · 科学备赛，稳步PB</view>
+</view>

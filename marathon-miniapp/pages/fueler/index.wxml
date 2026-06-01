@@ -1,0 +1,188 @@
+﻿<view class="container {{summary.isRisk ? 'risk-page' : ''}}">
+  <view class="hero-card fueler-hero {{summary.isRisk ? 'hero-risk' : ''}}">
+    <view class="row">
+      <view>
+        <view class="hero-title fueler-hero-title">PB能量舱</view>
+        <view class="hero-subtitle">基于当前参数的糖原推演</view>
+      </view>
+      <view class="status-tag {{summary.bonkKm ? 'status-risk' : 'status-safe'}}">
+        {{summary.bonkKm ? '存在撞墙风险' : '策略稳定'}}
+      </view>
+    </view>
+    <view class="metrics-row">
+      <view class="metric-item">
+        <view class="metric-label">预计完赛</view>
+        <view class="metric-value {{summary.isSub3Edge ? 'metric-warn' : ''}}">{{summary.finishTime}}</view>
+      </view>
+      <view class="metric-item">
+        <view class="metric-label">撞墙点</view>
+        <view class="metric-value">{{summary.bonkKmText}}</view>
+      </view>
+      <view class="metric-item">
+        <view class="metric-label">终点糖原</view>
+        <view class="metric-value">{{summary.endRemainingText}}</view>
+      </view>
+    </view>
+    <view class="sub3-hint" wx:if="{{summary.sub3Hint}}">{{summary.sub3Hint}}</view>
+  </view>
+
+  <view class="sticky-core {{summary.isRisk ? 'sticky-risk' : ''}}">
+    <view class="sticky-item">
+      <text class="s-label">完赛</text>
+      <text class="s-value">{{summary.finishTime}}</text>
+    </view>
+    <view class="sticky-item">
+      <text class="s-label">撞墙</text>
+      <text class="s-value">{{summary.bonkKmText}}</text>
+    </view>
+    <view class="sticky-item">
+      <text class="s-label">终点糖原</text>
+      <text class="s-value">{{summary.endRemainingText}}</text>
+    </view>
+  </view>
+
+  <view class="card">
+    <view class="card-title">糖原曲线（全程）</view>
+    <view id="glyChartWrap" class="chart-wrap">
+      <canvas
+        id="glyChart"
+        canvas-id="glyChart"
+        class="gly-canvas"
+        style="width: 100%; height: 240rpx;"
+        width="{{chartWidth}}"
+        height="{{chartHeight}}"
+      ></canvas>
+    </view>
+    <view class="muted tip">{{chartHint}}</view>
+  </view>
+
+  <view class="card">
+    <view class="card-title">后程放大图（25km - 42.195km）</view>
+    <view id="rearChartWrap" class="chart-wrap rear-chart-wrap">
+      <canvas
+        id="rearChart"
+        canvas-id="rearChart"
+        class="gly-canvas"
+        style="width: 100%; height: 240rpx;"
+        width="{{rearChartWidth}}"
+        height="{{rearChartHeight}}"
+      ></canvas>
+    </view>
+    <view class="muted tip">颜色语义：蓝=安全（＞50g），黄=预警（0~50g），红=撞墙（＜0g）</view>
+  </view>
+
+  <view class="card">
+    <view class="card-title">糖原趋势（关键里程）</view>
+    <view class="heatmap-wrap">
+      <view class="heatmap-track">
+        <view class="heatmap-bonk-zone" wx:if="{{heatmapBonkLeft}}" style="left: {{heatmapBonkLeft}};"></view>
+        <view class="heatmap-row">
+          <view
+            class="heat-cell {{item.isFocus ? 'heat-cell-focus' : ''}}"
+            wx:for="{{heatmapSegments}}"
+            wx:key="km"
+            style="background: {{item.color}};"
+          ></view>
+        </view>
+      </view>
+      <view class="heatmap-markers">
+        <view
+          class="heat-marker {{item.isFocus ? 'heat-marker-focus' : ''}}"
+          wx:for="{{heatmapMarkers}}"
+          wx:key="km"
+          style="left: {{item.left}};"
+        ></view>
+      </view>
+      <view class="heatmap-axis">
+        <view class="heat-tick" wx:for="{{heatmapTicks}}" wx:key="km" style="left: {{item.left}};">
+          {{item.km}}
+        </view>
+      </view>
+      <view class="heatmap-note" wx:if="{{heatmapBonkKm}}">
+        能量真空区：{{heatmapBonkKm}}km - 42km
+      </view>
+    </view>
+    <view class="km-grid km-grid-core">
+      <view class="km-item" wx:for="{{heatmapCore}}" wx:key="km">
+        <view class="km-label">{{item.km}}km</view>
+        <view class="km-value {{item.isBonk ? 'danger' : ''}}">{{item.remainingText}}</view>
+      </view>
+    </view>
+    <view class="muted tip">提示：撞墙一般定义为糖原低于 0g。</view>
+  </view>
+
+  <view class="card">
+    <view class="card-title">补给计划（自动）</view>
+    <scroll-view class="gel-points" scroll-x="true">
+      <view class="gel-row">
+        <view
+          class="gel-tag {{item.km === selectedGelKm ? 'gel-tag-active' : ''}} {{item.limited ? 'gel-tag-limited' : ''}}"
+          wx:for="{{gelTags}}"
+          wx:key="km"
+          data-km="{{item.km}}"
+          bindtap="onTapGel"
+        >
+          补 {{item.km}}km
+          <text wx:if="{{item.limited}}" class="gel-tag-sub">吸收受限</text>
+        </view>
+      </view>
+    </scroll-view>
+    <view class="muted tip">已吸收总量：{{summary.absorbedTotalG}}g</view>
+    <view class="limit-tip" wx:if="{{summary.absorbLimitHint}}">{{summary.absorbLimitHint}}</view>
+  </view>
+
+  <view class="card">
+    <view class="card-title">核心参数</view>
+
+    <view class="control">
+      <view class="row control-head"><text>体重 (kg)</text><text>{{form.weightKg}}</text></view>
+      <slider min="40" max="100" step="1" value="{{form.weightKg}}" data-key="weightKg" bindchange="onSliderChange" />
+      <view class="control-sub">{{paramHints.weight}}</view>
+    </view>
+
+    <view class="control">
+      <view class="row control-head"><text>VDOT</text><text>{{paramHints.vdotValue}}</text></view>
+      <slider min="35" max="75" step="0.1" value="{{form.vdot}}" data-key="vdot" bindchange="onSliderChange" />
+      <view class="control-sub">{{paramHints.vdot}}</view>
+    </view>
+
+    <view class="control">
+      <view class="row control-head"><text>目标配速</text><text>{{summary.finishPace}}</text></view>
+      <slider min="210" max="420" step="1" value="{{form.paceSecPerKm}}" data-key="paceSecPerKm" bindchange="onSliderChange" />
+      <view class="control-sub">{{paramHints.pace}}</view>
+    </view>
+
+    <view class="control">
+      <view class="row control-head"><text>碳水装载 (%)</text><text>{{form.loadingPercent}}</text></view>
+      <slider min="40" max="100" step="1" value="{{form.loadingPercent}}" data-key="loadingPercent" bindchange="onSliderChange" />
+      <view class="control-sub">{{paramHints.loading}}</view>
+    </view>
+
+    <view class="control">
+      <view class="row control-head"><text>能量胶数量</text><text>{{form.gelCount}}</text></view>
+      <slider min="0" max="12" step="1" value="{{form.gelCount}}" data-key="gelCount" bindchange="onSliderChange" />
+      <view class="control-sub">{{paramHints.gelCount}}</view>
+    </view>
+  </view>
+
+  <view class="card">
+    <view class="card-title">高级参数</view>
+    <view class="control">
+      <view class="row control-head"><text>环境温度 (°C)</text><text>{{form.ambientTempC}}</text></view>
+      <slider min="0" max="35" step="1" value="{{form.ambientTempC}}" data-key="ambientTempC" bindchange="onSliderChange" />
+      <view class="control-sub">{{paramHints.ambientTemp}}</view>
+    </view>
+    <view class="control">
+      <view class="row control-head"><text>单支碳水 (g)</text><text>{{form.gelCarbG}}</text></view>
+      <slider min="15" max="45" step="1" value="{{form.gelCarbG}}" data-key="gelCarbG" bindchange="onSliderChange" />
+      <view class="control-sub">{{paramHints.gelCarb}}</view>
+    </view>
+    <view class="control">
+      <view class="row control-head"><text>肠胃吸收上限 (g/h)</text><text>{{form.maxAbsorbPerHour}}</text></view>
+      <slider min="60" max="90" step="5" value="{{form.maxAbsorbPerHour}}" data-key="maxAbsorbPerHour" bindchange="onSliderChange" />
+      <view class="control-sub">{{paramHints.maxAbsorb}}</view>
+    </view>
+  </view>
+
+</view>
+

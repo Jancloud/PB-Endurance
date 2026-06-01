@@ -1,0 +1,15 @@
+App({
+  onLaunch() {
+    if (!wx.cloud) {
+      return;
+    }
+    wx.cloud.init({
+      env: wx.cloud.DYNAMIC_CURRENT_ENV,
+      traceUser: true,
+    });
+  },
+
+  globalData: {
+    version: "1.0.0",
+  },
+});

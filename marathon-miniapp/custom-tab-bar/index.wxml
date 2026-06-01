@@ -1,0 +1,44 @@
+<view class="tabbar-root">
+  <view class="tabbar-shell">
+    <view class="top-glow"></view>
+    <block wx:for="{{list}}" wx:key="pagePath" wx:for-index="idx" wx:for-item="item">
+      <view
+        class="tab-item {{selected === idx ? 'active' : ''}}"
+        data-path="{{item.pagePath}}"
+        bindtap="onTabTap"
+      >
+        <view class="icon-wrap">
+          <view class="icon-badge"></view>
+          <view class="icon icon-home" wx:if="{{item.key === 'home'}}">
+            <view class="home-roof"></view>
+            <view class="home-body"></view>
+            <view class="home-door"></view>
+          </view>
+
+          <view class="icon icon-plan" wx:if="{{item.key === 'plan'}}">
+            <view class="plan-cover"></view>
+            <view class="plan-ring plan-ring-left"></view>
+            <view class="plan-ring plan-ring-right"></view>
+            <view class="plan-line plan-line-1"></view>
+            <view class="plan-line plan-line-2"></view>
+            <view class="plan-line plan-line-3"></view>
+          </view>
+
+          <view class="icon icon-race" wx:if="{{item.key === 'race'}}">
+            <view class="race-flag-pole"></view>
+            <view class="race-flag"></view>
+            <view class="race-flag-cut"></view>
+            <view class="race-finish-dot"></view>
+          </view>
+
+          <view class="icon icon-profile" wx:if="{{item.key === 'profile'}}">
+            <view class="profile-head"></view>
+            <view class="profile-shoulders"></view>
+          </view>
+        </view>
+        <view class="tab-text">{{item.text}}</view>
+        <view class="tab-dot" wx:if="{{selected === idx}}"></view>
+      </view>
+    </block>
+  </view>
+</view>

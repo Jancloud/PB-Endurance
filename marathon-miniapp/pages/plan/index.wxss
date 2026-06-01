@@ -1,0 +1,181 @@
+.panel-card {
+  background: #151b1b;
+}
+
+.plan-tools-card {
+  margin-bottom: 14rpx;
+  border: 2rpx solid rgba(0, 242, 255, 0.22);
+  background: linear-gradient(135deg, rgba(11, 24, 28, 0.96), rgba(14, 20, 24, 0.96));
+}
+
+.tool-kicker {
+  color: #9db4b7;
+  font-size: 22rpx;
+}
+
+.tool-title {
+  margin-top: 4rpx;
+  color: #ffffff;
+  font-size: 32rpx;
+  font-weight: 900;
+}
+
+.tool-sub {
+  margin-top: 6rpx;
+  color: #9fb9bd;
+  font-size: 24rpx;
+}
+
+.tool-arrow {
+  border-radius: 999rpx;
+  padding: 8rpx 16rpx;
+  background: #c7ee5a;
+  color: #111318;
+  font-size: 22rpx;
+  font-weight: 900;
+}
+
+.progress-wrap {
+  margin-top: 16rpx;
+  width: 100%;
+  height: 12rpx;
+  border-radius: 999rpx;
+  background: rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #111318;
+  border-radius: 999rpx;
+}
+
+.setting-grid {
+  display: flex;
+  gap: 12rpx;
+}
+
+.setting-item {
+  flex: 1;
+}
+
+.setting-label {
+  color: #98a7a3;
+  margin-bottom: 8rpx;
+  font-size: 24rpx;
+}
+
+.picker-box {
+  background: #111716;
+  border: 2rpx solid #2a3434;
+  border-radius: 14rpx;
+  padding: 16rpx;
+  color: #f2f6ff;
+}
+
+.safety-tip {
+  margin-top: 14rpx;
+  padding: 14rpx 16rpx;
+  border-radius: 14rpx;
+  border: 2rpx solid rgba(232, 159, 74, 0.45);
+  background: rgba(232, 159, 74, 0.12);
+  color: #f2bc77;
+  font-size: 24rpx;
+  line-height: 1.6;
+}
+
+.taper-head {
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+
+.taper-dialog {
+  padding: 14rpx 16rpx;
+  border-radius: 12rpx;
+  background: rgba(232, 159, 74, 0.12);
+  border: 2rpx solid rgba(232, 159, 74, 0.42);
+  color: #f2c47f;
+  font-size: 24rpx;
+  line-height: 1.6;
+}
+
+.taper-line + .taper-line {
+  margin-top: 8rpx;
+}
+
+.week-card {
+  padding-bottom: 12rpx;
+}
+
+.week-header {
+  padding-bottom: 8rpx;
+}
+
+.week-title {
+  font-size: 32rpx;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.week-tag {
+  font-size: 22rpx;
+  background: #e89f4a;
+  color: #111318;
+  border-radius: 999rpx;
+  padding: 4rpx 12rpx;
+  font-weight: 700;
+}
+
+.fold-text {
+  margin-left: 10rpx;
+  font-size: 24rpx;
+  color: #c7ee5a;
+}
+
+.session-list {
+  margin-top: 12rpx;
+}
+
+.session-item {
+  background: #111716;
+  border: 2rpx solid #2a3434;
+  border-radius: 14rpx;
+  padding: 12rpx;
+  margin-bottom: 10rpx;
+}
+
+.session-title {
+  font-size: 28rpx;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.session-desc {
+  margin-top: 8rpx;
+  color: #b4c2be;
+}
+
+.session-meta {
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  color: #d5dfdc;
+}
+
+.status-done {
+  color: #14210c;
+  background: #bde781;
+  padding: 4rpx 12rpx;
+  border-radius: 999rpx;
+  font-size: 22rpx;
+  font-weight: 700;
+}
+
+.status-todo {
+  color: #111318;
+  background: #e89f4a;
+  padding: 4rpx 12rpx;
+  border-radius: 999rpx;
+  font-size: 22rpx;
+  font-weight: 700;
+}

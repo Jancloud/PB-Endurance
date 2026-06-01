@@ -1,0 +1,597 @@
+.home-page {
+  position: relative;
+  min-height: calc(100vh - 40rpx);
+  padding-top: 10rpx;
+  overflow: hidden;
+}
+
+.home-backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background:
+    linear-gradient(115deg, rgba(199, 238, 90, 0.07) 1px, transparent 1px),
+    linear-gradient(245deg, rgba(232, 159, 74, 0.035) 1px, transparent 1px),
+    radial-gradient(circle at 76% 12%, rgba(199, 238, 90, 0.12), transparent 28%),
+    radial-gradient(circle at 12% 74%, rgba(232, 159, 74, 0.055), transparent 28%);
+  background-size: 150rpx 150rpx, 210rpx 210rpx, 100% 100%, 100% 100%;
+  pointer-events: none;
+}
+
+.weather-summary {
+  margin-bottom: 14rpx;
+  padding: 20rpx 22rpx;
+  background: rgba(13, 20, 20, 0.9);
+  border-color: rgba(58, 76, 74, 0.42);
+  box-shadow: 0 10rpx 28rpx rgba(0, 0, 0, 0.28);
+}
+
+.weather-summary-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12rpx;
+}
+
+.weather-summary-city {
+  color: #ffffff;
+  font-size: 31rpx;
+  font-weight: 900;
+}
+
+.weather-risk-tag {
+  flex-shrink: 0;
+  padding: 6rpx 14rpx;
+  border-radius: 999rpx;
+  color: #c7ee5a;
+  background: rgba(199, 238, 90, 0.12);
+  font-size: 20rpx;
+  font-weight: 800;
+}
+
+.weather-risk-tag-medium {
+  color: #f2bc77;
+  background: rgba(232, 159, 74, 0.14);
+}
+
+.weather-risk-tag-high {
+  color: #ff9a9a;
+  background: rgba(255, 75, 75, 0.15);
+}
+
+.weather-metrics-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12rpx;
+  margin-top: 8rpx;
+  white-space: nowrap;
+}
+
+.weather-icon {
+  align-self: center;
+  color: #ffffff;
+  font-size: 42rpx;
+  line-height: 1;
+}
+
+.weather-summary-temp {
+  color: #ffffff;
+  font-size: 70rpx;
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -3rpx;
+  text-shadow: 0 0 18rpx rgba(199, 238, 90, 0.22);
+}
+
+.weather-humidity,
+.weather-dew-point {
+  color: #b6c4c0;
+  font-size: 24rpx;
+  font-weight: 700;
+}
+
+.weather-drop {
+  margin-right: 8rpx;
+  color: #49bfff;
+  font-size: 18rpx;
+  text-shadow: 0 0 12rpx rgba(73, 191, 255, 0.54);
+}
+
+.weather-summary-tip {
+  margin-top: 12rpx;
+  padding: 12rpx 14rpx;
+  border-left: 6rpx solid #e89f4a;
+  border-radius: 8rpx;
+  background: rgba(232, 159, 74, 0.08);
+  color: #e89f4a;
+  font-size: 25rpx;
+  line-height: 1.45;
+}
+
+.weather-risk-high .weather-summary-tip {
+  border-left-color: #ff7777;
+  background: rgba(255, 75, 75, 0.07);
+  color: #ffb0a8;
+}
+
+.today-hero-card,
+.week-overview-card,
+.race-mini-card {
+  position: relative;
+  overflow: hidden;
+  border-color: rgba(199, 238, 90, 0.34);
+  background: linear-gradient(155deg, rgba(22, 33, 30, 0.96), rgba(12, 18, 18, 0.97));
+  box-shadow: 0 0 0 1rpx rgba(199, 238, 90, 0.08), 0 18rpx 42rpx rgba(0, 0, 0, 0.34);
+}
+
+.today-hero-card::before,
+.week-overview-card::before {
+  content: "";
+  position: absolute;
+  top: -96rpx;
+  right: -72rpx;
+  width: 210rpx;
+  height: 210rpx;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(199, 238, 90, 0.16), rgba(199, 238, 90, 0));
+  pointer-events: none;
+}
+
+.today-hero-card {
+  padding: 24rpx 22rpx 22rpx;
+  margin-bottom: 16rpx;
+}
+
+.today-hero-head,
+.week-overview-head {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14rpx;
+}
+
+.section-eyebrow {
+  color: #9fb1ab;
+  font-size: 23rpx;
+  font-weight: 700;
+  letter-spacing: 1rpx;
+}
+
+.today-title {
+  margin-top: 6rpx;
+  color: #c7ee5a;
+  font-size: 64rpx;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -2rpx;
+  text-shadow: 0 0 24rpx rgba(199, 238, 90, 0.28);
+}
+
+.today-status,
+.week-status-pill {
+  flex-shrink: 0;
+  min-width: 86rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  padding: 0 16rpx;
+  box-sizing: border-box;
+  border-radius: 999rpx;
+  background: rgba(232, 159, 74, 0.16);
+  color: #f0b96d;
+  font-size: 22rpx;
+  font-weight: 900;
+  text-align: center;
+}
+
+.today-status-done {
+  background: rgba(199, 238, 90, 0.15);
+  color: #c7ee5a;
+}
+
+.today-desc {
+  position: relative;
+  z-index: 1;
+  margin-top: 12rpx;
+  color: #dce7e2;
+  font-size: 27rpx;
+  line-height: 1.35;
+}
+
+.today-meta {
+  position: relative;
+  z-index: 1;
+  margin-top: 8rpx;
+  color: #8fa39e;
+  font-size: 24rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hero-progress-row {
+  position: relative;
+  z-index: 1;
+  margin-top: 12rpx;
+  display: flex;
+  align-items: center;
+  gap: 14rpx;
+}
+
+.hero-progress-track {
+  flex: 1;
+  height: 12rpx;
+  border-radius: 999rpx;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.hero-progress-fill {
+  height: 100%;
+  border-radius: 999rpx;
+  background: linear-gradient(90deg, #e89f4a 0%, #c7ee5a 100%);
+  box-shadow: 0 0 16rpx rgba(199, 238, 90, 0.5);
+}
+
+.hero-progress-rate {
+  color: #c7ee5a;
+  font-size: 26rpx;
+  font-weight: 900;
+}
+
+.today-big-metrics {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 22rpx;
+  margin-top: 28rpx;
+}
+
+.today-big-metric {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 8rpx;
+}
+
+.pace-metric {
+  justify-content: flex-end;
+  flex: 1.45;
+}
+
+.today-big-number {
+  color: #c7ee5a;
+  font-size: 76rpx;
+  line-height: 0.95;
+  font-weight: 900;
+  letter-spacing: -3rpx;
+  text-shadow: 0 0 26rpx rgba(199, 238, 90, 0.22);
+}
+
+.pace-number {
+  font-size: 58rpx;
+  letter-spacing: -2rpx;
+}
+
+.today-big-unit {
+  color: #dfffa0;
+  font-size: 28rpx;
+  font-weight: 900;
+}
+
+.today-action-row {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 14rpx;
+  margin-top: 24rpx;
+}
+
+.completed-action-row {
+  gap: 14rpx;
+  justify-content: flex-start;
+}
+
+.completed-action-row .today-secondary-action {
+  margin-left: auto;
+}
+
+.action-btn {
+  margin-top: 0;
+  box-shadow: 0 12rpx 28rpx rgba(199, 238, 90, 0.26);
+}
+
+.today-main-action {
+  flex: 1;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.today-secondary-action {
+  flex-shrink: 0;
+  height: 76rpx;
+  line-height: 76rpx;
+  padding: 0 22rpx;
+  border-radius: 999rpx;
+  border: 2rpx solid rgba(255, 255, 255, 0.12);
+  color: #eef8f4;
+  font-size: 24rpx;
+  font-weight: 800;
+  background: rgba(10, 17, 17, 0.82);
+}
+
+.wide-secondary-action {
+  flex: 1;
+  text-align: center;
+}
+
+.training-done-badge {
+  flex: 1;
+  min-width: 0;
+  height: 76rpx;
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  color: #b9d584;
+  font-size: 26rpx;
+  font-weight: 900;
+}
+
+.training-done-dot {
+  flex-shrink: 0;
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+  background: #c7ee5a;
+  box-shadow: 0 0 16rpx rgba(199, 238, 90, 0.46);
+}
+
+.cancel-checkin-link {
+  flex-shrink: 0;
+  height: 76rpx;
+  line-height: 76rpx;
+  color: #7f8d89;
+  font-size: 22rpx;
+  font-weight: 700;
+  margin-left: 14rpx;
+}
+
+.card-heading {
+  color: #ffffff;
+  font-size: 31rpx;
+  line-height: 1.2;
+  font-weight: 900;
+}
+
+.card-subheading {
+  margin-top: 6rpx;
+  color: #8fa39e;
+  font-size: 23rpx;
+}
+
+.week-overview-card {
+  padding: 22rpx;
+  margin-bottom: 14rpx;
+}
+
+.week-status-pill {
+  min-width: 126rpx;
+  color: #f0b96d;
+}
+
+.week-overview-body {
+  position: relative;
+  z-index: 1;
+  margin-top: 18rpx;
+  display: flex;
+  align-items: flex-end;
+  gap: 14rpx;
+  padding: 18rpx;
+  border-radius: 20rpx;
+  border: 2rpx solid rgba(199, 238, 90, 0.2);
+  background: linear-gradient(90deg, rgba(31, 92, 55, 0.45), rgba(12, 18, 18, 0.62));
+}
+
+.week-main-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 6rpx;
+}
+
+.week-km-number {
+  color: #c7ee5a;
+  font-size: 72rpx;
+  line-height: 0.92;
+  font-weight: 900;
+  letter-spacing: -3rpx;
+}
+
+.week-km-unit {
+  color: #dfffa0;
+  font-size: 25rpx;
+  font-weight: 900;
+}
+
+.week-side-stat {
+  flex: 1;
+  min-width: 0;
+  padding-bottom: 4rpx;
+}
+
+.week-side-line {
+  color: #e8f4ef;
+  font-size: 25rpx;
+  font-weight: 800;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.muted-line {
+  margin-top: 7rpx;
+  color: #9cafaa;
+  font-size: 22rpx;
+  font-weight: 600;
+}
+
+.week-bars {
+  width: 170rpx;
+  height: 106rpx;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 8rpx;
+}
+
+.week-bar-item {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.week-bar {
+  width: 15rpx;
+  border-radius: 999rpx 999rpx 4rpx 4rpx;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.week-bar-run {
+  background: linear-gradient(180deg, #c7ee5a, #e89f4a);
+  box-shadow: 0 0 12rpx rgba(199, 238, 90, 0.28);
+}
+
+.week-bar-done {
+  background: linear-gradient(180deg, #c7ee5a, #e8ff95);
+  box-shadow: 0 0 14rpx rgba(199, 238, 90, 0.4);
+}
+
+.week-bar-rest {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.week-bar-label {
+  margin-top: 6rpx;
+  color: #8fa39e;
+  font-size: 17rpx;
+  line-height: 1;
+}
+
+.race-mini-card {
+  padding: 20rpx 22rpx;
+  margin-bottom: 14rpx;
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(13, 20, 20, 0.9);
+}
+
+.race-mini-layout {
+  width: 100%;
+}
+
+.race-mini-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 18rpx;
+}
+
+.race-mini-bottom-row {
+  margin-top: 8rpx;
+}
+
+.race-mini-subtitle {
+  flex: 1;
+  min-width: 0;
+  margin-top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.race-mini-name {
+  flex: 1;
+  min-width: 0;
+  color: #eef8f4;
+  font-size: 28rpx;
+  font-weight: 900;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.race-days-inline {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 4rpx;
+  white-space: nowrap;
+}
+
+.race-days-number {
+  color: #c7ee5a;
+  font-size: 44rpx;
+  line-height: 0.9;
+  font-weight: 900;
+}
+
+.race-days-label {
+  color: #9cafaa;
+  font-size: 22rpx;
+  font-weight: 800;
+}
+
+.race-mini-action {
+  flex-shrink: 0;
+  color: #c7ee5a;
+  font-size: 22rpx;
+  font-weight: 800;
+}
+
+.taper-reminder-card {
+  border: 2rpx solid rgba(232, 159, 74, 0.4);
+  background: linear-gradient(135deg, rgba(232, 159, 74, 0.15) 0%, rgba(24, 27, 27, 1) 72%);
+}
+
+.taper-reminder-link {
+  color: #f2bc77;
+  font-size: 24rpx;
+}
+
+.taper-reminder-race {
+  margin-top: 8rpx;
+  color: #fff2dd;
+  font-size: 28rpx;
+  font-weight: 800;
+}
+
+.taper-reminder-text {
+  margin-top: 8rpx;
+  color: #f3c98f;
+  font-size: 24rpx;
+  line-height: 1.6;
+}
+
+.empty-text {
+  position: relative;
+  z-index: 1;
+  margin-top: 18rpx;
+  color: #95a29f;
+  font-size: 26rpx;
+  line-height: 1.6;
+}
+
+.weather-source {
+  margin: 2rpx 2rpx 0;
+  font-size: 21rpx;
+  color: #83938f;
+}
