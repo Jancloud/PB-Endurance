@@ -28,8 +28,11 @@ Page({
 
   resetAll() {
     wx.showModal({
-      title: "重置数据",
-      content: "将清空训练计划进度与目标赛事。",
+      title: "确认重置全部数据？",
+      content: "这会清空训练计划进度和目标赛事；不会影响小程序代码或你的微信账号。",
+      confirmText: "确认重置",
+      confirmColor: "#ff4b4b",
+      cancelText: "取消",
       success: (res) => {
         if (res.confirm) {
           clearAllAppData();

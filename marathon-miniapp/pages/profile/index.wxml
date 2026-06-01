@@ -1,48 +1,38 @@
-<view class="container">
-  <view class="hero-card hero-accent">
-    <view class="hero-title">{{completionText}}</view>
-    <view class="hero-subtitle">训练计划完成度 · {{planName}}</view>
-    <view class="metrics-row">
-      <view class="metric-item">
-        <view class="metric-label">已完成天数</view>
-        <view class="metric-value">{{completedDaysText}}</view>
-      </view>
-      <view class="metric-item">
-        <view class="metric-label">目标赛事</view>
-        <view class="metric-value">{{targetRaceCountText}}</view>
-      </view>
+<view class="container profile-page">
+  <view class="profile-hero-card">
+    <view class="profile-kicker">个人备赛档案</view>
+    <view class="profile-title">{{runnerTitle}}</view>
+    <view class="profile-subtitle">{{runnerSubtitle}}</view>
+    <view class="profile-meta">{{profileMetaText}}</view>
+    <view class="profile-progress-track">
+      <view class="profile-progress-fill" style="width: {{completionText}};"></view>
     </view>
   </view>
 
-  <view class="card panel-card">
-    <view class="section-title">备赛概览</view>
-    <view class="stats-grid">
-      <view class="stats-item">
-        <view class="stats-label">当前计划</view>
-        <view class="stats-value">{{planName}}</view>
+  <view class="card settings-card">
+    <view class="section-title">设置与支持</view>
+    <view class="settings-list">
+      <view class="settings-item" bindtap="goToAbout">
+        <view>
+          <view class="settings-title">关于 PB日历</view>
+          <view class="settings-desc">产品说明、功能边界与使用建议</view>
+        </view>
+        <view class="settings-arrow">›</view>
       </view>
-      <view class="stats-item">
-        <view class="stats-label">开训日期</view>
-        <view class="stats-value">{{planStartDate}}</view>
+      <view class="settings-item settings-item-disabled">
+        <view>
+          <view class="settings-title">数据备份与恢复</view>
+          <view class="settings-desc">暂未开放</view>
+        </view>
+        <view class="settings-tag">规划中</view>
       </view>
-      <view class="stats-item">
-        <view class="stats-label">训练完成度</view>
-        <view class="stats-value">{{completionText}}</view>
-      </view>
-      <view class="stats-item">
-        <view class="stats-label">目标赛事</view>
-        <view class="stats-value">{{targetRaceCountText}}</view>
+      <view class="settings-item danger-settings-item" bindtap="resetAll">
+        <view>
+          <view class="settings-title danger-text">重置全部数据</view>
+          <view class="settings-desc">清空训练进度与目标赛事</view>
+        </view>
+        <view class="settings-arrow danger-text">›</view>
       </view>
     </view>
-  </view>
-
-  <view class="card panel-card">
-    <view class="section-title">关于</view>
-    <button class="btn-secondary action-btn" bindtap="goToAbout">关于PB日历</button>
-  </view>
-
-  <view class="card panel-card">
-    <view class="section-title">数据管理</view>
-    <button class="btn-danger action-btn" bindtap="resetAll">重置全部数据</button>
   </view>
 </view>

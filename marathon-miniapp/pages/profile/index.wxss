@@ -1,41 +1,112 @@
-.panel-card {
+.profile-page {
+  padding-top: 10rpx;
+}
+
+.profile-hero-card {
+  margin-bottom: 16rpx;
+  padding: 26rpx 24rpx;
+  border-radius: 26rpx;
+  background: linear-gradient(135deg, #c7ee5a 0%, #b4e944 100%);
+  color: #111318;
+  box-shadow: 0 14rpx 34rpx rgba(199, 238, 90, 0.22);
+}
+
+.profile-kicker {
+  color: rgba(17, 19, 24, 0.68);
+  font-size: 23rpx;
+  font-weight: 800;
+}
+
+.profile-title {
+  margin-top: 8rpx;
+  color: #111318;
+  font-size: 46rpx;
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.profile-subtitle {
+  margin-top: 12rpx;
+  color: rgba(17, 19, 24, 0.82);
+  font-size: 28rpx;
+  font-weight: 900;
+}
+
+.profile-meta {
+  margin-top: 8rpx;
+  color: rgba(17, 19, 24, 0.7);
+  font-size: 24rpx;
+  font-weight: 700;
+}
+
+.profile-progress-track {
+  margin-top: 18rpx;
+  height: 12rpx;
+  border-radius: 999rpx;
+  background: rgba(17, 19, 24, 0.14);
+  overflow: hidden;
+}
+
+.profile-progress-fill {
+  height: 100%;
+  border-radius: 999rpx;
+  background: #111318;
+}
+
+.settings-card {
   background: #151b1b;
 }
 
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10rpx;
+.settings-list {
+  margin-top: 8rpx;
 }
 
-.stats-item {
-  background: #111716;
-  border: 2rpx solid #2a3434;
-  border-radius: 14rpx;
-  padding: 12rpx;
+.settings-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16rpx;
+  padding: 20rpx 0;
+  border-bottom: 2rpx solid rgba(255, 255, 255, 0.06);
 }
 
-.stats-label {
-  color: #93a6a2;
-  font-size: 22rpx;
+.settings-item:last-child {
+  border-bottom: none;
 }
 
-.stats-value {
-  margin-top: 6rpx;
-  color: #c7ee5a;
+.settings-title {
+  color: #f3f6ff;
   font-size: 28rpx;
-  font-weight: 800;
-  word-break: break-all;
+  font-weight: 900;
 }
 
-.action-btn {
-  margin-top: 12rpx;
+.settings-desc {
+  margin-top: 6rpx;
+  color: #8fa19c;
+  font-size: 23rpx;
 }
 
-.btn-danger {
-  background: #ff4b4b;
-  color: #ffffff;
-  border: none;
+.settings-arrow {
+  flex-shrink: 0;
+  color: #c7ee5a;
+  font-size: 34rpx;
+  font-weight: 900;
+}
+
+.settings-tag {
+  flex-shrink: 0;
+  padding: 6rpx 14rpx;
   border-radius: 999rpx;
-  font-weight: 700;
+  background: rgba(255, 255, 255, 0.06);
+  color: #8fa19c;
+  font-size: 21rpx;
+  font-weight: 800;
+}
+
+.settings-item-disabled {
+  opacity: 0.72;
+}
+
+.danger-text {
+  color: #ff7777;
 }
