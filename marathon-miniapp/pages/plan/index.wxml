@@ -1,4 +1,4 @@
-<view class="container">
+<view class="container plan-page">
   <view class="card plan-tools-card" bindtap="goToFueler">
     <view class="row">
       <view>
@@ -10,21 +10,35 @@
     </view>
   </view>
 
-  <view class="hero-card hero-accent">
-    <view class="hero-title">{{activeTemplateName}}</view>
-    <view class="hero-subtitle">起始日期：{{startDate}}</view>
-    <view class="metrics-row">
-      <view class="metric-item">
+  <view class="plan-hero-card">
+    <view class="plan-hero-head">
+      <view>
+        <view class="hero-title">{{activeTemplateName}}</view>
+        <view class="hero-subtitle">起始日期：{{startDate}}</view>
+      </view>
+      <view class="hero-percent">{{completionPercentText}}</view>
+    </view>
+    <view class="plan-metrics-row">
+      <view class="plan-metric-item">
         <view class="metric-label">周期</view>
-        <view class="metric-value">{{weekCountText}}</view>
+        <view class="metric-value-line">
+          <text class="metric-number">{{weekCountNumber}}</text>
+          <text class="metric-unit">{{weekCountUnit}}</text>
+        </view>
       </view>
-      <view class="metric-item">
+      <view class="plan-metric-item">
         <view class="metric-label">已完成</view>
-        <view class="metric-value">{{doneCountText}}</view>
+        <view class="metric-value-line">
+          <text class="metric-number">{{doneCountNumber}}</text>
+          <text class="metric-unit">{{doneCountUnit}}</text>
+        </view>
       </view>
-      <view class="metric-item">
+      <view class="plan-metric-item">
         <view class="metric-label">总公里</view>
-        <view class="metric-value">{{totalDistanceText}}</view>
+        <view class="metric-value-line">
+          <text class="metric-number">{{totalDistanceNumber}}</text>
+          <text class="metric-unit">{{totalDistanceUnit}}</text>
+        </view>
       </view>
     </view>
     <view class="progress-wrap">
@@ -48,42 +62,41 @@
         </picker>
       </view>
     </view>
-    <view class="safety-tip">
-      温馨提示：半马是“耐力基础上拼速度”，全马是“海量有氧底盘上拼续航”。全马负荷较高，建议具备1年以上规律跑步基础，且近3个月月跑量稳定在150km及以上后再参赛。
-    </view>
+    <view class="safety-link" bindtap="showSafetyGuide">查看选课与参赛安全建议 ›</view>
   </view>
 
   <view class="card panel-card">
     <view class="row taper-head" bindtap="toggleTaperGuide">
-      <view class="section-title">赛前减量指南</view>
+      <view>
+        <view class="section-title">赛前减量指南</view>
+      </view>
       <view class="fold-text">{{taperGuideVisible ? "收起" : "展开"}}</view>
     </view>
     <block wx:if="{{taperGuideVisible}}">
       <view class="taper-dialog">
-        <view class="taper-line">1、核心九字原则：减总量、保强度、保频率。总跑量降至日常40%-60%（缩短长距离与单次时长）；强度课保留配速、缩短组数/距离；维持原有跑步频率，保留肌肉记忆与节奏。</view>
-        <view class="taper-line">2、减量周期划分：</view>
-        <view class="taper-line">半马：赛前7-10天启动，侧重保留半马配速体感。</view>
-        <view class="taper-line">全马常规：赛前14天启动；大跑量/深疲劳跑者：赛前21天启动，彻底释放深层疲劳。</view>
-        <view class="taper-line">3、关键提醒：减量不断崖、不躺平，以腿轻、精神好为标准，宁少勿多，保障赛前最佳状态。</view>
+        <view class="taper-line">1. 核心原则：减总量、保强度、保频率。总跑量降至日常 40%-60%，但保留短距离配速刺激。</view>
+        <view class="taper-line">2. 周期建议：半马赛前 7-10 天启动；全马常规赛前 14 天启动，深度疲劳跑者可提前至 21 天。</view>
+        <view class="taper-line">3. 关键提醒：减量不是躺平，以腿轻、精神好为标准，宁少勿多，保障赛前最佳状态。</view>
       </view>
     </block>
   </view>
 
-  <view class="card panel-card week-card" wx:for="{{weeks}}" wx:key="week" wx:for-item="weekItem">
+  <view class="card panel-card week-card {{weekItem.isCurrentWeek ? 'week-card-current' : ''}}" wx:for="{{weeks}}" wx:key="week" wx:for-item="weekItem">
     <view class="row week-header" data-week="{{weekItem.week}}" bindtap="toggleWeek">
       <view>
         <view class="week-title">第{{weekItem.week}}周</view>
-        <view class="muted">{{weekItem.phase || "训练期"}} · 周里程 {{weekItem.weekly_km}} km</view>
+        <view class="week-subtitle">{{weekItem.phase || "训练周期"}} · 周里程 {{weekItem.weekly_km}} km</view>
       </view>
       <view class="row">
-        <text wx:if="{{weekItem.is_deload_week}}" class="week-tag">减量周</text>
+        <text wx:if="{{weekItem.isCurrentWeek}}" class="week-tag-current">当前周</text>
+        <text wx:elif="{{weekItem.is_deload_week}}" class="week-tag">减量周</text>
         <text class="fold-text">{{activeWeek === weekItem.week ? "收起" : "展开"}}</text>
       </view>
     </view>
 
     <view wx:if="{{activeWeek === weekItem.week}}" class="session-list">
       <view
-        class="session-item"
+        class="session-item {{session.sessionClass}}"
         wx:for="{{weekItem.sessions}}"
         wx:key="day_index"
         wx:for-item="session"
@@ -91,14 +104,17 @@
         data-dayindex="{{session.day_index}}"
         bindtap="toggleSession"
       >
-        <view class="row">
-          <view class="session-title">{{session.day_label}} · {{session.workout_type || "恢复训练"}}</view>
-          <view class="{{session.completed ? 'status-done' : 'status-todo'}}">{{session.completed ? "已完成" : "待完成"}}</view>
-        </view>
-        <view class="session-desc">{{session.description || session.segment || "按计划执行"}}</view>
-        <view class="session-meta">
-          <text>{{session.distanceText}}</text>
-          <text>{{session.paceText}}</text>
+        <view class="session-main-row">
+          <view class="session-day">{{session.day_label}}</view>
+          <view class="session-body">
+            <view class="session-title">{{session.workout_type || "恢复训练"}}</view>
+            <view class="session-desc">{{session.description || session.segment || "按计划执行"}}</view>
+            <view class="session-meta">
+              <text>{{session.distanceText}}</text>
+              <text>{{session.paceText}}</text>
+            </view>
+          </view>
+          <view class="{{session.statusClass}}">{{session.statusText}}</view>
         </view>
       </view>
     </view>

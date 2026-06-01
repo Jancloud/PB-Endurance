@@ -1,32 +1,39 @@
+.plan-page {
+  padding-top: 10rpx;
+}
+
 .panel-card {
   background: #151b1b;
 }
 
 .plan-tools-card {
   margin-bottom: 14rpx;
-  border: 2rpx solid rgba(0, 242, 255, 0.22);
-  background: linear-gradient(135deg, rgba(11, 24, 28, 0.96), rgba(14, 20, 24, 0.96));
+  padding: 18rpx 20rpx;
+  border: 2rpx solid rgba(199, 238, 90, 0.2);
+  background: rgba(13, 20, 20, 0.9);
+  box-shadow: none;
 }
 
 .tool-kicker {
-  color: #9db4b7;
-  font-size: 22rpx;
+  color: #83938f;
+  font-size: 21rpx;
 }
 
 .tool-title {
   margin-top: 4rpx;
   color: #ffffff;
-  font-size: 32rpx;
+  font-size: 30rpx;
   font-weight: 900;
 }
 
 .tool-sub {
-  margin-top: 6rpx;
-  color: #9fb9bd;
-  font-size: 24rpx;
+  margin-top: 5rpx;
+  color: #9dafaa;
+  font-size: 23rpx;
 }
 
 .tool-arrow {
+  flex-shrink: 0;
   border-radius: 999rpx;
   padding: 8rpx 16rpx;
   background: #c7ee5a;
@@ -35,12 +42,90 @@
   font-weight: 900;
 }
 
+.plan-hero-card {
+  margin-bottom: 16rpx;
+  padding: 24rpx;
+  border-radius: 26rpx;
+  background: linear-gradient(135deg, #c7ee5a 0%, #b4e944 100%);
+  color: #111318;
+  box-shadow: 0 14rpx 34rpx rgba(199, 238, 90, 0.22);
+}
+
+.plan-hero-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16rpx;
+}
+
+.hero-title {
+  color: #111318;
+  font-size: 46rpx;
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.hero-subtitle {
+  margin-top: 8rpx;
+  color: rgba(17, 19, 24, 0.72);
+  font-size: 24rpx;
+  font-weight: 700;
+}
+
+.hero-percent {
+  flex-shrink: 0;
+  color: #111318;
+  font-size: 32rpx;
+  font-weight: 900;
+}
+
+.plan-metrics-row {
+  display: flex;
+  gap: 10rpx;
+  margin-top: 18rpx;
+}
+
+.plan-metric-item {
+  flex: 1;
+  border-radius: 16rpx;
+  padding: 13rpx 12rpx;
+  background: rgba(17, 19, 24, 0.08);
+  border: 2rpx solid rgba(17, 19, 24, 0.08);
+}
+
+.metric-label {
+  color: rgba(17, 19, 24, 0.62);
+  font-size: 21rpx;
+  font-weight: 800;
+}
+
+.metric-value-line {
+  margin-top: 3rpx;
+  display: flex;
+  align-items: baseline;
+  gap: 4rpx;
+}
+
+.metric-number {
+  color: #111318;
+  font-size: 42rpx;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -1rpx;
+}
+
+.metric-unit {
+  color: rgba(17, 19, 24, 0.78);
+  font-size: 21rpx;
+  font-weight: 900;
+}
+
 .progress-wrap {
   margin-top: 16rpx;
   width: 100%;
   height: 12rpx;
   border-radius: 999rpx;
-  background: rgba(0, 0, 0, 0.18);
+  background: rgba(17, 19, 24, 0.14);
   overflow: hidden;
 }
 
@@ -73,27 +158,29 @@
   color: #f2f6ff;
 }
 
-.safety-tip {
+.safety-link {
   margin-top: 14rpx;
-  padding: 14rpx 16rpx;
-  border-radius: 14rpx;
-  border: 2rpx solid rgba(232, 159, 74, 0.45);
-  background: rgba(232, 159, 74, 0.12);
-  color: #f2bc77;
+  color: #e89f4a;
   font-size: 24rpx;
-  line-height: 1.6;
+  font-weight: 800;
 }
 
 .taper-head {
   align-items: center;
-  margin-bottom: 10rpx;
+}
+
+.taper-summary {
+  margin-top: 4rpx;
+  color: #8fa19c;
+  font-size: 23rpx;
 }
 
 .taper-dialog {
+  margin-top: 12rpx;
   padding: 14rpx 16rpx;
+  border-left: 6rpx solid #e89f4a;
   border-radius: 12rpx;
-  background: rgba(232, 159, 74, 0.12);
-  border: 2rpx solid rgba(232, 159, 74, 0.42);
+  background: rgba(232, 159, 74, 0.08);
   color: #f2c47f;
   font-size: 24rpx;
   line-height: 1.6;
@@ -105,6 +192,11 @@
 
 .week-card {
   padding-bottom: 12rpx;
+  background: #121918;
+}
+
+.week-card-current {
+  border-color: rgba(199, 238, 90, 0.28);
 }
 
 .week-header {
@@ -113,23 +205,39 @@
 
 .week-title {
   font-size: 32rpx;
-  font-weight: 800;
+  font-weight: 900;
   color: #ffffff;
 }
 
-.week-tag {
-  font-size: 22rpx;
-  background: #e89f4a;
-  color: #111318;
+.week-subtitle {
+  margin-top: 4rpx;
+  color: #8fa19c;
+  font-size: 23rpx;
+}
+
+.week-tag,
+.week-tag-current {
+  font-size: 21rpx;
   border-radius: 999rpx;
   padding: 4rpx 12rpx;
-  font-weight: 700;
+  font-weight: 800;
+}
+
+.week-tag {
+  background: rgba(232, 159, 74, 0.16);
+  color: #f0b96d;
+}
+
+.week-tag-current {
+  background: rgba(199, 238, 90, 0.15);
+  color: #c7ee5a;
 }
 
 .fold-text {
   margin-left: 10rpx;
   font-size: 24rpx;
   color: #c7ee5a;
+  font-weight: 800;
 }
 
 .session-list {
@@ -139,43 +247,95 @@
 .session-item {
   background: #111716;
   border: 2rpx solid #2a3434;
-  border-radius: 14rpx;
-  padding: 12rpx;
+  border-radius: 16rpx;
+  padding: 14rpx;
   margin-bottom: 10rpx;
+}
+
+.session-main-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 14rpx;
+}
+
+.session-day {
+  flex-shrink: 0;
+  min-width: 74rpx;
+  color: #ffffff;
+  font-size: 25rpx;
+  font-weight: 900;
+}
+
+.session-body {
+  flex: 1;
+  min-width: 0;
 }
 
 .session-title {
   font-size: 28rpx;
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .session-desc {
-  margin-top: 8rpx;
+  margin-top: 7rpx;
   color: #b4c2be;
+  font-size: 24rpx;
+  line-height: 1.35;
 }
 
 .session-meta {
   margin-top: 10rpx;
   display: flex;
   justify-content: space-between;
+  gap: 12rpx;
   color: #d5dfdc;
+  font-size: 24rpx;
+}
+
+.session-item-today {
+  border-color: rgba(199, 238, 90, 0.72);
+  box-shadow: 0 0 0 1rpx rgba(199, 238, 90, 0.12), 0 0 24rpx rgba(199, 238, 90, 0.08);
+}
+
+.session-item-done {
+  background: rgba(17, 23, 22, 0.62);
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+.session-item-done .session-day,
+.session-item-done .session-title,
+.session-item-done .session-desc,
+.session-item-done .session-meta {
+  color: rgba(190, 204, 199, 0.52);
+}
+
+.status-done,
+.status-todo,
+.status-today {
+  flex-shrink: 0;
+  min-width: 42rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+  padding: 0 10rpx;
+  border-radius: 999rpx;
+  text-align: center;
+  font-size: 21rpx;
+  font-weight: 900;
 }
 
 .status-done {
-  color: #14210c;
-  background: #bde781;
-  padding: 4rpx 12rpx;
-  border-radius: 999rpx;
-  font-size: 22rpx;
-  font-weight: 700;
+  color: #9fbf79;
+  background: rgba(199, 238, 90, 0.08);
 }
 
 .status-todo {
+  color: #8fa19c;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.status-today {
   color: #111318;
-  background: #e89f4a;
-  padding: 4rpx 12rpx;
-  border-radius: 999rpx;
-  font-size: 22rpx;
-  font-weight: 700;
+  background: #c7ee5a;
+  box-shadow: 0 0 18rpx rgba(199, 238, 90, 0.3);
 }

@@ -1,5 +1,5 @@
-﻿const planService = require("../services/plan");
-const { formatDate } = require("./date");
+const planService = require("../services/plan");
+const { daysBetween, formatDate } = require("./date");
 
 function parsePositiveNumber(value) {
   const num = Number(value);
@@ -12,6 +12,29 @@ function parsePositiveNumber(value) {
 function formatKm(value) {
   const rounded = Number(value.toFixed(1));
   return `${rounded}km`;
+}
+
+function splitKm(value) {
+  const rounded = Number(value.toFixed(1));
+  return {
+    number: `${rounded}`,
+    unit: "km",
+  };
+}
+
+function resolveCurrentPosition(startDate, weekCount) {
+  const diff = daysBetween(startDate, formatDate(new Date()));
+  if (diff < 0) {
+    return {
+      week: 1,
+      dayIndex: 1,
+    };
+  }
+  const week = Math.floor(diff / 7) + 1;
+  return {
+    week: Math.max(1, Math.min(weekCount || 1, week)),
+    dayIndex: (diff % 7) + 1,
+  };
 }
 
 function sumWeekDistanceKm(week) {
@@ -33,10 +56,33 @@ function buildPlanViewModel(planService, activeWeekOverride) {
   const selectedTemplate = templates[templateIndex];
   const startDate = (config && config.startDate) || formatDate(new Date());
   const weeks = selectedTemplate ? planService.getWeeksWithStatus(selectedTemplate.name, startDate) : [];
+  const currentPosition = resolveCurrentPosition(startDate, weeks.length);
   const displayWeeks = weeks.map((week) => ({
     ...week,
+    isCurrentWeek: Number(week.week) === Number(currentPosition.week),
     sessions: (week.sessions || []).map((session) => ({
       ...session,
+      isToday:
+        Number(week.week) === Number(currentPosition.week) &&
+        Number(session.day_index) === Number(currentPosition.dayIndex),
+      sessionClass: session.completed
+        ? "session-item-done"
+        : Number(week.week) === Number(currentPosition.week) &&
+          Number(session.day_index) === Number(currentPosition.dayIndex)
+        ? "session-item-today"
+        : "",
+      statusText: session.completed
+        ? "✓"
+        : Number(week.week) === Number(currentPosition.week) &&
+          Number(session.day_index) === Number(currentPosition.dayIndex)
+        ? "今日"
+        : "待",
+      statusClass: session.completed
+        ? "status-done"
+        : Number(week.week) === Number(currentPosition.week) &&
+          Number(session.day_index) === Number(currentPosition.dayIndex)
+        ? "status-today"
+        : "status-todo",
       distanceText:
         session.distance_km === undefined || session.distance_km === null ? "无需里程" : `${session.distance_km} km`,
       paceText: session.pace || "--",
@@ -44,7 +90,11 @@ function buildPlanViewModel(planService, activeWeekOverride) {
   }));
   const completion = selectedTemplate ? planService.getCompletionStats(selectedTemplate.name, startDate) : null;
   const totalDistanceKm = displayWeeks.reduce((sum, week) => sum + sumWeekDistanceKm(week), 0);
+  const totalDistance = splitKm(totalDistanceKm);
   const completionPercent = completion ? completion.percent : 0;
+  const completionPercentText = `${completionPercent}%`;
+  const activeWeek =
+    activeWeekOverride !== undefined ? activeWeekOverride : ((displayWeeks[currentPosition.week - 1] && currentPosition.week) || 1);
 
   return {
     templates,
@@ -54,9 +104,16 @@ function buildPlanViewModel(planService, activeWeekOverride) {
     minStartDate: formatDate(new Date()),
     weeks: displayWeeks,
     completion,
-    activeWeek: activeWeekOverride !== undefined ? activeWeekOverride : ((displayWeeks[0] && displayWeeks[0].week) || 1),
+    activeWeek,
     completionBarWidth: `${completionPercent}%`,
+    completionPercentText,
     activeTemplateName: selectedTemplate ? selectedTemplate.name : "训练计划",
+    weekCountNumber: `${displayWeeks.length}`,
+    weekCountUnit: "周",
+    doneCountNumber: `${completion ? completion.completed : 0}`,
+    doneCountUnit: "次",
+    totalDistanceNumber: totalDistance.number,
+    totalDistanceUnit: totalDistance.unit,
     weekCountText: `${displayWeeks.length}周`,
     doneCountText: `${completion ? completion.completed : 0}次`,
     totalDistanceText: formatKm(totalDistanceKm),
