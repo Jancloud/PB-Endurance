@@ -1,4 +1,4 @@
-﻿function pad(value) {
+function pad(value) {
   return String(value).padStart(2, "0");
 }
 
@@ -14,6 +14,14 @@ function parseDate(dateStr) {
     return null;
   }
   return new Date(year, month - 1, day);
+}
+
+function formatMonthDay(dateStr) {
+  const date = parseDate(dateStr);
+  if (!date) {
+    return "";
+  }
+  return `${date.getMonth() + 1}月${date.getDate()}日`;
 }
 
 function monthKey(dateStr) {
@@ -107,6 +115,14 @@ function keywordMatched(race, keyword) {
   return haystack.includes(keyword.toLowerCase());
 }
 
+function normalizeDisplayIntro(intro) {
+  const text = String(intro || "").trim();
+  if (!text || text === "官方信息待补充。" || text === "官方信息待补充") {
+    return "";
+  }
+  return text;
+}
+
 function findIndex(options, value) {
   const index = (options || []).findIndex((item) => item === value);
   return index >= 0 ? index : 0;
@@ -127,6 +143,35 @@ function withRaceSelection(races, targetIds) {
   return (races || []).map((item) => ({
     ...item,
     isTarget: !!selectedMap[item.id],
+    displayIntro: normalizeDisplayIntro(item.intro),
+    listCountdownText: formatListCountdown(item),
+    actionText: selectedMap[item.id] ? "已关注 ✓" : "设为目标",
+    actionClass: selectedMap[item.id] ? "race-action-btn race-action-selected" : "race-action-btn",
+    compactMetaText: [formatMonthDay(item.date) || item.displayDate, item.city, item.distance].filter(Boolean).join(" · "),
+  }));
+}
+
+function formatListCountdown(item) {
+  if (!item || !item.countdown || item.countdown.isUnknown) {
+    return "待定";
+  }
+  if (item.countdown.isOver) {
+    return "已结束";
+  }
+  const days = Number(item.countdownDays);
+  if (!Number.isFinite(days)) {
+    return "待定";
+  }
+  return days <= 0 ? "今日开赛" : `${days}天后`;
+}
+
+function buildTargetRaceCards(targetRaces) {
+  return (targetRaces || []).map((item) => ({
+    ...item,
+    displayIntro: normalizeDisplayIntro(item.intro),
+    compactMetaText: [formatMonthDay(item.date) || item.displayDate, item.city, item.distance].filter(Boolean).join(" · "),
+    compactDaysText:
+      item.countdown && !item.countdown.isUnknown && !item.countdown.isOver ? `${item.countdownDays}天` : "待定",
   }));
 }
 
@@ -148,7 +193,7 @@ function resolveActiveMonth(months, preferredMonth) {
 
 function buildRaceViewModel(raceService, data) {
   const races = raceService.listRaces();
-  const targetRaces = raceService.listTargetRaces();
+  const targetRaces = buildTargetRaceCards(raceService.listTargetRaces());
   const targetIds = raceService.getTargetRaceIds();
   const options = raceService.listFilterOptions(races);
 

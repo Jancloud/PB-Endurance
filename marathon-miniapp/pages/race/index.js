@@ -1,5 +1,5 @@
 const { syncTabBarSelected } = require("../../utils/tabbar");
-﻿const raceService = require("../../services/race");
+const raceService = require("../../services/race");
 const { buildRaceViewModel } = require("../../utils/race_view");
 
 Page({
@@ -17,6 +17,7 @@ Page({
     filteredRaces: [],
     calendarCells: [],
     showCalendar: false,
+    filtersExpanded: false,
     weekLabels: ["一", "二", "三", "四", "五", "六", "日"],
 
     keyword: "",
@@ -134,6 +135,12 @@ Page({
       },
       () => this.loadData()
     );
+  },
+
+  toggleFilters() {
+    this.setData({
+      filtersExpanded: !this.data.filtersExpanded,
+    });
   },
 
   onMonthTap(event) {

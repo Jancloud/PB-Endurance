@@ -2,12 +2,20 @@
   margin-bottom: 16rpx;
 }
 
+.target-scroll-row {
+  display: inline-flex;
+  gap: 12rpx;
+  min-width: 100%;
+}
+
 .target-race-card {
   position: relative;
   overflow: hidden;
   border-radius: 24rpx;
+  box-sizing: border-box;
+  width: calc(100vw - 120rpx);
+  min-height: 136rpx;
   padding: 18rpx 20rpx;
-  margin-bottom: 10rpx;
   background: linear-gradient(135deg, #b8e24d 0%, #b2dd46 58%, #aed941 100%);
   border: 2rpx solid #a2cd39;
   box-shadow: 0 14rpx 28rpx rgba(111, 142, 32, 0.28);
@@ -35,31 +43,57 @@
   background: rgba(255, 255, 255, 0.08);
 }
 
-.target-head {
+.target-card-top,
+.target-card-bottom {
   position: relative;
   z-index: 1;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14rpx;
 }
 
 .target-race-name {
+  flex: 1;
+  min-width: 0;
   color: #172108;
-  font-size: 40rpx;
-  font-weight: 800;
+  font-size: 34rpx;
+  font-weight: 900;
   text-shadow: 0 2rpx 8rpx rgba(93, 121, 27, 0.12);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.target-days {
+  flex-shrink: 0;
+  color: #172108;
+  font-size: 42rpx;
+  line-height: 1;
+  font-weight: 900;
 }
 
 .target-race-meta {
-  margin-top: 4rpx;
+  flex: 1;
+  min-width: 0;
+  margin-top: 12rpx;
   color: #314419;
-  font-size: 26rpx;
+  font-size: 24rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .target-remove {
-  width: 56rpx;
-  height: 56rpx;
-  line-height: 56rpx;
+  flex-shrink: 0;
+  margin-top: 10rpx;
+  height: 42rpx;
+  line-height: 42rpx;
   text-align: center;
   border-radius: 999rpx;
-  font-size: 42rpx;
+  padding: 0 16rpx;
+  font-size: 21rpx;
+  font-weight: 900;
   color: #2c3c15;
   background: rgba(129, 166, 45, 0.32);
   border: 2rpx solid rgba(98, 126, 29, 0.26);
@@ -146,13 +180,29 @@
   margin-bottom: 12rpx;
 }
 
+.filter-actions {
+  display: flex;
+  gap: 10rpx;
+}
+
 .reset-btn {
   height: 58rpx;
   line-height: 58rpx;
   font-size: 22rpx;
   padding: 0 18rpx;
-  width: 120rpx;
+  min-width: 104rpx;
   margin: 0;
+}
+
+.filter-toggle-btn {
+  height: 58rpx;
+  line-height: 58rpx;
+  font-size: 22rpx;
+  padding: 0 18rpx;
+  min-width: 104rpx;
+  margin: 0;
+  background: #c7ee5a;
+  color: #111318;
 }
 
 .search-input {
@@ -192,39 +242,6 @@
   color: #f3f6ff;
 }
 
-.reminder-card {
-  border-color: #3a3121;
-  background: linear-gradient(180deg, rgba(232, 159, 74, 0.14) 0%, rgba(21, 27, 27, 1) 48%);
-}
-
-.reminder-title {
-  font-size: 28rpx;
-  font-weight: 800;
-  color: #f7c98c;
-  margin-bottom: 8rpx;
-}
-
-.reminder-line {
-  color: #cfd9d6;
-  font-size: 24rpx;
-  margin-top: 4rpx;
-}
-
-.warn-value {
-  color: #f5bf76;
-  font-weight: 800;
-}
-
-.danger-value {
-  color: #ff8b7f;
-  font-weight: 800;
-}
-
-.ok-value {
-  color: #c7ee5a;
-  font-weight: 800;
-}
-
 .month-tabs {
   padding: 10rpx 12rpx;
 }
@@ -254,51 +271,76 @@
 }
 
 .calendar-card {
-  padding: 16rpx;
+  padding: 14rpx 16rpx 16rpx;
 }
 
 .week-head {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  margin-bottom: 10rpx;
+  margin-bottom: 8rpx;
   color: #97a8a4;
   text-align: center;
+  font-size: 22rpx;
 }
 
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 10rpx;
+  gap: 8rpx;
 }
 
 .day-cell {
-  height: 82rpx;
-  border-radius: 999rpx;
-  background: #273131;
+  position: relative;
+  height: 58rpx;
+  border-radius: 14rpx;
+  background: rgba(39, 49, 49, 0.54);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #cfd9d6;
 }
 
 .day-cell.empty {
-  opacity: 0.25;
+  opacity: 0.12;
 }
 
 .day-cell.active {
-  background: #c7ee5a;
-  color: #111318;
+  background: rgba(199, 238, 90, 0.12);
+  color: #c7ee5a;
   font-weight: 800;
+  border: 2rpx solid rgba(199, 238, 90, 0.22);
 }
 
 .day-number {
   font-size: 24rpx;
 }
 
+.day-dot {
+  position: absolute;
+  left: 50%;
+  bottom: 8rpx;
+  width: 8rpx;
+  height: 8rpx;
+  margin-left: -4rpx;
+  border-radius: 50%;
+  background: #c7ee5a;
+  box-shadow: 0 0 10rpx rgba(199, 238, 90, 0.45);
+}
+
 .day-count {
-  font-size: 18rpx;
-  margin-top: 2rpx;
+  position: absolute;
+  top: 4rpx;
+  right: 5rpx;
+  min-width: 24rpx;
+  height: 24rpx;
+  line-height: 24rpx;
+  padding: 0 4rpx;
+  border-radius: 999rpx;
+  background: #c7ee5a;
+  color: #111318;
+  font-size: 17rpx;
+  font-weight: 900;
+  text-align: center;
 }
 
 .source-line {
@@ -328,7 +370,7 @@
   background: #111716;
   border: 2rpx solid #2a3434;
   border-radius: 16rpx;
-  padding: 14rpx;
+  padding: 13rpx 14rpx;
   margin-bottom: 12rpx;
 }
 
@@ -353,11 +395,19 @@
   font-size: 24rpx;
 }
 
+.race-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  margin-top: 8rpx;
+}
+
 .race-meta {
+  flex: 1;
+  min-width: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 10rpx;
-  margin-top: 8rpx;
 }
 
 .meta-tag {
@@ -431,10 +481,20 @@
   line-height: 1.5;
 }
 
-.choose-btn {
-  margin-top: 10rpx;
+.race-action-btn {
+  flex-shrink: 0;
+  height: 52rpx;
+  line-height: 52rpx;
+  padding: 0 18rpx;
+  border-radius: 999rpx;
+  background: #c7ee5a;
+  color: #111318;
+  font-size: 23rpx;
+  font-weight: 900;
 }
 
-.selected-btn {
-  background: #242d2d;
+.race-action-selected {
+  background: rgba(199, 238, 90, 0.1);
+  color: #c7ee5a;
+  border: 2rpx solid rgba(199, 238, 90, 0.18);
 }

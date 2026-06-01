@@ -19,35 +19,20 @@
   </view>
 
   <view class="target-board" wx:if="{{targetRaces.length > 0}}">
-    <view class="target-race-card" wx:for="{{targetRaces}}" wx:key="id">
-      <view class="row target-head">
-        <view>
-          <view class="target-race-name">{{item.name}}</view>
-          <view class="target-race-meta">{{item.displayDate}} · {{item.city}}</view>
-        </view>
-        <view class="target-remove" data-id="{{item.id}}" bindtap="removeTarget">×</view>
-      </view>
-      <view class="target-divider"></view>
-      <view class="target-countdown-row" wx:if="{{!item.countdown.isUnknown}}">
-        <view class="count-item">
-          <view class="count-num">{{item.countdownDays}}</view>
-          <view class="count-label">天</view>
-        </view>
-        <view class="count-dot">:</view>
-        <view class="count-item">
-          <view class="count-num">{{item.countdownHours}}</view>
-          <view class="count-label">时</view>
-        </view>
-        <view class="count-dot">:</view>
-        <view class="count-item">
-          <view class="count-num">{{item.countdownMinutes}}</view>
-          <view class="count-label">分</view>
+    <scroll-view scroll-x="true" enable-flex="true" show-scrollbar="false">
+      <view class="target-scroll-row">
+        <view class="target-race-card" wx:for="{{targetRaces}}" wx:key="id">
+          <view class="target-card-top">
+            <view class="target-race-name">{{item.name}}</view>
+            <view class="target-days">{{item.compactDaysText}}</view>
+          </view>
+          <view class="target-card-bottom">
+            <view class="target-race-meta">{{item.compactMetaText}}</view>
+            <view class="target-remove" data-id="{{item.id}}" catchtap="removeTarget">移除</view>
+          </view>
         </view>
       </view>
-      <view class="target-countdown-empty" wx:else>日期待定</view>
-      <view class="target-divider"></view>
-      <view class="target-week-text">{{item.trainingWeeksText}}</view>
-    </view>
+    </scroll-view>
   </view>
   <view class="card empty-target-card" wx:if="{{targetRaces.length === 0}}">
     <view class="empty-target-title">还没有目标赛事</view>
@@ -57,7 +42,10 @@
   <view class="card filter-card">
     <view class="row section-row">
       <view class="section-title">赛事筛选</view>
-      <button class="btn-secondary reset-btn" bindtap="onResetFilters">重置</button>
+      <view class="filter-actions">
+        <button class="btn-secondary reset-btn" bindtap="onResetFilters">重置</button>
+        <button class="btn-secondary filter-toggle-btn" bindtap="toggleFilters">{{filtersExpanded ? "收起" : "筛选"}}</button>
+      </view>
     </view>
     <input
       class="search-input"
@@ -66,7 +54,7 @@
       value="{{keyword}}"
       bindinput="onKeywordInput"
     />
-    <view class="filter-grid">
+    <view class="filter-grid" wx:if="{{filtersExpanded}}">
       <view class="filter-item">
         <view class="filter-label">距离</view>
         <picker mode="selector" range="{{distanceOptions}}" value="{{distanceIndex}}" bindchange="onDistanceChange">
@@ -105,16 +93,6 @@
     </view>
   </view>
 
-  <view class="card reminder-card" wx:if="{{officialMissingSourceCount > 0 || withSourceCount > 0}}">
-    <view class="reminder-title">数据提醒</view>
-    <view class="reminder-line" wx:if="{{officialMissingSourceCount > 0}}">
-      已官宣但缺来源：<text class="danger-value">{{officialMissingSourceCount}}</text> 场
-    </view>
-    <view class="reminder-line" wx:if="{{withSourceCount > 0}}">
-      已附来源链接：<text class="ok-value">{{withSourceCount}}</text> 场
-    </view>
-  </view>
-
   <view class="month-tabs card" wx:if="{{months.length > 0}}">
     <scroll-view scroll-x="true" enable-flex="true" show-scrollbar="false">
       <view class="month-row">
@@ -142,7 +120,8 @@
         class="{{item.empty ? 'day-cell empty' : item.highlight ? 'day-cell active' : 'day-cell'}}"
       >
         <text class="day-number">{{item.day}}</text>
-        <text class="day-count" wx:if="{{item.highlight}}">{{item.count}} 场</text>
+        <text class="day-dot" wx:if="{{item.highlight}}"></text>
+        <text class="day-count" wx:if="{{item.count > 1}}">{{item.count}}</text>
       </view>
     </view>
   </view>
@@ -159,20 +138,16 @@
           <view class="race-name">{{item.name}}</view>
           <view class="race-date">{{item.displayDate}}</view>
         </view>
-        <view class="race-meta">
-          <text class="meta-tag">{{item.city}}</text>
-          <text class="meta-tag">{{item.distance}}</text>
-          <text class="meta-tag">{{item.level}}</text>
-          <text class="meta-tag countdown-tag">{{item.countdownText}}</text>
+        <view class="race-meta-row">
+          <view class="race-meta">
+            <text class="meta-tag">{{item.city}}</text>
+            <text class="meta-tag">{{item.distance}}</text>
+            <text class="meta-tag">{{item.level}}</text>
+            <text class="meta-tag countdown-tag">{{item.listCountdownText}}</text>
+          </view>
+          <view class="{{item.actionClass}}" bindtap="toggleTarget" data-id="{{item.id}}">{{item.actionText}}</view>
         </view>
-        <view class="race-intro">{{item.intro}}</view>
-        <button
-          class="{{item.isTarget ? 'btn-secondary choose-btn selected-btn' : 'btn-primary choose-btn'}}"
-          bindtap="toggleTarget"
-          data-id="{{item.id}}"
-        >
-          {{item.isTarget ? "已加入目标（点我移除）" : "加入目标赛事"}}
-        </button>
+        <view class="race-intro" wx:if="{{item.displayIntro}}">{{item.displayIntro}}</view>
       </view>
     </block>
     <block wx:if="{{filteredRaces.length === 0}}">
