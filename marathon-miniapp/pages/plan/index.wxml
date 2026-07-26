@@ -14,6 +14,7 @@
     <view class="plan-hero-head">
       <view>
         <view class="hero-title">{{activeTemplateName}}</view>
+        <view class="hero-subtitle">{{activePlanSummary}}</view>
         <view class="hero-subtitle">起始日期：{{startDate}}</view>
       </view>
       <view class="hero-percent">{{completionPercentText}}</view>
@@ -34,9 +35,9 @@
         </view>
       </view>
       <view class="plan-metric-item">
-        <view class="metric-label">总公里</view>
+        <view class="metric-label">{{distanceMetricLabel}}</view>
         <view class="metric-value-line">
-          <text class="metric-number">{{totalDistanceNumber}}</text>
+          <text class="metric-number {{isSummerPlan ? 'metric-number-range' : ''}}">{{totalDistanceNumber}}</text>
           <text class="metric-unit">{{totalDistanceUnit}}</text>
         </view>
       </view>
@@ -47,20 +48,35 @@
   </view>
 
   <view class="card panel-card">
-    <view class="section-title">计划设置</view>
-    <view class="setting-grid">
-      <view class="setting-item">
-        <view class="setting-label">训练计划</view>
-        <picker mode="selector" range="{{templateNames}}" value="{{templateIndex}}" bindchange="onTemplateChange">
-          <view class="picker-box">{{templateNames[templateIndex] || "请选择模板"}}</view>
-        </picker>
+    <view class="section-title">选择训练计划</view>
+    <view class="setting-label">项目</view>
+    <view class="plan-filter-row">
+      <view class="plan-filter {{planEventFilter === option ? 'plan-filter-active' : ''}}" wx:for="{{planEventOptions}}" wx:for-item="option" wx:key="*this" data-value="{{option}}" bindtap="onPlanEventChange">{{option}}</view>
+    </view>
+    <view class="setting-label plan-filter-label">周期</view>
+    <view class="plan-filter-row">
+      <view class="plan-filter {{planCycleFilter === option ? 'plan-filter-active' : ''}}" wx:for="{{planCycleOptions}}" wx:for-item="option" wx:key="*this" data-value="{{option}}" bindtap="onPlanCycleChange">{{option}}</view>
+    </view>
+    <view class="plan-option-list">
+      <view class="plan-option {{template.name === activeTemplateName ? 'plan-option-active' : ''}}" wx:for="{{visibleTemplates}}" wx:for-item="template" wx:key="name" data-name="{{template.name}}" bindtap="onTemplateSelect">
+        <view class="plan-option-head">
+          <view class="plan-option-name">{{template.displayName}}</view>
+          <view class="plan-option-check">{{template.name === activeTemplateName ? '已选' : '选择'}}</view>
+        </view>
+        <view class="plan-option-meta">目标 {{template.targetTimeText}} · 目标配速 {{template.targetPaceText}}</view>
+        <view class="plan-option-desc">{{template.cycleText}}</view>
       </view>
-      <view class="setting-item">
-        <view class="setting-label">起始日期</view>
-        <picker mode="date" start="{{minStartDate}}" value="{{startDate}}" bindchange="onStartDateChange">
-          <view class="picker-box">{{startDate}}</view>
-        </picker>
-      </view>
+    </view>
+    <view class="setting-item start-date-setting">
+      <view class="setting-label">起始日期</view>
+      <picker mode="date" start="{{minStartDate}}" value="{{startDate}}" bindchange="onStartDateChange">
+        <view class="picker-box">{{startDate}}</view>
+      </picker>
+    </view>
+    <view wx:if="{{isSummerPlan}}" class="summer-plan-note">
+      <view>三阶段月跑量：{{activeMonthlyVolume}}</view>
+      <view>适用门槛：{{activeAudience}}</view>
+      <view>自测：{{activeTestNote}}</view>
     </view>
     <view class="safety-link" bindtap="showSafetyGuide">查看选课与参赛安全建议 ›</view>
   </view>
@@ -85,7 +101,7 @@
     <view class="row week-header" data-week="{{weekItem.week}}" bindtap="toggleWeek">
       <view>
         <view class="week-title">第{{weekItem.week}}周</view>
-        <view class="week-subtitle">{{weekItem.phase || "训练周期"}} · 周里程 {{weekItem.weekly_km}} km</view>
+        <view class="week-subtitle">{{weekItem.phase || "训练周期"}} · {{weekItem.volumeText}}</view>
       </view>
       <view class="row">
         <text wx:if="{{weekItem.isCurrentWeek}}" class="week-tag-current">当前周</text>
@@ -108,8 +124,8 @@
           <view class="session-day">{{session.day_label}}</view>
           <view class="session-body">
             <view class="session-title">{{session.workout_type || "恢复训练"}}</view>
-            <view class="session-desc">{{session.description || session.segment || "按计划执行"}}</view>
-            <view class="session-meta">
+            <view class="session-desc">{{session.description || session.segment || ""}}</view>
+            <view wx:if="{{session.hasSessionMeta}}" class="session-meta">
               <text>{{session.distanceText}}</text>
               <text>{{session.paceText}}</text>
             </view>

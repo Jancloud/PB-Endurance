@@ -1,4 +1,5 @@
 const planData = require("../data/training_plans");
+const summerPlanData = require("../data/summer_training_plans");
 const { KEYS, get, set } = require("../utils/storage");
 const { formatDate, daysBetween } = require("../utils/date");
 
@@ -82,16 +83,38 @@ function toggleCompletedSession(context, week, dayIndex) {
 }
 
 function getTemplates() {
-  return (planData.templates || []).map((item) => ({
+  return getAllTemplates().map((item) => ({
+    displayName: `${item.event || (item.template_name || "").slice(0, 2)}${((item.template_name || "").match(/\d{3}/) || [""])[0]}`,
     name: item.template_name,
     code: item.template_code,
     targetTimeMinutes: item.target_time_minutes,
     weeksCount: (item.weeks && item.weeks.length) || 0,
+    event: item.event || (item.template_name || "").slice(0, 2),
+    cycle: item.cycle || "常规备赛",
+    targetPace: item.target_pace || formatTargetPace(item.target_time_minutes, item.event || (item.template_name || "").slice(0, 2)),
+    monthlyVolume: item.monthly_volume || [],
+    audience: item.audience || "",
+    testNote: item.test_note || "",
   }));
 }
 
+function formatTargetPace(targetTimeMinutes, event) {
+  const distanceKm = event === "半马" ? 21.0975 : 42.195;
+  const totalSeconds = Math.round((Number(targetTimeMinutes) * 60) / distanceKm);
+  if (!Number.isFinite(totalSeconds) || totalSeconds <= 0) {
+    return "";
+  }
+  const minutes = Math.floor(totalSeconds / 60);
+  const seconds = `${totalSeconds % 60}`.padStart(2, "0");
+  return `${minutes}:${seconds}/km`;
+}
+
+function getAllTemplates() {
+  return [...(planData.templates || []), ...(summerPlanData.templates || [])];
+}
+
 function getTemplateByName(templateName) {
-  return (planData.templates || []).find((item) => item.template_name === templateName) || null;
+  return getAllTemplates().find((item) => item.template_name === templateName) || null;
 }
 
 function getDefaultTemplateName() {
@@ -151,6 +174,7 @@ function buildWeekWithSessionStatus(week, context) {
     weekly_km: week.weekly_km,
     weekly_km_computed: week.weekly_km_computed,
     weekly_km_mismatch: week.weekly_km_mismatch,
+    volume_note: week.volume_note || "",
     sessions: (week.sessions || []).map((session) => {
       const isFuture = isSessionInFuture(context.startDate, week.week, session.day_index, context.today);
       return {

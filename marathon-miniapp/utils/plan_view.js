@@ -59,6 +59,7 @@ function buildPlanViewModel(planService, activeWeekOverride) {
   const currentPosition = resolveCurrentPosition(startDate, weeks.length);
   const displayWeeks = weeks.map((week) => ({
     ...week,
+    volumeText: week.volume_note || `周里程 ${sumWeekDistanceKm(week)} km`,
     isCurrentWeek: Number(week.week) === Number(currentPosition.week),
     sessions: (week.sessions || []).map((session) => ({
       ...session,
@@ -84,13 +85,19 @@ function buildPlanViewModel(planService, activeWeekOverride) {
         ? "status-today"
         : "status-todo",
       distanceText:
-        session.distance_km === undefined || session.distance_km === null ? "无需里程" : `${session.distance_km} km`,
+        session.distance_km === undefined || session.distance_km === null ? "" : `${session.distance_km} km`,
       paceText: session.pace || "--",
+      hasSessionMeta: Boolean(
+        (session.distance_km !== undefined && session.distance_km !== null) || (session.pace && session.pace !== "--")
+      ),
     })),
   }));
   const completion = selectedTemplate ? planService.getCompletionStats(selectedTemplate.name, startDate) : null;
   const totalDistanceKm = displayWeeks.reduce((sum, week) => sum + sumWeekDistanceKm(week), 0);
-  const totalDistance = splitKm(totalDistanceKm);
+  const isSummerPlan = selectedTemplate && selectedTemplate.cycle === "夏训专项";
+  const totalDistance = isSummerPlan
+    ? { number: ((selectedTemplate.monthlyVolume && selectedTemplate.monthlyVolume[0]) || "--").replace("km", ""), unit: "km" }
+    : splitKm(totalDistanceKm);
   const completionPercent = completion ? completion.percent : 0;
   const completionPercentText = `${completionPercent}%`;
   const activeWeek =
@@ -108,12 +115,25 @@ function buildPlanViewModel(planService, activeWeekOverride) {
     completionBarWidth: `${completionPercent}%`,
     completionPercentText,
     activeTemplateName: selectedTemplate ? selectedTemplate.name : "训练计划",
+    activePlanEvent: selectedTemplate ? selectedTemplate.event : "",
+    activePlanCycle: selectedTemplate ? selectedTemplate.cycle : "",
+    activeTargetPace: selectedTemplate ? selectedTemplate.targetPace || "--" : "--",
+    activePlanSummary: selectedTemplate
+      ? selectedTemplate.targetPace
+        ? `${selectedTemplate.cycle} · 目标配速 ${selectedTemplate.targetPace}`
+        : selectedTemplate.cycle
+      : "",
+    activeMonthlyVolume: selectedTemplate && selectedTemplate.monthlyVolume ? selectedTemplate.monthlyVolume.join("／") : "",
+    activeAudience: selectedTemplate ? selectedTemplate.audience || "" : "",
+    activeTestNote: selectedTemplate ? selectedTemplate.testNote || "" : "",
+    isSummerPlan,
     weekCountNumber: `${displayWeeks.length}`,
     weekCountUnit: "周",
     doneCountNumber: `${completion ? completion.completed : 0}`,
     doneCountUnit: "次",
     totalDistanceNumber: totalDistance.number,
     totalDistanceUnit: totalDistance.unit,
+    distanceMetricLabel: isSummerPlan ? "首月跑量" : "总公里",
     weekCountText: `${displayWeeks.length}周`,
     doneCountText: `${completion ? completion.completed : 0}次`,
     totalDistanceText: formatKm(totalDistanceKm),
