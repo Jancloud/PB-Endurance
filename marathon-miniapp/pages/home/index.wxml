@@ -121,7 +121,7 @@
       </view>
       <view class="race-mini-row race-mini-bottom-row">
         <view class="card-subheading race-mini-subtitle">{{raceHintSubtitle}}</view>
-        <view class="race-mini-action">去赛事 ›</view>
+        <view class="race-mini-action">查看赛事 ›</view>
       </view>
     </view>
   </view>
