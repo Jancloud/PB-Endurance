@@ -64,7 +64,19 @@
           <view class="plan-option-check">{{template.name === activeTemplateName ? '已选' : '选择'}}</view>
         </view>
         <view class="plan-option-meta">目标 {{template.targetTimeText}} · 目标配速 {{template.targetPaceText}}</view>
-        <view class="plan-option-desc">{{template.cycleText}}</view>
+        <view class="plan-option-foot">
+          <view class="plan-option-desc">{{template.cycleText}}</view>
+          <view wx:if="{{template.isSummerPlan}}" class="plan-info-trigger" data-name="{{template.name}}" catchtap="toggleSummerPlanInfo">
+            <text class="plan-info-trigger-icon">i</text>
+          </view>
+        </view>
+        <block wx:if="{{template.isSummerPlan}}">
+          <view wx:if="{{expandedSummerPlanName === template.name}}" class="plan-option-info" catchtap="stopPlanInfoTap">
+            <view class="plan-option-info-line">三阶段月跑量：{{template.monthlyVolumeText}}</view>
+            <view class="plan-option-info-line">适用门槛：{{template.audience}}</view>
+            <view class="plan-option-info-line">自测：{{template.testNote}}</view>
+          </view>
+        </block>
       </view>
     </view>
     <view class="setting-item start-date-setting">
@@ -73,12 +85,6 @@
         <view class="picker-box">{{startDate}}</view>
       </picker>
     </view>
-    <view wx:if="{{isSummerPlan}}" class="summer-plan-note">
-      <view>三阶段月跑量：{{activeMonthlyVolume}}</view>
-      <view>适用门槛：{{activeAudience}}</view>
-      <view>自测：{{activeTestNote}}</view>
-    </view>
-    <view class="safety-link" bindtap="showSafetyGuide">查看选课与参赛安全建议 ›</view>
   </view>
 
   <view class="card panel-card">

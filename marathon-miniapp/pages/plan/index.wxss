@@ -116,7 +116,7 @@
 
 .metric-number-range {
   flex-shrink: 0;
-  font-size: 31rpx;
+  font-size: 34rpx;
   letter-spacing: -2rpx;
   white-space: nowrap;
 }
@@ -213,6 +213,29 @@
   font-weight: 900;
 }
 
+.plan-info-trigger {
+  flex-shrink: 0;
+  width: 48rpx;
+  height: 48rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -9rpx -9rpx -9rpx 0;
+}
+
+.plan-info-trigger-icon {
+  display: block;
+  width: 30rpx;
+  height: 30rpx;
+  border: 2rpx solid rgba(232, 159, 74, 0.72);
+  border-radius: 50%;
+  color: #f0b96d;
+  font-size: 22rpx;
+  font-weight: 900;
+  line-height: 26rpx;
+  text-align: center;
+}
+
 .plan-option-check {
   flex-shrink: 0;
   border-radius: 999rpx;
@@ -229,24 +252,35 @@
   font-size: 23rpx;
 }
 
-.plan-option-desc,
-.summer-plan-note {
+.plan-option-foot {
   margin-top: 7rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plan-option-desc {
   color: #8fa19c;
   font-size: 22rpx;
   line-height: 1.5;
 }
 
-.start-date-setting {
-  margin-top: 18rpx;
+.plan-option-info {
+  margin-top: 12rpx;
+  border-top: 2rpx solid rgba(232, 159, 74, 0.2);
+  border-left: 4rpx solid #e89f4a;
+  padding: 10rpx 0 2rpx 12rpx;
+  color: #f2c47f;
+  font-size: 22rpx;
+  line-height: 1.5;
 }
 
-.summer-plan-note {
-  margin-top: 16rpx;
-  border-left: 6rpx solid #e89f4a;
-  padding: 10rpx 14rpx;
-  background: rgba(232, 159, 74, 0.08);
-  color: #f2c47f;
+.plan-option-info-line + .plan-option-info-line {
+  margin-top: 4rpx;
+}
+
+.start-date-setting {
+  margin-top: 18rpx;
 }
 
 .picker-box {
@@ -255,13 +289,6 @@
   border-radius: 14rpx;
   padding: 16rpx;
   color: #f2f6ff;
-}
-
-.safety-link {
-  margin-top: 14rpx;
-  color: #e89f4a;
-  font-size: 24rpx;
-  font-weight: 800;
 }
 
 .taper-head {

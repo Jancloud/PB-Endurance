@@ -42,12 +42,12 @@
         <view class="hero-progress-rate">{{heroMainText}}</view>
       </view>
 
-      <view class="today-big-metrics">
-        <view class="today-big-metric">
+      <view wx:if="{{hasTodayMetrics}}" class="today-big-metrics {{hasTodaySingleMetric ? 'today-big-metrics-single' : ''}}">
+        <view wx:if="{{hasTodayDistanceMetric}}" class="today-big-metric">
           <text class="today-big-number">{{todayDistanceNumber}}</text>
           <text class="today-big-unit">{{todayDistanceUnit}}</text>
         </view>
-        <view class="today-big-metric pace-metric">
+        <view wx:if="{{hasTodayPaceMetric}}" class="today-big-metric pace-metric">
           <text class="today-big-number pace-number">{{todayPaceText}}</text>
           <text class="today-big-unit">/km</text>
         </view>
@@ -93,6 +93,7 @@
     </view>
     <view class="week-overview-body">
       <view class="week-main-stat">
+        <text wx:if="{{weekOverview.isEstimated}}" class="week-km-prefix">约</text>
         <text class="week-km-number">{{weekOverview.plannedKmText}}</text>
         <text class="week-km-unit">km</text>
       </view>

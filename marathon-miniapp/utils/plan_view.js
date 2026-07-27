@@ -123,9 +123,6 @@ function buildPlanViewModel(planService, activeWeekOverride) {
         ? `${selectedTemplate.cycle} · 目标配速 ${selectedTemplate.targetPace}`
         : selectedTemplate.cycle
       : "",
-    activeMonthlyVolume: selectedTemplate && selectedTemplate.monthlyVolume ? selectedTemplate.monthlyVolume.join("／") : "",
-    activeAudience: selectedTemplate ? selectedTemplate.audience || "" : "",
-    activeTestNote: selectedTemplate ? selectedTemplate.testNote || "" : "",
     isSummerPlan,
     weekCountNumber: `${displayWeeks.length}`,
     weekCountUnit: "周",

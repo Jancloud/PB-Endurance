@@ -155,9 +155,10 @@ function buildWeekOverview(currentWeek) {
       title: `第${currentWeek.week}周训练概览`,
       phase: currentWeek.phase || "训练周期",
       plannedKmText: formatKm(plannedKm),
+      isEstimated: Boolean(currentWeek.weekly_km_estimated),
       runCountText: `${runSessions.length}次跑步`,
       completedText: `已完成 ${completedCount}/${completableCount || sessions.length}`,
-      weeklyKmText: currentWeek.weekly_km ? `${formatKm(currentWeek.weekly_km)} km` : `${formatKm(plannedKm)} km`,
+      weeklyKmText: `${currentWeek.weekly_km_estimated ? "约 " : ""}${currentWeek.weekly_km ? formatKm(currentWeek.weekly_km) : formatKm(plannedKm)} km`,
       bars,
     },
   };
@@ -172,6 +173,9 @@ function buildHomeViewModel(todayTask, targetRaces, currentWeek) {
   const raceHint = buildRaceCountdownHint(targetRaces);
   const weekOverview = buildWeekOverview(currentWeek);
   const distance = normalizeSessionDistance(session);
+  const paceText = (session && session.pace) || "";
+  const hasTodayDistanceMetric = distance > 0;
+  const hasTodayPaceMetric = Boolean(paceText && paceText !== "--");
 
   return {
     todayTask,
@@ -184,9 +188,13 @@ function buildHomeViewModel(todayTask, targetRaces, currentWeek) {
       session && session.distance_km !== undefined && session.distance_km !== null
         ? `${formatKm(session.distance_km)} km`
         : "无需里程",
-    todayDistanceNumber: distance > 0 ? formatKm(distance) : "--",
-    todayDistanceUnit: distance > 0 ? "km" : "",
-    todayPaceText: (session && session.pace) || "--",
+    todayDistanceNumber: hasTodayDistanceMetric ? formatKm(distance) : "",
+    todayDistanceUnit: hasTodayDistanceMetric ? "km" : "",
+    todayPaceText: paceText,
+    hasTodayDistanceMetric,
+    hasTodayPaceMetric,
+    hasTodayMetrics: hasTodayDistanceMetric || hasTodayPaceMetric,
+    hasTodaySingleMetric: hasTodayDistanceMetric !== hasTodayPaceMetric,
     todayCompleted: !!(session && session.completed),
     todayCheckinButtonText: session && session.completed ? "取消打卡" : "完成打卡",
     targetRaceMetricText: hasTargetRaces ? `${targetRaces.length}场` : "未设置",

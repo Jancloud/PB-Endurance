@@ -3,6 +3,8 @@ const summerPlanData = require("../data/summer_training_plans");
 const { KEYS, get, set } = require("../utils/storage");
 const { formatDate, daysBetween } = require("../utils/date");
 
+const WEEKDAY_LABELS = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
+
 function normalizeStartDate(startDate) {
   return startDate || formatDate(new Date());
 }
@@ -12,6 +14,11 @@ function resolveSessionDate(startDate, week, dayIndex) {
   const offset = (Number(week) - 1) * 7 + (Number(dayIndex) - 1);
   base.setDate(base.getDate() + offset);
   return formatDate(base);
+}
+
+function resolveSessionDayLabel(sessionDate) {
+  const date = new Date(`${sessionDate}T00:00:00`);
+  return WEEKDAY_LABELS[date.getDay()] || "";
 }
 
 function isSessionInFuture(startDate, week, dayIndex, forDate = formatDate(new Date())) {
@@ -174,18 +181,20 @@ function buildWeekWithSessionStatus(week, context) {
     weekly_km: week.weekly_km,
     weekly_km_computed: week.weekly_km_computed,
     weekly_km_mismatch: week.weekly_km_mismatch,
+    weekly_km_estimated: Boolean(week.weekly_km_estimated),
     volume_note: week.volume_note || "",
     sessions: (week.sessions || []).map((session) => {
+      const sessionDate = resolveSessionDate(context.startDate, week.week, session.day_index);
       const isFuture = isSessionInFuture(context.startDate, week.week, session.day_index, context.today);
       return {
         day_index: session.day_index,
-        day_label: session.day_label,
+        day_label: resolveSessionDayLabel(sessionDate),
         workout_type: session.workout_type,
         distance_km: session.distance_km,
         pace: session.pace,
         description: session.description,
         segment: session.segment,
-        session_date: resolveSessionDate(context.startDate, week.week, session.day_index),
+        session_date: sessionDate,
         is_future: isFuture,
         completed: isFuture
           ? false
@@ -251,6 +260,8 @@ function getTodayTask() {
     };
   }
 
+  const sessionDate = resolveSessionDate(config.startDate, position.week, position.dayIndex);
+
   return {
     templateName: config.templateName,
     week: position.week,
@@ -259,7 +270,8 @@ function getTodayTask() {
     isDeloadWeek: weekData.is_deload_week,
     session: {
       day_index: session.day_index,
-      day_label: session.day_label,
+      day_label: resolveSessionDayLabel(sessionDate),
+      session_date: sessionDate,
       workout_type: session.workout_type,
       distance_km: session.distance_km,
       pace: session.pace,
