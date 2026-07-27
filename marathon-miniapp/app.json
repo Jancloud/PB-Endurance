@@ -5,7 +5,8 @@
     "pages/plan/index",
     "pages/race/index",
     "pages/profile/index",
-    "pages/about/index"
+    "pages/about/index",
+    "pages/vdot/index"
   ],
   "window": {
     "navigationBarTitleText": "跑友备赛助手",

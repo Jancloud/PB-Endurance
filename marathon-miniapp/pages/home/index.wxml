@@ -110,6 +110,14 @@
     </view>
   </view>
 
+  <view class="card vdot-entry-card" bindtap="goToVdot">
+    <view>
+      <view class="card-heading">VDOT 测算</view>
+      <view class="card-subheading">用近期成绩估算训练配速</view>
+    </view>
+    <view class="vdot-entry-action">开始测算 ›</view>
+  </view>
+
   <view class="card race-mini-card" wx:if="{{hasRaceHint}}" bindtap="goToRace">
     <view class="race-mini-layout">
       <view class="race-mini-row">

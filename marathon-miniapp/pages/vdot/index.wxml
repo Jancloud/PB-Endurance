@@ -1,0 +1,56 @@
+<view class="container vdot-page">
+  <view class="hero-card vdot-hero">
+    <view class="vdot-eyebrow">PERFORMANCE-BASED ESTIMATE</view>
+    <view class="hero-title">VDOT 测算</view>
+    <view class="hero-subtitle">用近期比赛成绩估算训练配速</view>
+  </view>
+
+  <view class="card input-card">
+    <view class="section-title">比赛成绩</view>
+    <view class="field-label">项目</view>
+    <picker mode="selector" range="{{eventOptions}}" value="{{eventIndex}}" bindchange="onEventChange">
+      <view class="selector-field">
+        <text>{{eventOptions[eventIndex]}}</text>
+        <text class="selector-arrow">⌄</text>
+      </view>
+    </picker>
+
+    <view class="field-label time-label">完赛时间</view>
+    <input
+      class="time-input"
+      placeholder="例如 40:00 或 1:32:40"
+      placeholder-style="color:#74847f;"
+      value="{{finishTime}}"
+      maxlength="8"
+      bindinput="onFinishTimeInput"
+    />
+    <view class="input-hint">仅需填写项目与完赛时间。</view>
+    <view class="error-text" wx:if="{{errorText}}">{{errorText}}</view>
+    <button class="btn-primary calculate-button" bindtap="onCalculate">开始测算</button>
+  </view>
+
+  <view class="card result-card" wx:if="{{result}}">
+    <view class="result-head">
+      <view>
+        <view class="section-title result-title">你的 VDOT</view>
+        <view class="result-source">基于{{result.eventLabel}} {{result.finishTime}} 测算</view>
+      </view>
+      <view class="vdot-score">{{result.vdot}}</view>
+    </view>
+
+    <view class="pace-heading">参考训练配速</view>
+    <view class="pace-list">
+      <view class="pace-row" wx:for="{{result.trainingPaces}}" wx:key="key">
+        <view>
+          <view class="pace-label">{{item.label}}</view>
+          <view class="pace-description">{{item.description}}</view>
+        </view>
+        <view class="pace-value">{{item.pace}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="method-note">
+    VDOT 由比赛表现反推，不等同于实验室测得的 VO2max。训练配速仅供参考，请结合身体状态调整。
+  </view>
+</view>
