@@ -10,6 +10,17 @@
     </view>
   </view>
 
+  <view class="card plan-tools-card" bindtap="goToVdot">
+    <view class="row">
+      <view>
+        <view class="tool-kicker">训练能力基准</view>
+        <view class="tool-title">VDOT 测算</view>
+        <view class="tool-sub">用近期比赛成绩估算训练配速</view>
+      </view>
+      <view class="tool-arrow">测算</view>
+    </view>
+  </view>
+
   <view class="plan-hero-card">
     <view class="plan-hero-head">
       <view>

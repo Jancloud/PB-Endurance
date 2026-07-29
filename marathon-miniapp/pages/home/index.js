@@ -144,12 +144,6 @@ Page({
     });
   },
 
-  goToVdot() {
-    wx.navigateTo({
-      url: "/pages/vdot/index",
-    });
-  },
-
   goToTaperGuide() {
     wx.switchTab({
       url: "/pages/plan/index",

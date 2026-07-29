@@ -127,24 +127,6 @@
   box-shadow: 0 0 0 1rpx rgba(199, 238, 90, 0.08), 0 18rpx 42rpx rgba(0, 0, 0, 0.34);
 }
 
-.vdot-entry-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18rpx;
-  padding: 20rpx 22rpx;
-  margin-bottom: 14rpx;
-  border-color: rgba(199, 238, 90, 0.26);
-  background: linear-gradient(115deg, rgba(31, 50, 38, 0.94), rgba(14, 22, 21, 0.95));
-}
-
-.vdot-entry-action {
-  flex-shrink: 0;
-  color: #c7ee5a;
-  font-size: 22rpx;
-  font-weight: 800;
-}
-
 .today-hero-card::before,
 .week-overview-card::before {
   content: "";

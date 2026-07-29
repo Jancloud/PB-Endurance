@@ -168,6 +168,12 @@ Page({
     });
   },
 
+  goToVdot() {
+    wx.navigateTo({
+      url: "/pages/vdot/index",
+    });
+  },
+
   onShareAppMessage() {
     return {
       title: "PB日历 - 马拉松备赛训练计划",
